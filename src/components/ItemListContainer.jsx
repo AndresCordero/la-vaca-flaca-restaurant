@@ -6,6 +6,4 @@ const ItemListContainer = (props) => {
         </div>
     )
 }
-
-
 export default ItemListContainer
