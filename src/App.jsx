@@ -1,4 +1,5 @@
 import './App.css'
+import Contador from './components/Contador'
 import NavbarComponent from './components/NavbarComponent'
 import ItemListContainer from './components/ItemListContainer'
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <NavbarComponent/>
       <ItemListContainer greeting= "Bienvenidos a la Vaca Flaca"/>
+     {/*  <Contador/> */}
     </>
   )
 }
