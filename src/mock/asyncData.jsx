@@ -35,6 +35,25 @@ export const getProducts = () => {
         let error = false
         setTimeout(() => {
             error ? reject("No hay data") : resolve(productos)
-        },2000)
+        }, 2000)
     })
 }
+
+
+//promesa de productos (EJEMPLO SENCILLO)
+
+/*    let error = false
+   let promiseExample = new Promise((resolve, reject) => {
+       setTimeout(() => {
+           error ? reject('No existen los productos') : resolve('Hay productos')
+       }, 3000)
+   })
+ 
+   console.log(promiseExample)
+   useEffect(() => {
+       promiseExample
+           .then((res) => setData(res))
+   }, []) */
+
+
+

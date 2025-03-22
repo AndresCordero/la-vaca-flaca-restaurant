@@ -3,12 +3,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from './CartWidget'
+import { NavLink } from 'react-router-dom'
 
 function NavbarComponent() {
     return (
         <>
             <Navbar expand="lg" bg="dark" data-bs-theme="dark">
-                <div className='pe-5 p-2'>
+                <div as={NavLink} className='pe-5 p-2'>
                     <img className='rounded-circle' src="./logo-vacaflaca.jpg" alt="logo" style={{ width: '12rem'}} />
                 </div>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -25,7 +26,7 @@ function NavbarComponent() {
                             <NavDropdown.Item href="#action/3.3">Sala de eventos</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">
-                                Alojamiento
+                                Alojamient`o
                             </NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="#contacto">Contacto</Nav.Link>
@@ -41,3 +42,4 @@ function NavbarComponent() {
 }
 
 export default NavbarComponent;
+
