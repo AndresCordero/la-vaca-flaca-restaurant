@@ -10,7 +10,7 @@ const productos = [
     },
     {
         id: '02',
-        name: 'Parmesano',
+        name: 'Cabaña',
         price: 5000,
         description: 'lorem lorem lorem',
         stock: 3,
@@ -24,6 +24,15 @@ const productos = [
         description: 'lorem lorem lorem',
         stock: 10,
         category: 'restaurante',
+        img: '../Barbacoa.jpg'
+    },
+    {
+        id: '04',
+        name: 'Pista',
+        price: 15000,
+        description: 'lorem lorem lorem',
+        stock: 1,
+        category: 'pista',
         img: '../Barbacoa.jpg'
     }
 ]

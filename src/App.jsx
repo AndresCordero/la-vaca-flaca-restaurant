@@ -6,13 +6,17 @@ import FetchApi from './mock/FetchApi'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 
+
+
+/* Este es el Router */
+
 function App() {
   return (
     <BrowserRouter> {/*Componente del Router instalado*/}
       <NavbarComponent /> {/*Va fuera de Routes para que se muestre en todos lados*/}
       <Routes>
         <Route path='/' element={<ItemListContainer greeting="Bienvenidos a la Vaca Flaca" />} />
-        <Route path='/category' element={<ItemListContainer greeting="Seleccionaste la categoria: " />} />
+        <Route path='/category/:categoryId' element={<ItemListContainer greeting="Seleccionaste la categoria: " />} />
       </Routes>
 
       <FetchApi />
