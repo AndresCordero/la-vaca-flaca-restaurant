@@ -5,7 +5,7 @@ const productos = [
         price: 4000,
         description: 'lorem lorem lorem',
         stock: 10,
-        categoty: 'restaurante',
+        category: 'restaurante',
         img: '../Camarones.jpg'
     },
     {
@@ -14,7 +14,7 @@ const productos = [
         price: 5000,
         description: 'lorem lorem lorem',
         stock: 3,
-        categoty: 'alojamiento',
+        category: 'alojamiento',
         img: '../Parmesano.jpg'
     },
     {
@@ -23,7 +23,7 @@ const productos = [
         price: 4000,
         description: 'lorem lorem lorem',
         stock: 10,
-        categoty: 'restaurante',
+        category: 'restaurante',
         img: '../Barbacoa.jpg'
     }
 ]
