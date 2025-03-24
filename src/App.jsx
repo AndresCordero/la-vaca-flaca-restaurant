@@ -4,7 +4,7 @@ import NavbarComponent from './components/NavbarComponent'
 import ItemListContainer from './components/ItemListContainer'
 import FetchApi from './mock/FetchApi'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { NavLink } from 'react-router-dom'
+import  ItemDetailContainer from './components/ItemDetailContainer'
 
 
 
@@ -17,6 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<ItemListContainer greeting="Bienvenidos a la Vaca Flaca" />} />
         <Route path='/category/:categoryId' element={<ItemListContainer greeting="Seleccionaste la categoria: " />} />
+        <Route path= '/item' element={<ItemDetailContainer/>} />
       </Routes>
 
       <FetchApi />

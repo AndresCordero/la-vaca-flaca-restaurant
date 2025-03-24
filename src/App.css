@@ -1,6 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.dropdown-item:active {
+    background-color: #6c757d !important;
+}

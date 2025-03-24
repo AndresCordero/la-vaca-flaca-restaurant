@@ -19,7 +19,7 @@ function NavbarComponent() {
                         <Nav.Link as={NavLink} to='/eventos'>Eventos</Nav.Link>
                         <Nav.Link as={NavLink} to= 'galeria'>Galeria</Nav.Link>
                         <NavDropdown  title="Servicios" id="basic-nav-dropdown">
-                            <NavDropdown.Item as={NavLink} to='/category/pista'>Pista de Motocross</NavDropdown.Item>
+                            <NavDropdown.Item as={NavLink} to='/category/pista'>Pista de Motocross</NavDropdown.Item> 
                             <NavDropdown.Item as={NavLink} to='/category/restaurante'>
                                 Restaurante y bar
                             </NavDropdown.Item>
@@ -42,4 +42,5 @@ function NavbarComponent() {
 }
 
 export default NavbarComponent;
+
 
