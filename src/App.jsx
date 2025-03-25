@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<ItemListContainer greeting="Bienvenidos a la Vaca Flaca" />} />
         <Route path='/category/:categoryId' element={<ItemListContainer greeting="Seleccionaste la categoria: " />} />
-        <Route path= '/item' element={<ItemDetailContainer/>} />
+        <Route path= '/item/:id' element={<ItemDetailContainer/>} />
       </Routes>
 
       <FetchApi />

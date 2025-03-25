@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Item = ({product}) => {
     return (
@@ -7,7 +8,7 @@ const Item = ({product}) => {
             <div>
                 <h4 className="card-title">{product.name}</h4>
                 <p className="card-text">₡{product.price}</p>
-                <a className="btn btn-dark">Ver mas</a>
+                <Link className="btn btn-dark" to={`/item/${product.id}`} >Ver mas</Link>
             </div>
         </div>
     )
