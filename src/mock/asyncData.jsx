@@ -31,7 +31,7 @@ const productos = [
         name: 'Pista',
         price: 15000,
         description: 'lorem lorem lorem',
-        stock: 1,
+        stock: 10,
         category: 'pista',
         img: '../Barbacoa.jpg'
     }
@@ -44,9 +44,26 @@ export const getProducts = () => {
         let error = false
         setTimeout(() => {
             error ? reject("No hay data") : resolve(productos)
-        }, 2000)
+        }, 1000)
     })
 }
+
+
+
+/* Buscar Producto */
+
+export const getOneProduct = (id) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            let product = productos.find(prod => prod.id === id)
+            resolve(product)
+        }, 1000)
+    })
+}
+
+
+
+
 
 
 //promesa de productos (EJEMPLO SENCILLO)

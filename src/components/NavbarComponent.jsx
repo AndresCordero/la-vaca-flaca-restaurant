@@ -7,10 +7,11 @@ import { NavLink } from 'react-router-dom'
 
 function NavbarComponent() {
     return (
-        <>
             <Navbar expand="lg" bg="dark" data-bs-theme="dark">
-                <div as={NavLink} to='/' className='pe-5 p-2'>
+                <div  className='pe-5 p-2'>
+                    <NavLink as={NavLink} to='/'>
                     <img className='rounded-circle' src="/logo-vacaflaca.jpg" alt="logo" style={{ width: '12rem'}} />
+                    </NavLink>
                 </div>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -36,8 +37,6 @@ function NavbarComponent() {
                     </nav>
                 </Navbar.Collapse>
             </Navbar>
-
-        </>
     );
 }
 

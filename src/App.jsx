@@ -5,6 +5,7 @@ import ItemListContainer from './components/ItemListContainer'
 import FetchApi from './mock/FetchApi'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import  ItemDetailContainer from './components/ItemDetailContainer'
+import ErrorPage from './components/ErrorPage'
 
 
 
@@ -18,6 +19,8 @@ function App() {
         <Route path='/' element={<ItemListContainer greeting="Bienvenidos a la Vaca Flaca" />} />
         <Route path='/category/:categoryId' element={<ItemListContainer greeting="Seleccionaste la categoria: " />} />
         <Route path= '/item/:id' element={<ItemDetailContainer/>} />
+        <Route path= '*' element={<ErrorPage/>} />
+        
       </Routes>
 
       <FetchApi />
