@@ -10,31 +10,59 @@ const productos = [
     },
     {
         id: '02',
-        name: 'Cabaña',
+        name: 'Cocacola',
         price: 5000,
         description: 'lorem lorem lorem',
         stock: 3,
-        category: 'alojamiento',
-        img: '../Parmesano.jpg'
+        category: 'bebidas',
+        img: '../Cocacola.png'
     },
     {
         id: '03',
-        name: 'Barbacoa',
+        name: 'Pollo barbacoa',
         price: 4000,
         description: 'lorem lorem lorem',
         stock: 10,
-        category: 'restaurante',
+        category: 'pollo',
         img: '../Barbacoa.jpg'
     },
     {
         id: '04',
-        name: 'Pista',
+        name: 'Casado',
         price: 15000,
         description: 'lorem lorem lorem',
         stock: 10,
-        category: 'pista',
-        img: '../Barbacoa.jpg'
+        category: 'ejecutivo',
+        img: '../casado.png'
+    },
+    {
+        id: '05',
+        name: 'Café',
+        price: 5000,
+        description: 'lorem lorem lorem',
+        stock: 10,
+        category: 'bebidas',
+        img: '../cafe.JPG'
+    },
+    {
+        id: '06',
+        name: 'Pollo Parmesano',
+        price: 15000,
+        description: 'lorem lorem lorem',
+        stock: 10,
+        category: 'pollo',
+        img: '../Parmesano.jpg'
+    },
+    {
+        id: '07',
+        name: 'Hamburguesa',
+        price: 5000,
+        description: 'lorem lorem lorem',
+        stock: 10,
+        category: 'comidasrapidas',
+        img: '../hamburguesa.jpg'
     }
+
 ]
 
 //crear y exportar promesa
