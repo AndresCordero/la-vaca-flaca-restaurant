@@ -29,7 +29,7 @@ const productos = [
     {
         id: '04',
         name: 'Casado',
-        price: 15000,
+        price: 3500,
         description: 'lorem lorem lorem',
         stock: 10,
         category: 'ejecutivo',
@@ -46,7 +46,7 @@ const productos = [
     },
     {
         id: '06',
-        name: 'Pollo Parmesano',
+        name: 'Pollo parmesano',
         price: 15000,
         description: 'lorem lorem lorem',
         stock: 10,
