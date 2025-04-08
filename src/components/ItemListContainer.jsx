@@ -8,8 +8,6 @@ const ItemListContainer = ({ greeting }) => {
     const [loading, setLoading] = useState(false)
     const {categoryId} = useParams()
 
-    
-
 
     /* --Promesa de productos-- */
     console.log(categoryId)

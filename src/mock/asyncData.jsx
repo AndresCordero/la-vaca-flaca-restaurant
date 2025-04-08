@@ -5,7 +5,7 @@ const productos = [
         price: 4000,
         description: 'lorem lorem lorem',
         stock: 10,
-        category: 'restaurante',
+        category: 'ejecutivo',
         img: '../Camarones.jpg'
     },
     {
@@ -77,7 +77,7 @@ const productos = [
         price: 5000,
         description: 'lorem lorem lorem',
         stock: 10,
-        category: 'acompanamientos',
+        category: 'acompañamientos',
         img: '../papasfritas.jpg'
     },
     {
@@ -86,7 +86,7 @@ const productos = [
         price: 5000,
         description: 'lorem lorem lorem',
         stock: 10,
-        category: 'acompanamientos',
+        category: 'acompañamientos',
         img: '../patacones.webp'
     },
     {
@@ -140,8 +140,44 @@ const productos = [
         price: 5000,
         description: 'lorem lorem lorem',
         stock: 8,
-        category: 'acompanamientos',
+        category: 'acompañamientos',
         img: '../ceviche.webp'
+    },
+    {
+        id: '17',
+        name: 'Olla de carne',
+        price: 5000,
+        description: 'lorem lorem lorem',
+        stock: 8,
+        category: 'sopas',
+        img: '../olladecarne.webp'
+    },
+    {
+        id: '18',
+        name: 'Sopa azteca',
+        price: 5000,
+        description: 'lorem lorem lorem',
+        stock: 8,
+        category: 'sopas',
+        img: '../sopaazteca.jpeg'
+    },
+    {
+        id: '19',
+        name: 'Rib Eye',
+        price: 8000,
+        description: 'lorem lorem lorem',
+        stock: 8,
+        category: 'especiales',
+        img: '../ribaye.webp'
+    },
+    {
+        id: '20',
+        name: 'Costilla',
+        price: 8000,
+        description: 'lorem lorem lorem',
+        stock: 8,
+        category: 'especiales',
+        img: '../costilladeres.jpg'
     }
 ]
 

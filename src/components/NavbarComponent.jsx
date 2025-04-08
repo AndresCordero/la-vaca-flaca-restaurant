@@ -20,18 +20,18 @@ function NavbarComponent() {
                         <Nav.Link as={NavLink} to='/eventos'>Eventos</Nav.Link>
                         <Nav.Link as={NavLink} to= 'galeria'>Galeria</Nav.Link>
                         <NavDropdown  title="Menu" id="basic-nav-dropdown">
+                            <NavDropdown.Item as={NavLink} to='/articulos'>
+                            Todos los productos
+                            </NavDropdown.Item>
+                            <NavDropdown.Divider />
                             <NavDropdown.Item as={NavLink} to='/category/bebidas'>Bebidas</NavDropdown.Item>
-                            <NavDropdown.Item as={NavLink} to='/category/acompanamientos'>Acompañamientos</NavDropdown.Item>
+                            <NavDropdown.Item as={NavLink} to='/category/acompañamientos'>Acompañamientos</NavDropdown.Item>
                             <NavDropdown.Item as={NavLink} to='/category/ejecutivo'>Ejecutivo</NavDropdown.Item>
                             <NavDropdown.Item as={NavLink} to='/category/pollo'>Pollo</NavDropdown.Item> 
                             <NavDropdown.Item as={NavLink} to='/category/pastas'>Pastas</NavDropdown.Item> 
                             <NavDropdown.Item as={NavLink} to='/category/comidasrapidas'>Comidas Rapidas</NavDropdown.Item> 
                             <NavDropdown.Item as={NavLink} to='/category/sopas'>Sopas</NavDropdown.Item> 
                             <NavDropdown.Item as={NavLink} to='/category/especiales'>Especiales</NavDropdown.Item> 
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item as={NavLink} to='/category/bar'>
-                                Bar
-                            </NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="#contacto">Contacto</Nav.Link>
                     </Nav>
