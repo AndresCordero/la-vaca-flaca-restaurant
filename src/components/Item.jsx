@@ -5,14 +5,14 @@ const Item = ({ product }) => {
     return (
         <div className='card text-center p-2 ms-5' style={{ width: '14rem', marginTop: 25, marginBottom: 35 }}>
             <img 
-                className='card-img mb-3 p-1 rounded' 
+                className='mb-3 p-1' 
                 src={product.img} 
                 alt={product.name}
                 style={{
                     width: '100%',
                     height: '150px',
                     objectFit: 'contain',
-                    borderRadius: '10px'
+                    borderRadius: '0.5rem'
                 }} 
             />
             <div>

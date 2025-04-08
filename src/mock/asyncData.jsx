@@ -61,8 +61,88 @@ const productos = [
         stock: 10,
         category: 'comidasrapidas',
         img: '../hamburguesa.jpg'
+    },
+    {
+        id: '08',
+        name: 'Nachos',
+        price: 5000,
+        description: 'lorem lorem lorem',
+        stock: 10,
+        category: 'comidasrapidas',
+        img: '../nachos.jpg'
+    },
+    {
+        id: '09',
+        name: 'Papas Fritas',
+        price: 5000,
+        description: 'lorem lorem lorem',
+        stock: 10,
+        category: 'acompanamientos',
+        img: '../papasfritas.jpg'
+    },
+    {
+        id: '10',
+        name: 'Patacones',
+        price: 5000,
+        description: 'lorem lorem lorem',
+        stock: 10,
+        category: 'acompanamientos',
+        img: '../patacones.webp'
+    },
+    {
+        id: '11',
+        name: 'Chifrijo',
+        price: 5000,
+        description: 'lorem lorem lorem',
+        stock: 8,
+        category: 'ejecutivo',
+        img: '../chifrijo.jpg'
+    },
+    {
+        id: '12',
+        name: 'Coctel',
+        price: 5000,
+        description: 'lorem lorem lorem',
+        stock: 8,
+        category: 'bebidas',
+        img: '../coctel.jpg'
+    },
+    {
+        id: '13',
+        name: 'Alitas',
+        price: 5000,
+        description: 'lorem lorem lorem',
+        stock: 8,
+        category: 'pollo',
+        img: '../alitas.avif'
+    },
+    {
+        id: '14',
+        name: 'Pasta Alfredo',
+        price: 5000,
+        description: 'lorem lorem lorem',
+        stock: 8,
+        category: 'pastas',
+        img: '../alfredo.jpg'
+    },
+    {
+        id: '15',
+        name: 'Pasta Pollo',
+        price: 5000,
+        description: 'lorem lorem lorem',
+        stock: 8,
+        category: 'pastas',
+        img: '../pastapollo.jpeg'
+    },
+    {
+        id: '16',
+        name: 'Ceviche',
+        price: 5000,
+        description: 'lorem lorem lorem',
+        stock: 8,
+        category: 'acompanamientos',
+        img: '../ceviche.webp'
     }
-
 ]
 
 //crear y exportar promesa

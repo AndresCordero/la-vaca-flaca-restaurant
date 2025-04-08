@@ -24,9 +24,10 @@ function NavbarComponent() {
                             <NavDropdown.Item as={NavLink} to='/category/acompanamientos'>Acompañamientos</NavDropdown.Item>
                             <NavDropdown.Item as={NavLink} to='/category/ejecutivo'>Ejecutivo</NavDropdown.Item>
                             <NavDropdown.Item as={NavLink} to='/category/pollo'>Pollo</NavDropdown.Item> 
-                            <NavDropdown.Item as={NavLink} to='/category/comidasrapidas'>ComidasRapidas</NavDropdown.Item> 
-                            <NavDropdown.Item as={NavLink} to='/category/especiales'>Especiales</NavDropdown.Item> 
+                            <NavDropdown.Item as={NavLink} to='/category/pastas'>Pastas</NavDropdown.Item> 
+                            <NavDropdown.Item as={NavLink} to='/category/comidasrapidas'>Comidas Rapidas</NavDropdown.Item> 
                             <NavDropdown.Item as={NavLink} to='/category/sopas'>Sopas</NavDropdown.Item> 
+                            <NavDropdown.Item as={NavLink} to='/category/especiales'>Especiales</NavDropdown.Item> 
                             <NavDropdown.Divider />
                             <NavDropdown.Item as={NavLink} to='/category/bar'>
                                 Bar
