@@ -8,7 +8,7 @@ const News = () => {
             style={{
                 backgroundImage: "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/back.png')",
                 backgroundSize: 'cover',
-                height: '200vh',
+                height: '150vh',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'top center',
                 backgroundColor: '#000'

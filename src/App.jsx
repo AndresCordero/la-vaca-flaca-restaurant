@@ -17,7 +17,7 @@ function App() {
     <BrowserRouter> {/*Componente del Router instalado*/}
       <NavbarComponent /> {/*Va fuera de Routes para que se muestre en todos lados*/}
       <Routes>
-
+        
         <Route path='/' element={< News/>}/>
         <Route path='/articulos' element={<ItemListContainer greeting="Todos los productos" />} />
         <Route path='/category/:categoryId' element={<ItemListContainer greeting="Seleccionaste la categoria: " />} />
