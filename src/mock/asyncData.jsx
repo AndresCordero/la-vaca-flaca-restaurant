@@ -2,7 +2,7 @@ const productos = [
     {
         id: '01',
         name: 'Camarones',
-        price: 4000,
+        price: 4800,
         description: 'lorem lorem lorem',
         stock: 10,
         category: 'ejecutivo',
@@ -11,7 +11,7 @@ const productos = [
     {
         id: '02',
         name: 'Cocacola',
-        price: 5000,
+        price: 1200,
         description: 'lorem lorem lorem',
         stock: 3,
         category: 'bebidas',
@@ -38,7 +38,7 @@ const productos = [
     {
         id: '05',
         name: 'Café',
-        price: 5000,
+        price: 1000,
         description: 'lorem lorem lorem',
         stock: 10,
         category: 'bebidas',
@@ -47,7 +47,7 @@ const productos = [
     {
         id: '06',
         name: 'Pollo parmesano',
-        price: 15000,
+        price: 6000,
         description: 'lorem lorem lorem',
         stock: 10,
         category: 'pollo',
@@ -56,7 +56,7 @@ const productos = [
     {
         id: '07',
         name: 'Hamburguesa',
-        price: 5000,
+        price: 4000,
         description: 'lorem lorem lorem',
         stock: 10,
         category: 'comidasrapidas',
@@ -65,7 +65,7 @@ const productos = [
     {
         id: '08',
         name: 'Nachos',
-        price: 5000,
+        price: 4000,
         description: 'lorem lorem lorem',
         stock: 10,
         category: 'comidasrapidas',
@@ -74,7 +74,7 @@ const productos = [
     {
         id: '09',
         name: 'Papas Fritas',
-        price: 5000,
+        price: 2000,
         description: 'lorem lorem lorem',
         stock: 10,
         category: 'acompañamientos',
@@ -83,7 +83,7 @@ const productos = [
     {
         id: '10',
         name: 'Patacones',
-        price: 5000,
+        price: 2500,
         description: 'lorem lorem lorem',
         stock: 10,
         category: 'acompañamientos',
@@ -92,7 +92,7 @@ const productos = [
     {
         id: '11',
         name: 'Chifrijo',
-        price: 5000,
+        price: 4000,
         description: 'lorem lorem lorem',
         stock: 8,
         category: 'ejecutivo',
@@ -101,7 +101,7 @@ const productos = [
     {
         id: '12',
         name: 'Coctel',
-        price: 5000,
+        price: 3000,
         description: 'lorem lorem lorem',
         stock: 8,
         category: 'bebidas',
@@ -110,7 +110,7 @@ const productos = [
     {
         id: '13',
         name: 'Alitas',
-        price: 5000,
+        price: 4000,
         description: 'lorem lorem lorem',
         stock: 8,
         category: 'pollo',
@@ -119,7 +119,7 @@ const productos = [
     {
         id: '14',
         name: 'Pasta Alfredo',
-        price: 5000,
+        price: 4500,
         description: 'lorem lorem lorem',
         stock: 8,
         category: 'pastas',
@@ -128,7 +128,7 @@ const productos = [
     {
         id: '15',
         name: 'Pasta Pollo',
-        price: 5000,
+        price: 4000,
         description: 'lorem lorem lorem',
         stock: 8,
         category: 'pastas',
@@ -191,7 +191,6 @@ export const getProducts = () => {
         }, 1000)
     })
 }
-
 
 
 /* Buscar Producto */
