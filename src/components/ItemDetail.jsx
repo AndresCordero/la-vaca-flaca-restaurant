@@ -6,10 +6,10 @@ const ItemDetail = ({ product }) => {
         alert(`Agregaste ${quantity} unidades de ${product.name} al carrito`)
     }
     return (
-        <div className='container text-center '>
+        <div className='container text-center'>
             <h1 className= 'mt-5'>Detalle de producto: {product.name}</h1>
             <div className='container d-flex justify-content-center flex-wrap mt-5'>
-                <img className='rounded' src={product.img} alt="{product.name}" style={{width: '50rem'}} />
+                <img className='rounded' src={product.img} alt="{product.name}" style={{maxWidth: '35rem'}} />
             </div>
             <p className='mt-5'> {product.description}</p>
             <p>Stock: {product.stock}</p>

@@ -10,7 +10,7 @@ const productos = [
     },
     {
         id: '02',
-        name: 'Cocacola',
+        name: 'Coca-Cola 350ml',
         price: 1200,
         description: 'lorem lorem lorem',
         stock: 3,
