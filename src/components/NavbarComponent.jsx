@@ -32,7 +32,7 @@ function NavbarComponent() {
                         <NavDropdown.Item as={NavLink} to='/category/sopas'>Sopas</NavDropdown.Item>
                         <NavDropdown.Item as={NavLink} to='/category/especiales'>Especiales</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link as={NavLink} to='/motocross'>Motocross</Nav.Link>
+                    <Nav.Link as={NavLink} to='/zonabiker'>Zona biker</Nav.Link>
                     <Nav.Link as={NavLink} to='galeria'>Galeria</Nav.Link>
                     <Nav.Link href="#contacto">Contacto</Nav.Link>
                 </Nav>
