@@ -14,9 +14,9 @@ function NavbarComponent() {
                     <img className='rounded-circle' src="/logo-vacaflaca.jpg" alt="logo" style={{ width: '12rem' }} />
                 </NavLink>
             </div>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle aria-controls="basic-navbar-nav" className="me-3"  />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav>
+                <Nav className="text-center">
                     <Nav.Link as={NavLink} to='/'>Home</Nav.Link>
                     <NavDropdown title="Menu" id="basic-nav-dropdown">
                         <NavDropdown.Item as={NavLink} to='/productos'>
@@ -36,7 +36,7 @@ function NavbarComponent() {
                     <Nav.Link as={NavLink} to='galeria'>Galeria</Nav.Link>
                     <Nav.Link href="#contacto">Contacto</Nav.Link>
                 </Nav>
-                <nav className='ms-auto me-4'>
+                <nav className='ms-auto me-lg-5'>
                     <CartWidget />
                 </nav>
             </Navbar.Collapse>
