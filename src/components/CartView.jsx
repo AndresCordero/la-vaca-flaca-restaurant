@@ -6,7 +6,7 @@ import CartItem from './CartItem'
 
 
 const CartView = () => {
-    const { clear } = useCart()
+    const { clear, cartTotal } = useCart()
 
     return (
         <div className='d-flex justify-content-center flex-column'>
@@ -14,9 +14,10 @@ const CartView = () => {
             <div className='text-center m-5 card border-2 border-dark shadow-lg'>
                 <CartItem />
             </div>
-            <button className='btn btn-danger mx-auto mb-4' onClick={clear}>Borrar carrito</button>
-            <Link to={'/productos'} className='btn btn-outline-dark mx-auto mb-4'>Agregar mas</Link>
+            <h2 className='my-5 text-center'>Total a pagar: ₡{cartTotal()}</h2>
             <button className='btn btn-dark mx-auto mb-4'>Finalizar compra</button>
+            <Link to={'/productos'} className='btn btn-outline-dark mx-auto mb-4'>Agregar mas productos</Link>
+            <button className='btn btn-danger mx-auto mb-4' onClick={clear}>Borrar carrito</button>
         </div>
     )
 }

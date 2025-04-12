@@ -2,10 +2,10 @@ import React from 'react'
 import { useCart } from './context/CartContext'
 
 
-
-
 const CartItem = () => {
     const { cart, removeItem } = useCart()
+
+
     return (
         <div>
             <div className='m-4'>
@@ -16,7 +16,14 @@ const CartItem = () => {
                         <p><strong>Precio:</strong> ₡{compra.price}</p>
                         <button className='btn btn-outline-danger' onClick={() => removeItem(compra.id)}>Eliminar</button>
                         <hr className="w-75 mx-auto" />
-                    </div>)}
+                        
+                    </div>)
+
+
+                    }
+                </div>
+
+                <div>
                 </div>
             </div>
         </div>

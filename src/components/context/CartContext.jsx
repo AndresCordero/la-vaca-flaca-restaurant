@@ -8,9 +8,12 @@ export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([])
 
 
+
+
+
     //---------------funciones de carrito
 
-    //afregar elementos al carrito
+    //agregar elementos al carrito
     const addToCart = (item, quantity) => {
         setCart([...cart, { ...item, quantity }])
 
@@ -27,21 +30,29 @@ export const CartProvider = ({ children }) => {
         }
     }
 
+
+
     //--Borrar carrito
     const clear = () => {
         setCart([])
     }
+
+
 
     //borrar un item
     const removeItem = (id) => {
         setCart(cart.filter((prod) => prod.id !== id))
     }
 
+
+
     //si esta o no en el carrito
     const isInCart = (id) => {
         return cart.some((prod) => prod.id === id)  //*****
     }
 
+
+    
     //Total a pagar (se llama en cart)
     const cartTotal = () => {
         return cart.reduce((acc, prod) => (acc += prod.price * prod.quantity),0)
