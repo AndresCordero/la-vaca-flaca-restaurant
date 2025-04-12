@@ -1,4 +1,5 @@
 import './App.css'
+import WhatsAppComponent from './components/WhatsAppComponent'
 import NavbarComponent from './components/NavbarComponent'
 import ItemListContainer from './components/ItemListContainer'
 import FetchApi from './mock/FetchApi'
@@ -13,13 +14,15 @@ import CartContainer from './components/CartContainer.'
 
 
 
-/* Este es el Router */
+
+/*  Router */
 
 function App() {
   return (
     <BrowserRouter> {/*Componente del Router instalado*/}
       <CartProvider>
         <NavbarComponent /> {/*Va fuera de Routes para que se muestre en todos lados*/}
+        <WhatsAppComponent/>
         <Routes>
           <Route path='/' element={< News />} />
           <Route path='/productos' element={<ItemListContainer greeting="Todos los productos" />} />
