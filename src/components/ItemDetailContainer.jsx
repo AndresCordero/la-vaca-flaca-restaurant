@@ -23,15 +23,6 @@ const ItemDetailContainer = () => {
     }, [])
 
 
-    /* crear una funcion que busque un item */
-/*     
-    useEffect(() => {
-        setLoading(true)
-        getOneProduct(id)
-        .then((res) => setProduct(res))
-        .catch((error) => console.log(error))
-    }) */
-
 
     return (
         <div className='d-flex justify-content-center mt-5'>
