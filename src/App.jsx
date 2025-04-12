@@ -9,6 +9,7 @@ import News from './components/News'
 import Galeria from './components/Galeria'
 import ZonaBiker from './components/ZonaBiker'
 import { CartProvider } from './components/context/CartContext'
+import CartContainer from './components/CartContainer.'
 
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route path='/category/:categoryId' element={<ItemListContainer greeting="Seleccionaste la categoria: " />} />
           <Route path='/item/:id' element={<ItemDetailContainer />} />
           <Route path='/zonabiker' element={<ZonaBiker />} />
+          <Route path='/cart' element={<CartContainer/>}/>
           <Route path='/galeria' element={<Galeria />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>
