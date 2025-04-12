@@ -6,7 +6,7 @@ import CartItem from './CartItem'
 
 
 const CartView = () => {
-    const { cart, removeItem, clear } = useCart()
+    const { clear } = useCart()
 
     return (
         <div className='d-flex justify-content-center flex-column'>
