@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import imageCompraExistosa from "/image_riding2.png"
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
@@ -71,9 +72,14 @@ const Checkout = () => {
     return (
         <>
             {orderId ? (
-                <div className="text-center mt-5">
-                    <h2>Compra realizada ✅</h2>
+                <div className="d-flex justify-content-center flex-column text-center mt-5 p-5 align-items-center">
+                    <div className='card p-5 border-dark border-1 shadow'>
+
+                    <h2 >Compra realizada ✅</h2>
                     <h4>Su ID de orden es: <strong>{orderId}</strong></h4>
+                    </div>
+                    <h2 className='mt-5'>¡Gracias por preferirnos!</h2>
+                    <img src={imageCompraExistosa} alt="Vaca montando motocicleta" style={ {width:"25rem", marginTop:'3rem'}}/>
                 </div>
             ) : (
                 <div className="container mt-5">
@@ -143,7 +149,6 @@ const Checkout = () => {
                                         name="confirmEmail"
                                         onChange={buyerData}
                                     />
-                                    {/* Display error message if emails don't match */}
                                     {emailError && <div className="text-danger mt-2">{emailError}</div>}
                                 </Form.Group>
                             </Row>

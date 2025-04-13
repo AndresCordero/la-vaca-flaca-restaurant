@@ -23,17 +23,17 @@ function NavbarComponent() {
                             Todos los productos
                         </NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item as={NavLink} to='/category/desayunos'>Desayunos</NavDropdown.Item>
-                        <NavDropdown.Item as={NavLink} to='/category/entradas'>Entradas</NavDropdown.Item>
-                        <NavDropdown.Item as={NavLink} to='/category/bebidas'>Bebidas</NavDropdown.Item>
-                        <NavDropdown.Item as={NavLink} to='/category/sopas'>Sopas</NavDropdown.Item>
-                        <NavDropdown.Item as={NavLink} to='/category/arroces'>Arroces</NavDropdown.Item>
-                        <NavDropdown.Item as={NavLink} to='/category/comidasrapidas'>Comidas Rapidas</NavDropdown.Item>
-                        <NavDropdown.Item as={NavLink} to='/category/platosfuertes'>Platos fuertes</NavDropdown.Item>
-                        <NavDropdown.Item as={NavLink} to='/category/especialidades'>Especialidades</NavDropdown.Item>
+                        <NavDropdown.Item as={NavLink} to='/category/Desayunos'>Desayunos</NavDropdown.Item>
+                        <NavDropdown.Item as={NavLink} to='/category/Entradas'>Entradas</NavDropdown.Item>
+                        <NavDropdown.Item as={NavLink} to='/category/Bebidas'>Bebidas</NavDropdown.Item>
+                        <NavDropdown.Item as={NavLink} to='/category/Sopas'>Sopas</NavDropdown.Item>
+                        <NavDropdown.Item as={NavLink} to='/category/Arroces'>Arroces</NavDropdown.Item>
+                        <NavDropdown.Item as={NavLink} to='/category/Comidas rapidas'>Comidas rapidas</NavDropdown.Item>
+                        <NavDropdown.Item as={NavLink} to='/category/Platos fuertes'>Platos fuertes</NavDropdown.Item>
+                        <NavDropdown.Item as={NavLink} to='/category/Especialidades'>Especialidades</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link as={NavLink} to='/zonabiker'>Zona biker</Nav.Link>
-                    <Nav.Link as={NavLink} to='galeria'>Galeria</Nav.Link>
+                    <Nav.Link as={NavLink} to='/galeria'>Galeria</Nav.Link>
                     <Nav.Link href="#contacto">Contacto</Nav.Link>
                 </Nav>
                 <nav className='ms-auto me-lg-5'>

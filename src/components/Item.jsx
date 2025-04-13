@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Item = ({ product }) => {
     return (
-        <div className='card text-center p-2 mx-3' style={{ maxWidth: '14rem', width: '100%', marginTop: 25, marginBottom: 35 }}>
+        <div className='card text-center pt-2 mx-3 shadow-lg' style={{ maxWidth: '14rem', minHeight: '350px', width: '100%', marginTop: 25, marginBottom: 35 }}>
 
             <img
                 className='mb-3 p-1'
@@ -16,10 +16,10 @@ const Item = ({ product }) => {
                     borderRadius: '0.5rem'
                 }}
             />
-            <div>
+            <div className='d-flex flex-column justify-content-between flex-grow-1'>
                 <h4 className="card-title">{product.name}</h4>
-                <p className="card-text">₡{product.price}</p>
-                <Link className="btn btn-dark" to={`/item/${product.id}`}>Ver más</Link>
+                <p className="card-text"><strong>Precio:</strong> ₡{product.price}</p>
+                <Link className="btn btn-dark mt-auto m-3" to={`/item/${product.id}`}>Ver más</Link>
             </div>
         </div>
     );

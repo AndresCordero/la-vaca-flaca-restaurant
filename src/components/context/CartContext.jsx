@@ -56,8 +56,13 @@ export const CartProvider = ({ children }) => {
     //Total a pagar (se llama en cart)
     const cartTotal = () => {
         return cart.reduce((acc, prod) => (acc += prod.price * prod.quantity),0)
+        
     }
 
+    //Agregar 10% de impuesto
+    const cartImpuesto = () => {
+        return cartTotal() * 0.10
+    }
 
     //Total de Items (se llama en cart widget)
     const cartQuantity = () => {
@@ -69,7 +74,7 @@ export const CartProvider = ({ children }) => {
 
 
     return (
-        <CartContext.Provider value={{ cart, addToCart, clear, removeItem, cartTotal, cartQuantity }}>
+        <CartContext.Provider value={{ cart, addToCart, clear, removeItem, cartTotal, cartQuantity, cartImpuesto }}>
             {children}
         </CartContext.Provider>
     )
