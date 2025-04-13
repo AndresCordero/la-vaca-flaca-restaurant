@@ -1,8 +1,24 @@
-# React + Vite
+# Vaca Flaca Restaurante y zona Biker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projecto fue creado para potenciar la utilidad del restaurante y bar Vaca flaca, dando asi mayot visibilidad y comunicación a clientela y publico en general sobre infomación pertinente al negocio
 
-Currently, two official plugins are available:
+![image](/public/redme_image.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Intalación
+
+1. Clone el repositorio
+2. Corra el comando `cd la-vaca-flaca-restaurant` para moverse a la carperta del proyecto
+3. Instale dependencias ejecutando npm install
+4. Para levantar la app en servidor local ejecute npm run dev
+
+### Version Host
+
+Si desea ver el proyecto online puede ingresar al siguiente link [La vaca Flaca restaurant]
+
+### Librerias Utilizadas
+- [React Bootstrap](https://react-bootstrap.netlify.app/): Utlilizada para el stylind de la app
+- [Firebase](https://firebase.google.com/): Utilizada como base de datos
+- [React Router Dom](https://reactrouter.com/): Utilizada para navegación por rutas
+' [React Floting Whatsapp](https://www.npmjs.com/package/react-floating-whatsapp): Utilizada para uso de Whatsapp link flotante
+
+#### Desarrollado por Andres Corder Mora
