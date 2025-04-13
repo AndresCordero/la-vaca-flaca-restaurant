@@ -1,10 +1,10 @@
 # Vaca Flaca Restaurante y zona Biker
 
-Este projecto fue creado para potenciar la utilidad del restaurante y bar Vaca flaca, dando asi mayot visibilidad y comunicación a clientela y publico en general sobre infomación pertinente al negocio
+Este proyecto fue creado para potenciar la utilidad del restaurante y bar Vaca flaca, dando asi mayor visibilidad y comunicación a clientela y publico en general sobre infomación pertinente al negocio
 
 ![image](/public/redme_image.png)
 
-### Intalación
+### Instalación
 
 1. Clone el repositorio
 2. Corra el comando `cd la-vaca-flaca-restaurant` para moverse a la carperta del proyecto
@@ -19,6 +19,6 @@ Si desea ver el proyecto online puede ingresar al siguiente link [La vaca Flaca 
 - [React Bootstrap](https://react-bootstrap.netlify.app/): Utlilizada para el stylind de la app
 - [Firebase](https://firebase.google.com/): Utilizada como base de datos
 - [React Router Dom](https://reactrouter.com/): Utilizada para navegación por rutas
-' [React Floting Whatsapp](https://www.npmjs.com/package/react-floating-whatsapp): Utilizada para uso de Whatsapp link flotante
+- [React Floting Whatsapp](https://www.npmjs.com/package/react-floating-whatsapp): Utilizada para uso de Whatsapp link flotante
 
 #### Desarrollado por Andres Corder Mora
