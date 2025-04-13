@@ -11,7 +11,7 @@ const Checkout = () => {
     const [buyer, setBuyer] = useState({});
     const [orderId, setOrderId] = useState('');
     const [validated, setValidated] = useState(false);
-    const [emailError, setEmailError] = useState(''); 
+    const [emailError, setEmailError] = useState('');
     const { cart, cartTotal, clear } = useCart();
 
     const buyerData = (event) => {
@@ -33,7 +33,7 @@ const Checkout = () => {
     const finalizarCompra = (event) => {
         event.preventDefault();
         const form = event.currentTarget;
-    
+
         if (form.checkValidity() === false || !validateEmail()) {
             event.stopPropagation();
         } else {
@@ -44,18 +44,18 @@ const Checkout = () => {
                 date: serverTimestamp()
             };
             const ventas = collection(db, "orders");
-    
+
             addDoc(ventas, order)
                 .then((res) => {
                     cart.forEach((item) => {
                         const docRef = doc(db, "productos", item.id)
                         getDoc(docRef)
-                        .then((dbDoc) => {
-                            updateDoc(docRef, {stock:dbDoc.data().stock - item.quantity})
-                        })
-                        .catch((error) => console.log(error))
+                            .then((dbDoc) => {
+                                updateDoc(docRef, { stock: dbDoc.data().stock - item.quantity })
+                            })
+                            .catch((error) => console.log(error))
                     })
-                    
+
                     setOrderId(res.id);
                     clear();
                 })
@@ -63,10 +63,10 @@ const Checkout = () => {
                     console.error("Error al enviar la orden:", error);
                 });
         }
-    
+
         setValidated(true);
     };
-    
+
 
     return (
         <>
@@ -76,8 +76,8 @@ const Checkout = () => {
                     <h4>Su ID de orden es: <strong>{orderId}</strong></h4>
                 </div>
             ) : (
-                <div className="d-flex justify-content-center mt-5">
-                    <div className="p-5 col-8 card m-5 border-2 shadow-lg">
+                <div className="container mt-5">
+                    <div className="card shadow-lg border-2 p-4 p-md-5 mx-auto w-100" style={{ maxWidth: "800px" }} >
                         <Form noValidate validated={validated} onSubmit={finalizarCompra}>
                             <Row className="mb-3">
                                 <Form.Group as={Col} md="6">
