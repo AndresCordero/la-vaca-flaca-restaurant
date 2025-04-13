@@ -23,14 +23,14 @@ function NavbarComponent() {
                             Todos los productos
                         </NavDropdown.Item>
                         <NavDropdown.Divider />
+                        <NavDropdown.Item as={NavLink} to='/category/desayunos'>Desayunos</NavDropdown.Item>
+                        <NavDropdown.Item as={NavLink} to='/category/entradas'>Entradas</NavDropdown.Item>
                         <NavDropdown.Item as={NavLink} to='/category/bebidas'>Bebidas</NavDropdown.Item>
-                        <NavDropdown.Item as={NavLink} to='/category/acompañamientos'>Acompañamientos</NavDropdown.Item>
-                        <NavDropdown.Item as={NavLink} to='/category/ejecutivo'>Ejecutivo</NavDropdown.Item>
-                        <NavDropdown.Item as={NavLink} to='/category/pollo'>Pollo</NavDropdown.Item>
-                        <NavDropdown.Item as={NavLink} to='/category/pastas'>Pastas</NavDropdown.Item>
-                        <NavDropdown.Item as={NavLink} to='/category/comidasrapidas'>Comidas Rapidas</NavDropdown.Item>
                         <NavDropdown.Item as={NavLink} to='/category/sopas'>Sopas</NavDropdown.Item>
-                        <NavDropdown.Item as={NavLink} to='/category/especiales'>Especiales</NavDropdown.Item>
+                        <NavDropdown.Item as={NavLink} to='/category/arroces'>Arroces</NavDropdown.Item>
+                        <NavDropdown.Item as={NavLink} to='/category/comidasrapidas'>Comidas Rapidas</NavDropdown.Item>
+                        <NavDropdown.Item as={NavLink} to='/category/platosfuertes'>Platos fuertes</NavDropdown.Item>
+                        <NavDropdown.Item as={NavLink} to='/category/especialidades'>Especialidades</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link as={NavLink} to='/zonabiker'>Zona biker</Nav.Link>
                     <Nav.Link as={NavLink} to='galeria'>Galeria</Nav.Link>

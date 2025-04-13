@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
-import { getProducts } from '../mock/asyncData'
+
 import ItemList from './ItemList'
 import { useParams } from 'react-router-dom'
 import LoaderComponent from './LoaderComponent'
-import { collection, getDocs, where,  query } from 'firebase/firestore'
+import { collection, getDocs, where, query, addDoc } from 'firebase/firestore'
 import { db } from '../service/firebase/'
 
 
@@ -21,7 +21,7 @@ const ItemListContainer = ({ greeting }) => {
 
         //conexion con nuestra collection y filtro de productos aplicado por categoria
         const prodCollection = categoryId 
-        ? query(collection(db, "productos"), where("category", "===", categoryId)) 
+        ? query(collection(db, "productos"), where("category", "==", categoryId)) 
         : collection(db, "productos")
 
         //perdir los documentos (se trata como una promesa)
@@ -68,6 +68,11 @@ const ItemListContainer = ({ greeting }) => {
     
         console.log(data) */
 
+/*         const subirData = () => {
+            console.log("Hisiste click pa")
+            const collectionToAdd = collection(db, "productos")
+            productos.map((item) => addDoc(collectionToAdd, item))
+        } */
     return (
         <main>
             <h1 className="mt-5 text-center">{greeting}{categoryId && <span>{categoryId}</span>}</h1>
@@ -75,6 +80,7 @@ const ItemListContainer = ({ greeting }) => {
             <div className="container d-flex justify-content-center flex-wrap">
                 {loading ? <LoaderComponent /> : <ItemList data={data} />}
             </div>
+            {/* <button onClick={subirData}>Firebase una sola vez</button> */}
         </main>
     )
 }

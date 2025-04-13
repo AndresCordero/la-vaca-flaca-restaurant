@@ -1,4 +1,4 @@
-const productos = [
+export const productos = [
     {
         name: 'Pinto de la Casa',
         price: 2500,
