@@ -11,6 +11,7 @@ import Galeria from './components/Galeria'
 import ZonaBiker from './components/ZonaBiker'
 import { CartProvider } from './components/context/CartContext'
 import CartContainer from './components/CartContainer.'
+import Checkout from './components/Checkout'
 
 
 
@@ -31,6 +32,7 @@ function App() {
           <Route path='/zonabiker' element={<ZonaBiker />} />
           <Route path='/cart' element={<CartContainer/>}/>
           <Route path='/galeria' element={<Galeria />} />
+          <Route path='/checkout' element={<Checkout/>} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>
       </CartProvider>

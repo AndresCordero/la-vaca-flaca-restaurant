@@ -1,105 +1,167 @@
 const productos = [
     {
-        id: '01',
-        name: 'Camarones',
-        price: 4800,
-        description: 'lorem lorem lorem',
+        name: 'Pinto de la Casa',
+        price: 2500,
+        description: 'Huevo, maduro natilla y queso',
         stock: 10,
-        category: 'ejecutivo',
-        img: '../Camarones.jpg'
+        category: 'desayunos',
+        img: '../pinto.jpg'
     },
     {
-        id: '02',
-        name: 'Coca-Cola 350ml',
-        price: 1200,
-        description: 'lorem lorem lorem',
-        stock: 3,
-        category: 'bebidas',
-        img: '../Cocacola.png'
-    },
-    {
-        id: '03',
-        name: 'Pollo barbacoa',
-        price: 4000,
-        description: 'lorem lorem lorem',
+        name: 'Homelet',
+        price: 2200,
+        description: 'Carne, pollo, jamon y queso, hongos',
         stock: 10,
-        category: 'pollo',
-        img: '../Barbacoa.jpg'
+        category: 'desayunos',
+        img: '../homelete.jpg'
     },
     {
-        id: '04',
-        name: 'Casado',
-        price: 3500,
-        description: 'lorem lorem lorem',
+        name: 'Huevos rancheros',
+        price: 2200,
+        description: 'Salsa de la casa, 2 huevos y tortilla',
         stock: 10,
-        category: 'ejecutivo',
-        img: '../casado.png'
+        category: 'desayunos',
+        img: '../huevosrancheros.webp'
     },
     {
-        id: '05',
-        name: 'Café',
-        price: 1000,
-        description: 'lorem lorem lorem',
+        name: 'Desayuno Campesino',
+        price: 2500,
+        description: 'Totilla con queso, torta de huevo, frijoles arreglados y natilla',
+        stock: 10,
+        category: 'desayunos',
+        img: '../desayunocampesino.webp'
+    },
+    {
+        name: 'Totilla con queso',
+        price: 2000,
+        description: 'Con natilla',
+        stock: 10,
+        category: 'desayunos',
+        img: '../torillaqueso.jpg'
+    },
+
+    {
+        name: 'Empanadas',
+        price: 1600,
+        description: 'Carne, pollo, queso y frijol. Sencilla o arreglada',
+        stock: 10,
+        category: 'desayunos',
+        img: '../empanadas.jpg'
+    },
+
+    {
+        name: 'Orden de patacones',
+        price: 2700,
+        description: 'Frijoles molidos, pico de gallo y carne',
+        stock: 10,
+        category: 'entradas',
+        img: '../patacones.webp'
+    },
+    {
+        name: 'Orden de yuca frita',
+        price: 2500,
+        description: 'Salsa de tomate y mayones de la casa',
+        stock: 10,
+        category: 'entradas',
+        img: '../ordenyuca.jpg'
+    },
+    {
+        name: 'Orden de papas',
+        price: 2500,
+        description: 'Salsa de tomate y mayones de la casa',
+        stock: 10,
+        category: 'entradas',
+        img: '../papasfritas.jpg'
+    },
+    {
+        name: 'Doraditas',
+        price: 2500,
+        description: 'Salsa de tomate y mayones de la casa',
+        stock: 10,
+        category: 'entradas',
+        img: '../doraditas.jpg'
+    },
+    {
+        name: 'Orden de papas',
+        price: 2500,
+        description: 'Salsa de tomate y mayones de la casa',
+        stock: 10,
+        category: 'entradas',
+        img: '../papasfritas.jpg'
+    },
+    {
+        name: 'Cafe negro',
+        price: 800,
+        description: 'Cafe de especialidad',
         stock: 10,
         category: 'bebidas',
         img: '../cafe.JPG'
     },
     {
-        id: '06',
-        name: 'Pollo parmesano',
-        price: 6000,
-        description: 'lorem lorem lorem',
+        name: 'Cafe con leche',
+        price: 1000,
+        description: 'Café de espécialidad',
         stock: 10,
-        category: 'pollo',
-        img: '../Parmesano.jpg'
+        category: 'bebidas',
+        img: '../cafeconleche.jpg'
     },
     {
-        id: '07',
-        name: 'Hamburguesa',
-        price: 4000,
-        description: 'lorem lorem lorem',
+        name: 'Aguadulce',
+        price: 1000,
+        description: 'Tradicional',
         stock: 10,
-        category: 'comidasrapidas',
-        img: '../hamburguesa.jpg'
+        category: 'bebidas',
+        img: '../aguadulce.jpg'
     },
     {
-        id: '08',
-        name: 'Nachos',
-        price: 4000,
-        description: 'lorem lorem lorem',
+        name: 'Chocolate',
+        price: 1000,
+        description: 'Tradicional',
         stock: 10,
-        category: 'comidasrapidas',
-        img: '../nachos.jpg'
+        category: 'bebidas',
+        img: '../chocolate.jpg'
     },
     {
-        id: '09',
-        name: 'Papas Fritas',
-        price: 2000,
-        description: 'lorem lorem lorem',
+        name: 'Te',
+        price: 1000,
+        description: 'Verde, negro o manzanilla',
         stock: 10,
-        category: 'acompañamientos',
+        category: 'bebidas',
         img: '../papasfritas.jpg'
     },
     {
-        id: '10',
-        name: 'Patacones',
-        price: 2500,
-        description: 'lorem lorem lorem',
+        name: 'Batidos en agua',
+        price: 1000,
+        description: 'Papaya, piña, cas',
         stock: 10,
-        category: 'acompañamientos',
-        img: '../patacones.webp'
+        category: 'bebidas',
+        img: '../batidosagua.jpg'
     },
     {
-        id: '11',
-        name: 'Chifrijo',
-        price: 4000,
-        description: 'lorem lorem lorem',
-        stock: 8,
-        category: 'ejecutivo',
-        img: '../chifrijo.jpg'
+        name: 'Batidos en leche',
+        price: 1300,
+        description: 'Papaya, piña, melon',
+        stock: 10,
+        category: 'bebidas',
+        img: '../batidosleche.jpg'
     },
     {
-        id: '12',
+        name: 'Tropical',
+        price: 1200,
+        description: 'Frutas, te frio, te blanco, te limon',
+        stock: 10,
+        category: 'bebidas',
+        img: '../tropical.jpg'
+    },
+    {
+        name: 'Gaseosa',
+        price: 1300,
+        description: 'CocaCola, Gin, Everesst',
+        stock: 10,
+        category: 'bebidas',
+        img: '../gaseosa.jpg'
+    },
+    {
         name: 'Coctel',
         price: 3000,
         description: 'lorem lorem lorem',
@@ -108,78 +170,278 @@ const productos = [
         img: '../coctel.jpg'
     },
     {
-        id: '13',
-        name: 'Alitas',
-        price: 4000,
-        description: 'lorem lorem lorem',
-        stock: 8,
-        category: 'pollo',
-        img: '../alitas.avif'
-    },
-    {
-        id: '14',
-        name: 'Pasta Alfredo',
-        price: 4500,
-        description: 'lorem lorem lorem',
-        stock: 8,
-        category: 'pastas',
-        img: '../alfredo.jpg'
-    },
-    {
-        id: '15',
-        name: 'Pasta Pollo',
-        price: 4000,
-        description: 'lorem lorem lorem',
-        stock: 8,
-        category: 'pastas',
-        img: '../pastapollo.jpeg'
-    },
-    {
-        id: '16',
-        name: 'Ceviche',
-        price: 5000,
-        description: 'lorem lorem lorem',
-        stock: 8,
-        category: 'acompañamientos',
-        img: '../ceviche.webp'
-    },
-    {
-        id: '17',
         name: 'Olla de carne',
-        price: 5000,
-        description: 'lorem lorem lorem',
-        stock: 8,
+        price: 4500,
+        description: 'Disponible los domingos**',
+        stock: 10,
         category: 'sopas',
         img: '../olladecarne.webp'
     },
     {
-        id: '18',
-        name: 'Sopa azteca',
-        price: 5000,
-        description: 'lorem lorem lorem',
-        stock: 8,
+        name: 'Sopa Azteca',
+        price: 3700,
+        description: 'Tradicional',
+        stock: 10,
         category: 'sopas',
         img: '../sopaazteca.jpeg'
     },
     {
-        id: '19',
-        name: 'Rib Eye',
-        price: 8000,
-        description: 'lorem lorem lorem',
-        stock: 8,
-        category: 'especiales',
-        img: '../ribaye.webp'
+        name: 'Sopa negra',
+        price: 2500,
+        description: 'Tradicional',
+        stock: 10,
+        category: 'sopas',
+        img: '../sopanegra.jpg'
     },
     {
-        id: '20',
-        name: 'Costilla',
-        price: 8000,
-        description: 'lorem lorem lorem',
-        stock: 8,
-        category: 'especiales',
-        img: '../costilladeres.jpg'
+        name: 'Sustancia de pollo',
+        price: 2500,
+        description: 'Tradicional',
+        stock: 10,
+        category: 'sopas',
+        img: '../sustanciapollo.jpg'
+    },
+    {
+        name: 'Sopa de mariscos',
+        price: 4500,
+        description: 'En agua o en leche',
+        stock: 10,
+        category: 'sopas',
+        img: '../sopamariscos.jpg'
+    },
+    {
+        name: 'Arros de la casa (cantones)',
+        price: 3700,
+        description: 'Arroz cantones al estilo Vaca Flaca',
+        stock: 10,
+        category: 'arroces',
+        img: '../cantones.jpg'
+    },
+    {
+        name: 'Arroz con pollo o cerdo',
+        price: 3700,
+        description: 'Acopañado de papas y ensalada verde',
+        stock: 10,
+        category: 'arroces',
+        img: '../arrozconpollo.jpg'
+    },
+    {
+        name: 'Arroz con mariscos',
+        price: 5000,
+        description: 'Acopañado de papas y ensalada verde',
+        stock: 10,
+        category: 'arroces',
+        img: '../arrozmariscos.jpg'
+    },
+    {
+        name: 'Arroz con camarones',
+        price: 4500,
+        description: 'Acopañado de papas y ensalada verde',
+        stock: 10,
+        category: 'arroces',
+        img: '../arrozcamarones.jpg'
+    },
+    {
+        name: 'Camarones con arroz',
+        price: 5000,
+        description: 'Acopañado de papas y ensalada verde',
+        stock: 10,
+        category: 'arroces',
+        img: '../camarones.jpg'
+    },
+    {
+        name: 'Nachos',
+        price: 3800,
+        description: 'Carne de res, pollo o mixto',
+        stock: 10,
+        category: 'comidasrapidas',
+        img: '../nachos.jpg'
+    },
+    {
+        name: 'Hamburguesa con papas',
+        price: 3800,
+        description: 'Carne de res o pollo',
+        stock: 10,
+        category: 'comidasrapidas',
+        img: '../hamburguesa.jpg'
+    },
+    {
+        name: 'Papas supremas',
+        price: 3500,
+        description: 'Carne de res, pollo o mixto',
+        stock: 10,
+        category: 'comidasrapidas',
+        img: '../papassupremas.jpg'
+    },
+    {
+        name: 'Fajitas de pollo empanizado',
+        price: 3800,
+        description: 'Con maypnesa de la casa',
+        stock: 10,
+        category: 'comidasrapidas',
+        img: '../fajitasdepollo.jpg'
+    },
+    {
+        name: 'Dedos de pezcado',
+        price: 4000,
+        description: 'Con mayonesa de la casa',
+        stock: 10,
+        category: 'comidasrapidas',
+        img: '../dedosdepezcado.jpg'
+    },
+    {
+        name: 'Chicharrones',
+        price: 4800,
+        description: 'Patacones, yuca frita, frijoles molidos, ensalada verde',
+        stock: 10,
+        category: 'platosfuertes',
+        img: '../chicharrones.jpg'
+    },
+    {
+        name: 'Chifrijo',
+        price: 3600,
+        description: 'Tradicional',
+        stock: 10,
+        category: 'platosfutertes',
+        img: '../chifrijo.jpg'
+    },
+    {
+        name: 'Chifrijo',
+        price: 3600,
+        description: 'Tradicional',
+        stock: 10,
+        category: 'platosfutertes',
+        img: '../chifrijo.jpg'
+    },
+    {
+        name: 'Casado',
+        price: 3500,
+        description: 'Tradicional',
+        stock: 10,
+        category: 'platosfutertes',
+        img: '../casado.png'
+    },
+    {
+        name: 'Cordon Blue',
+        price: 3600,
+        description: '2 acompañamientos',
+        stock: 10,
+        category: 'platosfutertes',
+        img: '../cordonblue.jpg'
+    },
+    {
+        name: 'Pollo parmesano',
+        price: 4800,
+        description: 'Sobre pasta conpapas y arroz',
+        stock: 10,
+        category: 'platosfuertes',
+        img: '../Parmesano.jpg'
+    },
+    {
+        name: 'Filet de pezcado empanizado',
+        price: 5000,
+        description: 'Arroz, papas y ensalada verde',
+        stock: 10,
+        category: 'platosfutertes',
+        img: '../filetpezcado.jpg'
+    },
+    {
+        name: 'Filet de pollo en salsa blanca',
+        price: 4800,
+        description: '2 acompañamientos',
+        stock: 10,
+        category: 'platosfuetes',
+        img: '../pollosalsablanca.jpg'
+    },
+    {
+        name: 'Camarones Empanizados',
+        price: 5000,
+        description: 'Papas y aderezo',
+        stock: 10,
+        category: 'platosfuetes',
+        img: '../camaronesempanizados.jpg'
+    },
+    {
+        name: 'Mariscada',
+        price: 5000,
+        description: '2 acompañamientos',
+        stock: 10,
+        category: 'platosfuetes',
+        img: '../mariscada.jpg'
+    },
+    {
+        name: 'Fajitas miztas',
+        price: 4000,
+        description: 'Papas y ensalada',
+        stock: 10,
+        category: 'platosfuetes',
+        img: '../fajitasmixtas.jpg'
+    },
+    {
+        name: 'Costilla al horno',
+        price: 5000,
+        description: '3 acompañamientos',
+        stock: 10,
+        category: 'especialidades',
+        img: '../costilla.jpg'
+    },
+    {
+        name: 'Filet de pezcado con salsa de camarones',
+        price: 4800,
+        description: '3 acompañamientos',
+        stock: 10,
+        category: 'especialidades',
+        img: '../filetpezcadosalsa.jpg'
+    },
+    {
+        name: 'Fajitas Jalapeñas',
+        price: 5000,
+        description: '3 acompañamientos',
+        stock: 10,
+        category: 'especialidades',
+        img: '../fajitasjalapenas.jpg'
+    },
+    {
+        name: 'Mar y Tierra',
+        price: 10000,
+        description: 'Corte de carne a elección, camarones, salsa de la casa t 2 acompañamientos',
+        stock: 10,
+        category: 'especialidades',
+        img: '../marytierra.jpg'
+    },
+    {
+        name: 'Pasta con jamon y pollo en salsa blanca',
+        price: 5000,
+        description: 'Acompañamientos disponibles',
+        stock: 10,
+        category: 'especialidades',
+        img: '../pastajamon.jpg'
+    },
+    {
+        name: 'Pasta con camarones en salsa roja o blanca',
+        price: 5000,
+        description: 'Papas y aderezo',
+        stock: 10,
+        category: 'especialidades',
+        img: '../pastacamarones.jpg'
+    },
+    {
+        name: 'Pasta con camarones en salsa roja o blanca',
+        price: 5000,
+        description: 'Papas y aderezo',
+        stock: 10,
+        category: 'especialidades',
+        img: '../pastamariscos.jpg'
+    },
+    {
+        name: 'Pasta tres quesos',
+        price: 5000,
+        description: 'Papas y aderezo',
+        stock: 10,
+        category: 'especialidades',
+        img: '../pastatresquesos.jpg'
     }
-]
+];
 
 //crear y exportar promesa
 
