@@ -34,7 +34,7 @@ function NavbarComponent() {
                     </NavDropdown>
                     <Nav.Link as={NavLink} to='/zonabiker'>Zona biker</Nav.Link>
                     <Nav.Link as={NavLink} to='/galeria'>Galeria</Nav.Link>
-                    <Nav.Link href="#contacto">Contacto</Nav.Link>
+                    <Nav.Link href="contacto">Contacto</Nav.Link>
                 </Nav>
                 <nav className='ms-auto me-lg-5'>
                     <CartWidget />

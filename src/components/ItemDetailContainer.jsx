@@ -14,8 +14,6 @@ const ItemDetailContainer = () => {
 
 
 
-
-
     /* Firebase Usa doc en vez de docs*/
 
 
@@ -67,8 +65,6 @@ const ItemDetailContainer = () => {
         return
         <div>El producto no existe</div>
     }
-
-
 
     return (
         <div className='d-flex justify-content-center mt-5'>

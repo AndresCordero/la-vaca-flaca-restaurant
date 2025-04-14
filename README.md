@@ -21,4 +21,4 @@ Si desea ver el proyecto online puede ingresar al siguiente link [La vaca Flaca 
 - [React Router Dom](https://reactrouter.com/): Utilizada para navegación por rutas
 - [React Floting Whatsapp](https://www.npmjs.com/package/react-floating-whatsapp): Utilizada para uso de Whatsapp link flotante
 
-#### Desarrollado por Andres Corder Mora
+#### Desarrollado por Andres Cordero Mora

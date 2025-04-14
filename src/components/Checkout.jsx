@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import imageCompraExistosa from "/image_riding2.png"
+import Swal from 'sweetalert2'
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
@@ -14,6 +15,7 @@ const Checkout = () => {
     const [validated, setValidated] = useState(false);
     const [emailError, setEmailError] = useState('');
     const { cart, cartTotal, clear } = useCart();
+    const [showConfirmation, setShowConfirmation] = useState(false);
 
     const buyerData = (event) => {
         setBuyer({
@@ -66,20 +68,36 @@ const Checkout = () => {
         }
 
         setValidated(true);
+
     };
+
+
+    useEffect(() => {
+        if (orderId) {
+            Swal.fire({
+                position: "center   ",
+                icon: "success",
+                title: "¡Compra realizada con éxito!",
+                showConfirmButton: false,
+                timer: 2000
+            }).then(() => {
+                setShowConfirmation(true); // 🔥 Se muestra el contenido solo después del alert
+            });
+        }
+    }, [orderId]);
+
 
 
     return (
         <>
-            {orderId ? (
+            {orderId && showConfirmation ? (
                 <div className="d-flex justify-content-center flex-column text-center mt-5 p-5 align-items-center">
                     <div className='card p-5 border-dark border-1 shadow'>
-
-                    <h2 >Compra realizada ✅</h2>
-                    <h4>Su ID de orden es: <strong>{orderId}</strong></h4>
+                        <h2 >Compra realizada ✅</h2>
+                        <h4>Su ID de orden es: <strong>{orderId}</strong></h4>
                     </div>
                     <h2 className='mt-5'>¡Gracias por preferirnos!</h2>
-                    <img src={imageCompraExistosa} alt="Vaca montando motocicleta" style={ {width:"25rem", marginTop:'3rem'}}/>
+                    <img src={imageCompraExistosa} alt="Vaca montando motocicleta" style={{ width: "25rem", marginTop: '3rem' }} />
                 </div>
             ) : (
                 <div className="container mt-5">
@@ -160,7 +178,7 @@ const Checkout = () => {
                                     feedbackType="invalid"
                                 />
                             </Form.Group>
-                            <Button className="btn btn-dark mt-4" type="submit">Completar Compra</Button>
+                            <Button className="btn btn-dark mt-4" type="submit" disabled={!cart.length} >Completar Compra</Button>
                         </Form>
                     </div>
                 </div>
@@ -168,5 +186,6 @@ const Checkout = () => {
         </>
     );
 };
+
 
 export default Checkout;
