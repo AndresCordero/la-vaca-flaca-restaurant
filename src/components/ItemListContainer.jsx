@@ -40,17 +40,10 @@ const ItemListContainer = ({ greeting }) => {
                 <img
                     src={menu_image}
                     alt="Vaca Flaca logo"
-                    style={{
-                        position: 'absolute',
-                        top: '-30px',
-                        right: '0',
-                        width: '170px',
-                        height: 'auto',
-                        zIndex: 1,
-                    }}
+                    className="responsive-logo d-none d-sm-block"
                 />
 
-                <h1 className='text-center badge-lg rounded text-bg-dark' style={{ marginTop: '5rem', marginBottom: '3rem' }}>
+                <h1 className="text-center badge-lg rounded text-bg-dark mt-5 mb-3">
                     Menu
                 </h1>
 
@@ -67,13 +60,16 @@ const ItemListContainer = ({ greeting }) => {
                     <div className="d-flex justify-content-center align-items-center flex-column">
                         {loading ? <LoaderComponent /> : <ItemList data={data} />}
                         {!loading && (
-                            <p className="text-center my-5">**Los precios no incluyen el 10% de servicio a la mesa</p>
+                            <p className="text-center my-5">
+                                **Los precios no incluyen el 10% de servicio a la mesa
+                            </p>
                         )}
                     </div>
                 </div>
             </div>
         </main>
     )
+
 }
 
 export default ItemListContainer
