@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import '../components/styles/Animaciones.css'
 import CategorySelector from './CategorySelector'
 import menu_image from "/image_standing.png"
 import ItemList from './ItemList'
@@ -71,7 +72,7 @@ const ItemListContainer = ({ greeting }) => {
     return (
         <main>
 
-            <div className="container my-5 position-relative">
+            <div className="container my-5 position-relative fade-in-up">
                 <img
                     src={menu_image}
                     alt="Vaca Flaca logo"

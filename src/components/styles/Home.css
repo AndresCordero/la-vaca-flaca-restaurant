@@ -1,0 +1,25 @@
+.hero-section {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%) scale(0.7);
+    z-index: 0;
+    object-fit: contain;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    /* Oscurece el video para mejor lectura del texto */
+    z-index: 1;
+}
+
+
