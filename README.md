@@ -13,7 +13,7 @@ Este proyecto fue creado para potenciar la utilidad del restaurante y bar Vaca f
 
 ### Version Host
 
-Si desea ver el proyecto online puede ingresar al siguiente link (https://la-vaca-flaca-restaurant.vercel.app/)
+Si desea ver el proyecto online puede ingresar al siguiente link [Vaca Flaca Restaurante](https://github.com/AndresCordero/la-vaca-flaca-restaurant)
 
 ### Librerias Utilizadas
 - [React Bootstrap](https://react-bootstrap.netlify.app/): Utlilizada para el stylind de la app
