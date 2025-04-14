@@ -13,12 +13,15 @@ Este proyecto fue creado para potenciar la utilidad del restaurante y bar Vaca f
 
 ### Version Host
 
-Si desea ver el proyecto online puede ingresar al siguiente link [La vaca Flaca restaurant]
+Si desea ver el proyecto online puede ingresar al siguiente link (https://la-vaca-flaca-restaurant.vercel.app/)
 
 ### Librerias Utilizadas
 - [React Bootstrap](https://react-bootstrap.netlify.app/): Utlilizada para el stylind de la app
 - [Firebase](https://firebase.google.com/): Utilizada como base de datos
 - [React Router Dom](https://reactrouter.com/): Utilizada para navegación por rutas
 - [React Floting Whatsapp](https://www.npmjs.com/package/react-floating-whatsapp): Utilizada para uso de Whatsapp link flotante
+- [Sweetalert] (https://sweetalert2.github.io/) Utilizada para generacion y estilo de alerts 
+
+
 
 #### Desarrollado por Andres Cordero Mora
