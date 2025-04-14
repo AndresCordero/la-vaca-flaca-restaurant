@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 
 const categories = [
-    { name: 'Todos los productos', path: '/productos' },
+    { name: 'Todos los productos', path: '/category/All' },
     { name: 'Desayunos', path: '/category/Desayunos' },
     { name: 'Entradas', path: '/category/Entradas' },
     { name: 'Bebidas', path: '/category/Bebidas' },
