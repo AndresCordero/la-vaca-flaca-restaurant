@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { toast } from 'react-toastify';
 
 const ItemCounter = ({ stock, onAdd }) => {
     const [count, setCount] = useState(1)
@@ -10,25 +11,35 @@ const ItemCounter = ({ stock, onAdd }) => {
     }
 
     const substrack = () => {
-        if (count > 0){
+        if (count > 1) {
             setCount(count - 1)
         }
     }
 
     const addToCart = () => {
-        onAdd(count)
+        onAdd(count);
+        toast.success(`${count} producto(s) agregado(s) al carrito`, {
+            position: "top-right",
+            autoClose: 2500,
+            hideProgressBar: false,
+            pauseOnHover: true,
+            theme: "dark",
+        });
     }
-    return (
-        <div>
-            <div className='mb-4'>
-                <h5>Cantidad:</h5>
-                <button className='btn btn-outline-danger mx-2' onClick={substrack}>-</button>
-                <span>{count}</span>
-                <button className='btn btn-outline-success mx-2' onClick={add}>+</button>
-            </div>
-            <button className='btn btn-dark mb-5' disabled={stock === 0 || count === 0} onClick={addToCart}> Agregar al carrito</button>
-        </div>
-    )
-}
+    
 
-export default ItemCounter
+        return (
+            <div>
+                <div className='mb-4'>
+                    <h5>Cantidad:</h5>
+                    <button className='btn btn-outline-danger mx-2' onClick={substrack}>-</button>
+                    <span>{count}</span>
+                    <button className='btn btn-outline-success mx-2' onClick={add}>+</button>
+                </div>
+                <button className='btn btn-dark' disabled={stock === 0 || count === 0} onClick={addToCart}> Agregar al carrito</button>
+
+            </div>
+        )
+    }
+
+    export default ItemCounter

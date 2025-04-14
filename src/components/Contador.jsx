@@ -10,7 +10,7 @@ const Contador = () => {
         setCount(count - 1)
     }
 
-    /* -------- Elemplos de los 3 tipos de useEffect aqui abajo --------- */
+    /* -------- Ejemplos de los 3 tipos de useEffect aqui abajo --------- */
 
     /* Primer caso */
 

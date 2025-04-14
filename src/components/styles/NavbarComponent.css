@@ -1,0 +1,10 @@
+.navbar-gradient {
+    background:  linear-gradient(25deg, #000000, #000000, #ffffff);
+    backdrop-filter: blur(10px); /* Menos difuminado para mejor legibilidad */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregar sombra para profundidad */
+    transition: background 0.3s ease; /* Transición suave */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Asegúrate de que se mantenga sobre otros elementos */
+}
+
