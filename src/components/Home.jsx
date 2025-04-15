@@ -18,6 +18,7 @@ const Home = () => {
                 <video className="video-bg max-h-50 overflow-auto mb-5" autoPlay loop muted playsInline>
                     <source src={HomeVideo} type="video/mp4" />
                 </video>
+
                 <div className="overlay position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
                     <div>
                         <h1 className="display-3 fw-bold">Bar y Restaurante Vaca Flaca</h1>
@@ -33,36 +34,21 @@ const Home = () => {
 
             {/* SVG */}
 
-            <div>
-                <svg
-                    className="frame-decoration w-100"
-                    style={{ height: '100px', display: 'block' }} // puedes ajustar la altura
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="xMidYMid slice"
-                    viewBox="0 0 1920 192.275"
+
+            <div className="svg" style={{ overflow: 'hidden', lineHeight: 0, marginTop: '-140px', position: 'relative', zIndex: 1 }}>
+                <svg className='svg'
+                    viewBox="0 0 1440 310"
+                    preserveAspectRatio="none"
+                    style={{
+                        height: '200px',
+                        width: '100%',
+                        transition: 'height 0.3s ease-in-out', // Suaviza el cambio de altura
+                    }}
                 >
-
-                    {/* Gradient Definition */}
-                    <defs>
-                        <linearGradient id="grad1" x1="0%" y1="100%" x2="0%" y2="0%">
-                            <stop offset="0%" style={{ stopColor: '#000', stopOpacity: 1 }} />
-                            <stop offset="100%" style={{ stopColor: '#999', stopOpacity: 1 }} />
-                        </linearGradient>
-                    </defs>
-
-                    {/* First Path: Black Fill */}
                     <path
-                        fill="#000"
-                        d="M1920,158.755s-63.9,52.163-179.472,50.736c-121.494-1.5-185.839-49.738-305.984-49.733-109.21,0-181.491,51.733-300.537,50.233-123.941-1.562-225.214-50.126-390.43-50.374-123.821-.185-353.982,58.374-458.976,56.373-217.907-4.153-284.6-57.236-284.6-57.236V351.03H1920V158.755Z"
-                        transform="translate(0 -160.755)"
-                    />
-
-                    {/* Second Path: Gradient Fill */}
-                    <path
-                        fill="url(#grad1)"
-                        d="M0,158.755s63.9,52.163,179.472,50.736c121.494-1.5,185.839-49.738,305.984-49.733,109.21,0,181.491,51.733,300.537,50.233,123.941-1.562,225.214-50.126,390.43-50.374,123.821-.185,353.982,58.374,458.976,56.373,217.907-4.153,284.6-57.236,284.6-57.236V351.03H0V158.755Z"
-                        transform="translate(0 -90.755)"
-                    />
+                        d="M0,158.755s63.9,52.163,179.472,50.736c121.494-1.5,185.839-49.738,305.984-49.733,109.21,0,181.491,51.733,300.537,50.233,123.941-1.562,225.214-50.126,"
+                        style={{ fill: '#000' }}
+                    ></path>
                 </svg>
             </div>
 
@@ -152,7 +138,12 @@ const Home = () => {
                 {/* Seccion de redes */}
 
 
-                <section className="bg-secondary text-white text-center mt-3 p-md-3 position-relative rounded d-block mx-3 mx-md-5">
+                <section
+                    className="text-white text-center mt-3 p-md-3 position-relative rounded d-block mx-3 mx-md-5"
+                    style={{
+                        background: 'linear-gradient(135deg,rgb(0, 0, 0),rgba(46, 46, 46, 0.73))',
+                    }}
+                >
                     <div>
 
                         <img
