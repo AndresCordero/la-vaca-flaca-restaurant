@@ -8,6 +8,7 @@ import NavbarComponent from './components/NavbarComponent';
 import WhatsAppComponent from './components/WhatsAppComponent';
 import AnimatedRoutes from './components/AnimatedRoutes'; 
 import Galeria from './components/Galeria';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <NavbarComponent />
         <WhatsAppComponent />
         <AnimatedRoutes /> 
+        <Footer/>
       </CartProvider>
     </BrowserRouter>
   );

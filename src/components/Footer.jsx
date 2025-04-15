@@ -1,0 +1,85 @@
+import React from 'react'
+import {
+    FaFacebookF,
+    FaInstagram,
+    FaHome,
+    FaEnvelope,
+    FaPhone,
+    FaPrint,
+    FaWhatsapp
+} from 'react-icons/fa';
+
+const Footer = () => {
+    return (
+        <div>
+            <div>
+                <footer className="text-center text-lg-start text-white" style={{ backgroundColor: '#111' }}>
+                    {/* Social Media Section */}
+                    <section className="d-flex justify-content-between p-4" style={{ backgroundColor: '#3e2723   ' }}>
+                        <div className="me-5">
+                            <span className='lead'>Buscanos en nuestras Redes Sociales</span>
+                        </div>
+                        <div>
+                            <a href="#" className="text-white me-4"><FaFacebookF size={30} /></a>
+                            <a href="#" className="text-white me-4"><FaInstagram size={30} /></a>
+                            <a href="https://wa.me/506XXXXXXXX"  className="text-white me-4">
+                                                        <FaWhatsapp size={30} />
+                                                    </a>
+                        </div>
+                    </section>
+
+                    {/* Links Section */}
+                    <section>
+                        <div className="container text-center text-md-start mt-5">
+                            <div className="row mt-3">
+                                {/* Company Info */}
+                                <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                    <h6 className="text-uppercase fw-bold">Bar y Restaurante Vaca Flaca</h6>
+                                    <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#7c4dff', height: '2px' }} />
+                                    <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </div>
+
+                                {/* Products */}
+                                <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                    <h6 className="text-uppercase fw-bold">Productos</h6>
+                                    <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#7c4dff', height: '2px' }} />
+                                    <p><a href="#!" className="text-white">Menu</a></p>
+                                    <p><a href="#!" className="text-white">Zona Biker</a></p>
+                                    <p><a href="#!" className="text-white">Alojamiento</a></p>
+                                </div>
+
+                                {/* Useful Links */}
+                                <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                                    <h6 className="text-uppercase fw-bold">Enlaces de Interes</h6>
+                                    <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#7c4dff', height: '2px' }} />
+                                    <p><a href="#!" className="text-white">Your Account</a></p>
+                                    <p><a href="#!" className="text-white">Become an Affiliate</a></p>
+                                    <p><a href="#!" className="text-white">Help</a></p>
+                                </div>
+
+                                {/* Contact */}
+                                <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                    <h6 className="text-uppercase fw-bold">Contacto</h6>
+                                    <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#7c4dff', height: '2px' }} />
+                                    <p><FaHome className="me-2" /> El Abejonal, San Pablo de León Cortés, San José, Costa Rica</p>
+                                    <p><FaEnvelope className="me-2" /> info@example.com</p>
+                                    <p><FaPhone className="me-2" /> +506 60190259 /  +506 62531144</p> 
+            
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Copyright */}
+                    <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+                        © 2025 Copyright: 
+                        <a className="text-white ms-1" href="https://mdbootstrap.com/">Andres Cordero</a>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+    )
+}
+
+export default Footer

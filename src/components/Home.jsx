@@ -12,7 +12,7 @@ const Home = () => {
 
 
     return (
-        <div className='bg-black'>
+        <div className='bg-black pb-2'>
             <section className="hero-section position-relative text-white text-center d-flex align-items-center justify-content-center flex-column">
                 <video className="video-bg max-h-50 overflow-auto mb-5" autoPlay loop muted playsInline>
                     <source src={HomeVideo} type="video/mp4" />
@@ -177,7 +177,7 @@ const Home = () => {
 
             {/* Seccion Horario y ubicacion */}
 
-            <section className="bg-body-secondary text-dark py-5 m-md-5 mx-3 rounded" id="ubicacion">
+            <section className="bg-body-secondary text-dark py-5 m-md-5 mx-3" id="ubicacion">
                 <div className="container">
                     <h2 className="text-center fw-bold mb-4">📍 ¿Dónde Estamos?</h2>
                     <h4 className=" text-center mb-5">Visitános en la fresca Zona de Los Santos. Viví la experiencia Vaca Flaca.</h4>
@@ -225,7 +225,7 @@ const Home = () => {
 
 
 
-            <section className="bg-dark text-white text-center py-4 my-5 position-relative rounded " style={{marginInline: "10rem"}}>
+            <section className="bg-dark text-white text-center py-4 my-5 position-relative rounded " style={{marginInline: "12rem"}}>
                 {/* Imagen flotante a la izquierda */}
                 <img
                     src={IconPhone}
@@ -234,31 +234,25 @@ const Home = () => {
                 />
 
                 <div className="container" style={{paddingInline:'18rem'}} >
-                    <h2 className="display-4 fw-bold mb-3">Seguinos en Redes Sociales</h2>
+                    <h2 className="display-4 fw-bold mb-3">Seguínos en Redes Sociales</h2>
                     <p className="lead px-5" >
                         Viví la experiencia Vaca Flaca también online. Enterate de eventos, promos y toda la vibra biker desde nuestras redes.
                     </p>
-                    <div className="d-flex justify-content-center gap-2 flex-wrap">
+                    <div className="d-flex justify-content-center gap- flex-wrap">
                         {/* Iconos sociales */}
                         <a href="https://facebook.com" target="_blank" rel="noreferrer" className="icon-social">
-                            <FaFacebook size={30} />
+                            <FaFacebook size={50} />
                         </a>
                         <a href="https://instagram.com" target="_blank" rel="noreferrer" className="icon-social">
-                            <FaInstagram size={30} />
+                            <FaInstagram size={50} />
                         </a>
                         <a href="https://wa.me/506XXXXXXXX" target="_blank" rel="noreferrer" className="icon-social">
-                            <FaWhatsapp size={30} />
+                            <FaWhatsapp size={50} />
                         </a>
                     </div>
                 </div>
-
-
             </section>
 
-            <section>
-
-                hola
-            </section>
         </div>
     );
 
