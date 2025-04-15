@@ -11,9 +11,9 @@ function NavbarComponent() {
     return (
         
         <Navbar expand="lg" className="navbar-gradient" data-bs-theme="dark">
-            <div className='pe-5 p-2'>
+            <div className='p-2'>
                 <NavLink as={NavLink} to='/'>
-                    <img className='rounded' src={NavImage} alt="logo" style={{ width: '22rem' }} />
+                    <img className='rounded' src={NavImage} alt="logo" style={{ width: '14rem' }} />
                 </NavLink>
             </div>
             <Navbar.Toggle aria-controls="basic-navbar-nav" className="me-3" />

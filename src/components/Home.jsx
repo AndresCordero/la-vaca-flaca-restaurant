@@ -6,6 +6,7 @@ import HomeVideo from '/video4.mp4';
 import MotoVideo from '/Moto2.mp4'
 import MotoPhoto from '/moto3.jpeg'
 import IconPhone from '/phone2.png'
+import Cabin from '/cabina1.jpg'
 import { NavLink } from 'react-router-dom';
 
 const Home = () => {
@@ -140,14 +141,61 @@ const Home = () => {
                                 <p className="lead mb-4">
                                     Vení a vivir la adrenalina en nuestra pista de motocross o relajate con tu crew biker en un ambiente 100% Vaca Flaca.
                                 </p>
-                                <a href="#contacto" className="btn btn-warning btn-lg">Reservar tu espacio</a>
+                                <a href="#contacto" className="btn btn-warning btn-lg">Mira disponibilidad</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
+
+
+                {/* Seccion de redes */}
+
+
+                <section className="bg-secondary text-white text-center mt-3 p-md-3 position-relative rounded d-block mx-3 mx-md-5">
+                    <div>
+
+                        <img
+                            src={IconPhone}
+                            alt="Biker Mascot"
+                            className="d-block d-md-none mx-auto mb-4 pt-2"
+                            style={{ maxWidth: "180px" }} />
+
+
+
+                        {/* Imagen flotante a la izquierda */}
+                        <img
+                            src={IconPhone}
+                            alt="Biker Mascot"
+                            className="social-image-floating d-none d-md-block"
+                        />
+
+                        <div className="container px-3 px-md-5">
+                            <h2 className="display-5 fw-bold mb-3">Seguínos en Redes Sociales</h2>
+                            <p className="lead mx-auto" style={{ maxWidth: "700px" }}>
+                                Viví la experiencia Vaca Flaca también online. Enterate de eventos, promos y toda la vibra biker desde nuestras redes.
+                            </p>
+                            <div className="d-flex justify-content-center gap-3 flex-wrap py-2">
+                                {/* Iconos sociales */}
+                                <a href="https://facebook.com" target="_blank" rel="noreferrer" className="icon-social">
+                                    <FaFacebook size={50} />
+                                </a>
+                                <a href="https://instagram.com" target="_blank" rel="noreferrer" className="icon-social">
+                                    <FaInstagram size={50} />
+                                </a>
+                                <a href="https://wa.me/506XXXXXXXX" target="_blank" rel="noreferrer" className="icon-social">
+                                    <FaWhatsapp size={50} />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
                 <div className="container-fluid px-0 mt-3">
                     <div className="row g-0 min-vh-50">
+
+
 
                         {/* Text Column */}
                         <div className="col-md-5 d-flex align-items-center p-5 bg-dark text-light">
@@ -163,7 +211,7 @@ const Home = () => {
                         <div className="col-md-7">
                             <div className="position-relative w-100 h-100" style={{ minHeight: '400px' }}>
                                 <img
-                                    src={MotoPhoto}
+                                    src={Cabin}
                                     alt="Zona Motocross"
                                     className="w-100 h-100"
                                     style={{ objectFit: 'contain' }}
@@ -177,7 +225,7 @@ const Home = () => {
 
             {/* Seccion Horario y ubicacion */}
 
-            <section className="bg-body-secondary text-dark py-5 m-md-5 mx-3" id="ubicacion">
+            <section className="bg-body-secondary text-dark pb-2 pt-4 m-md-5 m-3" id="ubicacion">
                 <div className="container">
                     <h2 className="text-center fw-bold mb-4">📍 ¿Dónde Estamos?</h2>
                     <h4 className=" text-center mb-5">Visitános en la fresca Zona de Los Santos. Viví la experiencia Vaca Flaca.</h4>
@@ -225,33 +273,8 @@ const Home = () => {
 
 
 
-            <section className="bg-dark text-white text-center py-4 my-5 position-relative rounded " style={{marginInline: "12rem"}}>
-                {/* Imagen flotante a la izquierda */}
-                <img
-                    src={IconPhone}
-                    alt="Biker Mascot"
-                    className="social-image-floating"
-                />
 
-                <div className="container" style={{paddingInline:'18rem'}} >
-                    <h2 className="display-4 fw-bold mb-3">Seguínos en Redes Sociales</h2>
-                    <p className="lead px-5" >
-                        Viví la experiencia Vaca Flaca también online. Enterate de eventos, promos y toda la vibra biker desde nuestras redes.
-                    </p>
-                    <div className="d-flex justify-content-center gap- flex-wrap">
-                        {/* Iconos sociales */}
-                        <a href="https://facebook.com" target="_blank" rel="noreferrer" className="icon-social">
-                            <FaFacebook size={50} />
-                        </a>
-                        <a href="https://instagram.com" target="_blank" rel="noreferrer" className="icon-social">
-                            <FaInstagram size={50} />
-                        </a>
-                        <a href="https://wa.me/506XXXXXXXX" target="_blank" rel="noreferrer" className="icon-social">
-                            <FaWhatsapp size={50} />
-                        </a>
-                    </div>
-                </div>
-            </section>
+
 
         </div>
     );

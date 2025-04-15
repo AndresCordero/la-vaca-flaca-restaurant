@@ -51,13 +51,15 @@
 
 .social-image-floating {
     position: absolute;
-    left: 30px;
+    left: -80px;
     top: -45px;
     /* Ajustá según el efecto que querés */
     bottom: 0;
     max-height: 320px;
-    opacity: 0.9;
 }
+
+
+
 
 .icon-social {
     padding: 0.5rem 0.5rem;
@@ -75,3 +77,8 @@
     background: #ffc107;
     color: #000;
 }
+
+.mx-md-9 {
+    margin-inline: 9rem;
+}
+
