@@ -5,6 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from './CartWidget'
 import { NavLink } from 'react-router-dom'
 import './styles/NavbarComponent.css'
+import NavImage from '/LogoNav4.png'
 
 function NavbarComponent() {
     return (
@@ -12,7 +13,7 @@ function NavbarComponent() {
         <Navbar expand="lg" className="navbar-gradient" data-bs-theme="dark">
             <div className='pe-5 p-2'>
                 <NavLink as={NavLink} to='/'>
-                    <img className='rounded-circle' src="/logo-vacaflaca.jpg" alt="logo" style={{ width: '12rem' }} />
+                    <img className='rounded' src={NavImage} alt="logo" style={{ width: '22rem' }} />
                 </NavLink>
             </div>
             <Navbar.Toggle aria-controls="basic-navbar-nav" className="me-3" />
@@ -35,7 +36,7 @@ function NavbarComponent() {
                     </NavDropdown>
                     <Nav.Link as={NavLink} to='/zonabiker'>Zona biker</Nav.Link>
                     <Nav.Link as={NavLink} to='/galeria'>Galeria</Nav.Link>
-                    <Nav.Link href="contacto">Contacto</Nav.Link>
+                    <Nav.Link as={NavLink} to="/contacto">Contacto</Nav.Link>
                 </Nav>
                 <nav className='ms-auto me-lg-5'>
                     <CartWidget />

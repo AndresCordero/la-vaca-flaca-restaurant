@@ -35,8 +35,8 @@ const ItemListContainer = ({ greeting }) => {
     }, [categoryId])
 
     return (
-        <main>
-            <div className="container mt-md-5 position-relative">
+        <main className='bg-body-secondary'>
+            <div className="container pt-md-5 position-relative">
                 <img
                     src={menu_image}
                     alt="Vaca Flaca logo"
@@ -50,7 +50,7 @@ const ItemListContainer = ({ greeting }) => {
                         zIndex: 1,
                     }}
                 />
-                <h1 className="text-center badge-lg rounded text-bg-dark my-3 my-md-5">
+                <h1 className="text-center badge-lg rounded text-bg-dark mb-3 ">
                     Menu
                 </h1>
                 {/* Mobile Image*/}
