@@ -8,18 +8,19 @@ import './styles/NavbarComponent.css'
 
 function NavbarComponent() {
     return (
+        
         <Navbar expand="lg" className="navbar-gradient" data-bs-theme="dark">
             <div className='pe-5 p-2'>
                 <NavLink as={NavLink} to='/'>
                     <img className='rounded-circle' src="/logo-vacaflaca.jpg" alt="logo" style={{ width: '12rem' }} />
                 </NavLink>
             </div>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" className="me-3"  />
+            <Navbar.Toggle aria-controls="basic-navbar-nav" className="me-3" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="text-center">
                     <Nav.Link as={NavLink} to='/'>Home</Nav.Link>
                     <NavDropdown title="Menu" id="basic-nav-dropdown">
-                        <NavDropdown.Item as={NavLink} to='/productos'>
+                        <NavDropdown.Item as={NavLink} to='/category/All'>
                             Todos los productos
                         </NavDropdown.Item>
                         <NavDropdown.Divider />
@@ -40,6 +41,7 @@ function NavbarComponent() {
                     <CartWidget />
                 </nav>
             </Navbar.Collapse>
+            
         </Navbar>
     );
 }

@@ -5,7 +5,6 @@ import {
     FaHome,
     FaEnvelope,
     FaPhone,
-    FaPrint,
     FaWhatsapp
 } from 'react-icons/fa';
 
@@ -20,7 +19,7 @@ const Footer = () => {
                             <span className='lead'>Buscanos en nuestras Redes Sociales</span>
                         </div>
                         <div>
-                            <a href="#" className="text-white me-4"><FaFacebookF size={30} /></a>
+                            <a href="#" className="text-white me-4 "><FaFacebookF size={30} /></a>
                             <a href="#" className="text-white me-4"><FaInstagram size={30} /></a>
                             <a href="https://wa.me/506XXXXXXXX"  className="text-white me-4">
                                                         <FaWhatsapp size={30} />
