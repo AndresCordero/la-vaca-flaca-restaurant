@@ -66,9 +66,7 @@ const Checkout = () => {
                     console.error("Error al enviar la orden:", error);
                 });
         }
-
         setValidated(true);
-
     };
 
 

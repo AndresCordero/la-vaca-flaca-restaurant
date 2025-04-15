@@ -41,33 +41,13 @@ const ItemDetailContainer = () => {
 
 
 
-
-
-
-
-
-
-
-    /* Promesa Productos */
-
-
-    /*     useEffect(() => {
-            setLoading(true)
-            getProducts()
-            .then((res) => setProduct(res.find((item) => item.id === id)))
-            .catch((error) => console.log(error))
-            .finally(() => setLoading(false))
-     
-        }, []) */
-
-
     if (invalid) {
         return
         <div>El producto no existe</div>
     }
 
     return (
-        <div className='d-flex justify-content-center mt-5'>
+        <div className=' d-flex justify-content-center mt-5'>
             {loading ? <LoaderComponent /> : <ItemDetail product={product} />}
         </div>
     )

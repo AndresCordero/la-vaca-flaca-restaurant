@@ -13,24 +13,29 @@ const ItemDetail = ({ product }) => {
         setPurchase(true);
     };
 
+    const handleAddToCart = () => {
+        onAdd();
+        setPurchase(true);
+    }
     return (
         <div className='container text-center'>
-            <h1 className='mt-5'>Detalle de producto: {product.name}</h1>
-            <div className='container d-flex justify-content-center flex-wrap mt-5'>
-                <img className='rounded img-fluid' src={product.img} alt={product.name} style={{ maxWidth: '35rem', width: '100%', height: 'auto' }} />
+            <div className='card border-dark shadow-lg p-5 container d-flex justify-content-center align-items-center flex-wrap my-5'>
+                <h1 className='mb-5'>Detalle de producto: {product.name}</h1>
+                <img className='rounded img-fluid ' src={product.img} alt={product.name} style={{ maxWidth: '35rem', width: '100%', height: 'auto' }} />
+                <hr className="w-25 mt-5" />
+                <p className='mt-3 lead'>{product.description}</p>
+                <p>Stock: {product.stock}</p>
+                <p><strong>Precio: </strong>₡{product.price}</p>
             </div>
-            <p className='mt-5'>{product.description}</p>
-            <p>Stock: {product.stock}</p>
-            <p>Precio:₡ {product.price}</p>
             <div>
                 {purchase ? (
-                    <Link className='btn btn-outline-dark' to={'/cart'}>Ir al carrito</Link>
+                    <Link className='btn btn-warning btn-lg shadow' to={'/cart'}>Ir al carrito</Link>
                 ) : (
                     <ItemCounter stock={product.stock} onAdd={onAdd} />
                 )}
             </div>
-            <button className='btn btn-outline-dark my-4' onClick={() => navigate(-1)}>
-                Atrás
+            <button className='shadow btn btn-outline-dark mt-4 mb-5' onClick={() => navigate(-1)}>
+                {purchase ? 'Seguir comprando' : 'Atrás'}
             </button>
         </div>
     );

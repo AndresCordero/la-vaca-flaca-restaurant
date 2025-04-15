@@ -41,7 +41,7 @@ const CartView = () => {
             <h2 className='mt-2 mb-4 text-center'>Total a pagar: ₡{cartImpuesto() + cartTotal()}</h2>
             <hr className="w-50 mx-auto pb-5" />
             <Link to={'/checkout'} className='btn btn-dark mx-auto mb-4'>Finalizar Compra</Link>
-            <Link to={'/productos'} className='btn btn-outline-dark mx-auto mb-4'>Agregar mas productos</Link>
+            <Link to={'/category/all'} className='btn btn-outline-dark mx-auto mb-4'>Agregar mas productos</Link>
             <button className='btn btn-danger mx-auto mb-5' onClick={preConfirmation}>Borrar carrito</button>
         </div>
     )

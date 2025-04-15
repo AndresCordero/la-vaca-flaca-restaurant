@@ -4,7 +4,7 @@
 
 .fade-enter-active {
     opacity: 1;
-    transition: opacity 300ms ease-in-out;
+    transition: opacity 400ms ease-in-out;
 }
 
 .fade-exit {
@@ -44,7 +44,7 @@
     position: absolute;
     top: -30px;
     right: 0;
-    width: 150px;
+    width: 170px;
     height: auto;
     z-index: 1;
 }

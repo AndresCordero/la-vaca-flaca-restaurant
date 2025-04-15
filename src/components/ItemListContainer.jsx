@@ -36,18 +36,33 @@ const ItemListContainer = ({ greeting }) => {
 
     return (
         <main>
-            <div className="container my-5 position-relative">
+            <div className="container mt-md-5 position-relative">
                 <img
                     src={menu_image}
                     alt="Vaca Flaca logo"
-                    className="responsive-logo d-none d-sm-block"
+                    className="d-none d-md-block"
+                    style={{
+                        position: 'absolute',
+                        top: '-30px',
+                        right: '0',
+                        width: '180px',
+                        height: 'auto',
+                        zIndex: 1,
+                    }}
                 />
-
-                <h1 className="text-center badge-lg rounded text-bg-dark mt-5 mb-3">
+                <h1 className="text-center badge-lg rounded text-bg-dark my-3 my-md-5">
                     Menu
                 </h1>
+                {/* Mobile Image*/}
+                <div className="text-center mb-4 d-block d-md-none">
+                    <img
+                        src={menu_image}
+                        alt="Vaca Flaca logo"
+                        style={{ width: '180px', height: 'auto' }}
+                    />
+                </div>
 
-                <h2 className="text-center my-5">
+                <h2 className="text-center my-2 my-md-5">
                     {greeting}
                     {categoryId && categoryId !== 'all' && <span>{categoryId}</span>}
                 </h2>
@@ -60,14 +75,13 @@ const ItemListContainer = ({ greeting }) => {
                     <div className="d-flex justify-content-center align-items-center flex-column">
                         {loading ? <LoaderComponent /> : <ItemList data={data} />}
                         {!loading && (
-                            <p className="text-center my-5">
-                                **Los precios no incluyen el 10% de servicio a la mesa
-                            </p>
+                            <p className="text-center my-5">**Los precios no incluyen el 10% de servicio a la mesa</p>
                         )}
                     </div>
                 </div>
             </div>
         </main>
+
     )
 
 }
