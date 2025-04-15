@@ -21,54 +21,59 @@ const Home = () => {
                         <h1 className="display-3 fw-bold">Bar y Restaurante Vaca Flaca</h1>
                         <p className="lead">Comida deliciosa, ambiente único. ¡Disfrutá cada bocado!</p>
                         <div className="d-flex flex-column flex-md-row gap-3 justify-content-center mt-4">
-                            <NavLink to="./category/all" className="btn btn-warning btn-lg">Ver Menú</NavLink>
-                            <NavLink to="/reserva" className="btn btn-outline-light btn-lg">Reservar</NavLink>
+                            <NavLink to="./category/all" className="btn btn-warning col-8 mx-auto btn-lg">Ver Menú</NavLink>
+                            <NavLink to="/reserva" className="btn btn-outline-light col-8 mx-auto btn-lg">Reservar</NavLink>
                         </div>
                     </div>
                 </div>
             </section>
 
 
+            {/* SVG */}
 
-            <svg
-                className="frame-decoration w-100"
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="none"
-                viewBox="0 0 1920 192.275"
-            >
-                {/* Gradient Definition */}
-                <defs>
-                    <linearGradient id="grad1" x1="0%" y1="100%" x2="0%" y2="0%">
-                        <stop offset="0%" style={{ stopColor: '#000', stopOpacity: 1 }} />
-                        <stop offset="100%" style={{ stopColor: '#999', stopOpacity: 1 }} />
-                    </linearGradient>
-                </defs>
+            <div>
+                <svg
+                    className="frame-decoration w-100"
+                    style={{ height: '100px', display: 'block' }} // puedes ajustar la altura
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid slice"
+                    viewBox="0 0 1920 192.275"
+                >
 
-                {/* First Path: Black Fill */}
-                <path
-                    fill="#000"
-                    d="M1920,158.755s-63.9,52.163-179.472,50.736c-121.494-1.5-185.839-49.738-305.984-49.733-109.21,0-181.491,51.733-300.537,50.233-123.941-1.562-225.214-50.126-390.43-50.374-123.821-.185-353.982,58.374-458.976,56.373-217.907-4.153-284.6-57.236-284.6-57.236V351.03H1920V158.755Z"
-                    transform="translate(0 -158.755)"
-                />
+                    {/* Gradient Definition */}
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="100%" x2="0%" y2="0%">
+                            <stop offset="0%" style={{ stopColor: '#000', stopOpacity: 1 }} />
+                            <stop offset="100%" style={{ stopColor: '#999', stopOpacity: 1 }} />
+                        </linearGradient>
+                    </defs>
 
-                {/* Second Path: Gradient Fill */}
-                <path
-                    fill="url(#grad1)"
-                    d="M0,158.755s63.9,52.163,179.472,50.736c121.494-1.5,185.839-49.738,305.984-49.733,109.21,0,181.491,51.733,300.537,50.233,123.941-1.562,225.214-50.126,390.43-50.374,123.821-.185,353.982,58.374,458.976,56.373,217.907-4.153,284.6-57.236,284.6-57.236V351.03H0V158.755Z"
-                    transform="translate(0 -90.755)"
-                />
-            </svg>
+                    {/* First Path: Black Fill */}
+                    <path
+                        fill="#000"
+                        d="M1920,158.755s-63.9,52.163-179.472,50.736c-121.494-1.5-185.839-49.738-305.984-49.733-109.21,0-181.491,51.733-300.537,50.233-123.941-1.562-225.214-50.126-390.43-50.374-123.821-.185-353.982,58.374-458.976,56.373-217.907-4.153-284.6-57.236-284.6-57.236V351.03H1920V158.755Z"
+                        transform="translate(0 -160.755)"
+                    />
+
+                    {/* Second Path: Gradient Fill */}
+                    <path
+                        fill="url(#grad1)"
+                        d="M0,158.755s63.9,52.163,179.472,50.736c121.494-1.5,185.839-49.738,305.984-49.733,109.21,0,181.491,51.733,300.537,50.233,123.941-1.562,225.214-50.126,390.43-50.374,123.821-.185,353.982,58.374,458.976,56.373,217.907-4.153,284.6-57.236,284.6-57.236V351.03H0V158.755Z"
+                        transform="translate(0 -90.755)"
+                    />
+                </svg>
+            </div>
 
 
             {/* Seccion Ofertas */}
 
-            <section className="offers-section py-5 text-center bg-dark text-white m-5">
+            <section className="offers-section py-3 text-center bg-dark text-white m-md-5 rounded m-3">
                 <div className="container">
                     <h2 className="display-5 fw-bold mb-4 ">¡Ofertas Especiales!</h2>
                     <p className="lead mb-5">Disfrutá promociones irresistibles por tiempo limitado</p>
                     <div className="row g-4 justify-content-center pb-4">
                         {/* Offer Card 1 */}
-                        <div className="col-md-4">
+                        <div className="col-md-4 mb-4">
                             <div className="card h-100 shadow-lg border-0">
                                 <img src="./olladecarne.webp" className="card-img-top" alt="Olla de Carne" />
                                 <div className="card-body">
@@ -79,7 +84,7 @@ const Home = () => {
                         </div>
 
                         {/* Offer Card 2 */}
-                        <div className="col-md-4">
+                        <div className="col-md-4 mb-4">
                             <div className="card h-100 shadow-lg border-0">
                                 <img src="./balde.jpg" className="card-img-top" alt="Promo Cerveza" />
                                 <div className="card-body">
@@ -90,7 +95,7 @@ const Home = () => {
                         </div>
 
                         {/* Offer Card 3 */}
-                        <div className="col-md-4">
+                        <div className="col-md-4 mb-4">
                             <div className="card h-100 shadow-lg border-0">
                                 <img src="Ribeye.jpg" className="card-img-top" alt="Hamburguesa" />
                                 <div className="card-body">
@@ -105,12 +110,12 @@ const Home = () => {
 
             {/* Zona bike*/}
 
-            <section className="motocross-section bg-dark text-light" style={{ marginTop: "5rem" }}>
+            <section className="motocross-section text-light" style={{ marginTop: "4rem" }}>
                 <div className="container-fluid px-0">
                     <div className="row g-0 min-vh-50">
 
                         {/* Video Column */}
-                        <div className="col-md-7">
+                        <div className="col-md-7 ">
                             <div className="position-relative w-100 h-100" style={{ minHeight: '400px' }}>
                                 <video
                                     className="w-100 h-100"
@@ -128,7 +133,7 @@ const Home = () => {
                         </div>
 
                         {/* Text Column */}
-                        <div className="col-md-5 d-flex flex-column justify-content-center align-items-center text-center p-5">
+                        <div className="col-md-5 rounded col-11 bg-dark mt-3 mx-auto d-flex flex-column align-items-center text-center p-5">
                             <div className="px-3">
                                 <h2 className="display-5 fw-bold mb-3">Zona Motocross & Biker</h2>
                                 <p className="lead mb-4">
@@ -147,10 +152,9 @@ const Home = () => {
                         <div className="col-md-5 d-flex align-items-center p-5 bg-dark text-light">
                             <div>
                                 <h2 className="display-5 fw-bold mb-3">¿Sos parte de un club de motociclistas?</h2>
-                                <p className="lead mb-4">
+                                <p className="lead mb-0 mb-md-4">
                                     Traé a tu crew y unite a Vaca Flaca. Nuestra zona biker está lista para recibirlos con buena comida, ambiente rústico, hospedaje y mucha actitud.
                                 </p>
-
                             </div>
                         </div>
 
@@ -161,7 +165,7 @@ const Home = () => {
                                     src={MotoPhoto}
                                     alt="Zona Motocross"
                                     className="w-100 h-100"
-                                    style={{ objectFit: 'cover' }}
+                                    style={{ objectFit: 'contain' }}
                                 />
                             </div>
                         </div>
@@ -174,38 +178,38 @@ const Home = () => {
 
             {/* Seccion Horario y ubicacion */}
 
-            <section className="bg-light text-dark py-5" id="ubicacion">
+            <section className="bg-body-secondary text-dark py-5 m-md-5 mx-3 rounded" id="ubicacion">
                 <div className="container">
                     <h2 className="text-center fw-bold mb-4">📍 ¿Dónde Estamos?</h2>
-                    <p className="lead text-center mb-5">Visitános en la fresca Zona de Los Santos. Viví la experiencia Vaca Flaca.</p>
+                    <h4 className=" text-center mb-5">Visitános en la fresca Zona de Los Santos. Viví la experiencia Vaca Flaca.</h4>
 
                     <div className="row">
                         {/* Horario */}
-                        <div className="col-md-6 mb-4  p-3 bg-body-secondary rounded-4">
-                            <h4 className="fw-bold mb-3">🕒 Horario</h4>
-                            <ul className="list-group bg-light">
-                                <li className="list-group-item bg-light text-dark border-0">Martes a Jueves: 9:00am - 9:00pm</li>
-                                <li className="list-group-item bg-light text-dark border-0">Viernes y Sábado: 9:00am - 10:00pm</li>
-                                <li className="list-group-item bg-light text-dark border-0">Domingo: 9:00am - 8:00pm</li>
+                        <div className=" order-2 d-flex flex-column mx-auto col-11 col-md-6 mb-2 shadow-lg p-5 bg-light rounded-4">
+                            <h4 className="fw-bold mb-2 text-center badge bg-black fs-2">🕒 Horario</h4>
+                            <ul className="list-group bg-light my-4">
+                                <li className="list-group-item bg-body-secondary text-dark border-0">Martes a Jueves: 9:00am - 9:00pm</li>
+                                <li className="list-group-item bg-body-secondary text-dark border-0">Viernes y Sábado: 9:00am - 10:00pm</li>
+                                <li className="list-group-item bg-body-secondary text-dark border-0">Domingo: 9:00am - 8:00pm</li>
+                                <li className="list-group-item bg-body-secondary text-dark border-0">Lunes: Cerrado</li>
                             </ul>
 
-                            <div className="mt-4">
-                                <h5 className="fw-bold">📫 Dirección</h5>
-                                <p>El Abejonal, San Pablo de León Cortés, San José, Costa Rica</p>
-                                <a
-                                    href="https://www.google.com/maps?q=9.935+,-84.051"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="btn btn-lg btn-primary mt-2"
-                                >
-                                    Cómo llegar
-                                </a>
-                            </div>
+                            <h5 className="fw-bold">📫 Dirección</h5>
+                            <p>El Abejonal, San Pablo de León Cortés, San José, Costa Rica</p>
+                            <a
+                                href="https://www.google.com/maps?q=9.935+,-84.051"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn btn-primary mt-3"
+                            >
+                                Cómo llegar
+                            </a>
+
                         </div>
 
                         {/* Mapa */}
-                        <div className="col-md-6">
-                            <div className="ratio ratio-4x3 shadow-lg rounded-4 overflow-hidden">
+                        <div className="col-md-6 order-1">
+                            <div className="ratio mb-5 ratio-4x3 shadow-lg rounded-4 overflow-hidden">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.7021516059426!2d-84.05155649999999!3d9.706441999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa1114f13c217c7%3A0xfeb8c45c6c3feca5!2sVaca%20Flaca%20zona%20Biker%20(El%20Trapiche)!5e0!3m2!1sen!2scr!4v1744691873870!5m2!1sen!2scr"
                                     width="100%"
@@ -223,7 +227,7 @@ const Home = () => {
 
 
 
-            <section className="bg-dark text-white text-center py-5">
+            <section className="bg-dark text-white text-center py-5 mt-5">
                 <div className="container">
                     <h2 className="display-4 fw-bold mb-3">📱 Seguinos en Redes Sociales</h2>
                     <p className="lead mb-4">
