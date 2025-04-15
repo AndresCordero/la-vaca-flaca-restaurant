@@ -6,7 +6,7 @@ import HomeVideo from '/video4.mp4';
 import MotoVideo from '/Moto2.mp4'
 import MotoPhoto from '/moto3.jpeg'
 import IconPhone from '/phone2.png'
-import Cabin from '/cabina1.jpg'
+import Cabin from '/cabina2.jpg'
 import { NavLink } from 'react-router-dom';
 
 const Home = () => {
