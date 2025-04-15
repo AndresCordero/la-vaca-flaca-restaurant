@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import '../components/styles/Home.css';
 import HomeVideo from '/video4.mp4';
 import MotoVideo from '/Moto2.mp4'
 import MotoPhoto from '/moto3.jpeg'
+import IconPhone from '/phone2.png'
 import { NavLink } from 'react-router-dom';
 
 const Home = () => {
 
 
     return (
-
         <div className='bg-black'>
             <section className="hero-section position-relative text-white text-center d-flex align-items-center justify-content-center flex-column">
                 <video className="video-bg max-h-50 overflow-auto mb-5" autoPlay loop muted playsInline>
@@ -21,8 +22,8 @@ const Home = () => {
                         <h1 className="display-3 fw-bold">Bar y Restaurante Vaca Flaca</h1>
                         <p className="lead">Comida deliciosa, ambiente único. ¡Disfrutá cada bocado!</p>
                         <div className="d-flex flex-column flex-md-row gap-3 justify-content-center mt-4">
-                            <NavLink to="./category/all" className="btn btn-warning col-8 mx-auto btn-lg">Ver Menú</NavLink>
-                            <NavLink to="/reserva" className="btn btn-outline-light col-8 mx-auto btn-lg">Reservar</NavLink>
+                            <NavLink to="./category/all" className="btn btn-warning col-8 col-md-auto mx-auto mx-md-0 btn-lg">Ver Menú</NavLink>
+                            <NavLink to="/reserva" className="btn btn-outline-light col-8  col-md-auto mx-auto mx-md-0 btn-lg">Reservar</NavLink>
                         </div>
                     </div>
                 </div>
@@ -151,9 +152,9 @@ const Home = () => {
                         {/* Text Column */}
                         <div className="col-md-5 d-flex align-items-center p-5 bg-dark text-light">
                             <div>
-                                <h2 className="display-5 fw-bold mb-3">¿Sos parte de un club de motociclistas?</h2>
+                                <h2 className="display-5 fw-bold mb-3">¿Sos parte de un Moto Club?</h2>
                                 <p className="lead mb-0 mb-md-4">
-                                    Traé a tu crew y unite a Vaca Flaca. Nuestra zona biker está lista para recibirlos con buena comida, ambiente rústico, hospedaje y mucha actitud.
+                                    Traé a tu crew y unite a Vaca Flaca. Nuestra zona biker está lista para recibirlos con buena comida, ambiente rústico, <strong>hospedaje</strong> y mucha actitud.
                                 </p>
                             </div>
                         </div>
@@ -172,8 +173,6 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
-
 
 
             {/* Seccion Horario y ubicacion */}
@@ -204,7 +203,6 @@ const Home = () => {
                             >
                                 Cómo llegar
                             </a>
-
                         </div>
 
                         {/* Mapa */}
@@ -227,38 +225,41 @@ const Home = () => {
 
 
 
-            <section className="bg-dark text-white text-center py-5 mt-5">
-                <div className="container">
-                    <h2 className="display-4 fw-bold mb-3">📱 Seguinos en Redes Sociales</h2>
-                    <p className="lead mb-4">
+            <section className="bg-dark text-white text-center py-4 my-5 position-relative rounded " style={{marginInline: "10rem"}}>
+                {/* Imagen flotante a la izquierda */}
+                <img
+                    src={IconPhone}
+                    alt="Biker Mascot"
+                    className="social-image-floating"
+                />
+
+                <div className="container" style={{paddingInline:'18rem'}} >
+                    <h2 className="display-4 fw-bold mb-3">Seguinos en Redes Sociales</h2>
+                    <p className="lead px-5" >
                         Viví la experiencia Vaca Flaca también online. Enterate de eventos, promos y toda la vibra biker desde nuestras redes.
                     </p>
-                    <div className="d-flex justify-content-center gap-3 mb-4 flex-wrap">
-                        <a
-                            href="https://www.facebook.com/VacaFlacaCR" // Reemplazá por el enlace real
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn btn-outline-light btn-lg"
-                        >
-                            <i className="bi bi-facebook me-2"></i>Facebook
+                    <div className="d-flex justify-content-center gap-2 flex-wrap">
+                        {/* Iconos sociales */}
+                        <a href="https://facebook.com" target="_blank" rel="noreferrer" className="icon-social">
+                            <FaFacebook size={30} />
                         </a>
-                        <a
-                            href="https://www.instagram.com/VacaFlacaCR" // Reemplazá por el enlace real
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn btn-outline-light btn-lg"
-                        >
-                            <i className="bi bi-instagram me-2"></i>Instagram
+                        <a href="https://instagram.com" target="_blank" rel="noreferrer" className="icon-social">
+                            <FaInstagram size={30} />
+                        </a>
+                        <a href="https://wa.me/506XXXXXXXX" target="_blank" rel="noreferrer" className="icon-social">
+                            <FaWhatsapp size={30} />
                         </a>
                     </div>
                 </div>
+
+
             </section>
 
+            <section>
 
-
+                hola
+            </section>
         </div>
-
-
     );
 
 };
