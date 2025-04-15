@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../components/styles/Home.css';
 import HomeVideo from '/video4.mp4';
+import MotoVideo from '/Moto2.mp4'
+import MotoPhoto from '/moto3.jpeg'
 import { NavLink } from 'react-router-dom';
 
 const Home = () => {
@@ -101,36 +103,100 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* Zona bike*/}
+
+            <section className="motocross-section bg-dark text-light" style={{ marginTop: "5rem" }}>
+                <div className="container-fluid px-0">
+                    <div className="row g-0 min-vh-50">
+
+                        {/* Video Column */}
+                        <div className="col-md-7">
+                            <div className="position-relative w-100 h-100" style={{ minHeight: '400px' }}>
+                                <video
+                                    className="w-100 h-100"
+                                    style={{ objectFit: 'cover' }}
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    poster="/images/motocross-fallback.jpg"
+                                >
+                                    <source src={MotoVideo} type="video/mp4" />
+                                    Tu navegador no soporta el video HTML5.
+                                </video>
+                            </div>
+                        </div>
+
+                        {/* Text Column */}
+                        <div className="col-md-5 d-flex flex-column justify-content-center align-items-center text-center p-5">
+                            <div className="px-3">
+                                <h2 className="display-5 fw-bold mb-3">Zona Motocross & Biker</h2>
+                                <p className="lead mb-4">
+                                    Vení a vivir la adrenalina en nuestra pista de motocross o relajate con tu crew biker en un ambiente 100% Vaca Flaca.
+                                </p>
+                                <a href="#contacto" className="btn btn-warning btn-lg">Reservar tu espacio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="container-fluid px-0 mt-3">
+                    <div className="row g-0 min-vh-50">
+
+                        {/* Text Column */}
+                        <div className="col-md-5 d-flex align-items-center p-5 bg-dark text-light">
+                            <div>
+                                <h2 className="display-5 fw-bold mb-3">¿Sos parte de un club de motociclistas?</h2>
+                                <p className="lead mb-4">
+                                    Traé a tu crew y unite a Vaca Flaca. Nuestra zona biker está lista para recibirlos con buena comida, ambiente rústico, hospedaje y mucha actitud.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        {/* Image Column */}
+                        <div className="col-md-7">
+                            <div className="position-relative w-100 h-100" style={{ minHeight: '400px' }}>
+                                <img
+                                    src={MotoPhoto}
+                                    alt="Zona Motocross"
+                                    className="w-100 h-100"
+                                    style={{ objectFit: 'cover' }}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
 
 
             {/* Seccion Horario y ubicacion */}
 
-
-            <section className="bg-light py-5" id="ubicacion">
+            <section className="bg-light text-dark py-5" id="ubicacion">
                 <div className="container">
                     <h2 className="text-center fw-bold mb-4">📍 ¿Dónde Estamos?</h2>
                     <p className="lead text-center mb-5">Visitános en la fresca Zona de Los Santos. Viví la experiencia Vaca Flaca.</p>
 
                     <div className="row">
                         {/* Horario */}
-                        <div className="col-md-6 mb-4 ">
+                        <div className="col-md-6 mb-4  p-3 bg-body-secondary rounded-4">
                             <h4 className="fw-bold mb-3">🕒 Horario</h4>
-                            <div className=''>
-                            <ul className="list-group bg-dark">
-                                <li className="list-group-item">Martes a Jueves: 9:00am - 9:00pm</li>
-                                <li className="list-group-item">Viernes y Sábado: 9:00am - 10:000m</li>
-                                <li className="list-group-item">Domingo: 9:00am - 8:00pm</li>
+                            <ul className="list-group bg-light">
+                                <li className="list-group-item bg-light text-dark border-0">Martes a Jueves: 9:00am - 9:00pm</li>
+                                <li className="list-group-item bg-light text-dark border-0">Viernes y Sábado: 9:00am - 10:00pm</li>
+                                <li className="list-group-item bg-light text-dark border-0">Domingo: 9:00am - 8:00pm</li>
                             </ul>
-                            </div>
 
                             <div className="mt-4">
                                 <h5 className="fw-bold">📫 Dirección</h5>
-                                <p>El Abejonal , San Pablo de Leon Cortez, San José. Costa Rica</p>
+                                <p>El Abejonal, San Pablo de León Cortés, San José, Costa Rica</p>
                                 <a
-                                    href="https://www.google.com/maps?q=9.935+,-84.051" // cambiá por tu lat/lng reales
+                                    href="https://www.google.com/maps?q=9.935+,-84.051"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="btn btn-dark mt-2"
+                                    className="btn btn-lg btn-primary mt-2"
                                 >
                                     Cómo llegar
                                 </a>
@@ -141,7 +207,7 @@ const Home = () => {
                         <div className="col-md-6">
                             <div className="ratio ratio-4x3 shadow-lg rounded-4 overflow-hidden">
                                 <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.0197362403046!2d-84.051!3d9.935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNTYnMDYuMCJOIDg0wrAwMycwMy4wIlc!5e0!3m2!1ses!2scr!4v0000000000000"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.7021516059426!2d-84.05155649999999!3d9.706441999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa1114f13c217c7%3A0xfeb8c45c6c3feca5!2sVaca%20Flaca%20zona%20Biker%20(El%20Trapiche)!5e0!3m2!1sen!2scr!4v1744691873870!5m2!1sen!2scr"
                                     width="100%"
                                     height="100%"
                                     style={{ border: 0 }}
@@ -154,6 +220,36 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
+
+
+            <section className="bg-dark text-white text-center py-5">
+                <div className="container">
+                    <h2 className="display-4 fw-bold mb-3">📱 Seguinos en Redes Sociales</h2>
+                    <p className="lead mb-4">
+                        Viví la experiencia Vaca Flaca también online. Enterate de eventos, promos y toda la vibra biker desde nuestras redes.
+                    </p>
+                    <div className="d-flex justify-content-center gap-3 mb-4 flex-wrap">
+                        <a
+                            href="https://www.facebook.com/VacaFlacaCR" // Reemplazá por el enlace real
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-outline-light btn-lg"
+                        >
+                            <i className="bi bi-facebook me-2"></i>Facebook
+                        </a>
+                        <a
+                            href="https://www.instagram.com/VacaFlacaCR" // Reemplazá por el enlace real
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-outline-light btn-lg"
+                        >
+                            <i className="bi bi-instagram me-2"></i>Instagram
+                        </a>
+                    </div>
+                </div>
+            </section>
+
 
 
         </div>
