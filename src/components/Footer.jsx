@@ -14,18 +14,27 @@ const Footer = () => {
             <div>
                 <footer className="text-center text-lg-start text-white" style={{ backgroundColor: '#111' }}>
                     {/* Social Media Section */}
-                    <section className="d-flex justify-content-between p-4" style={{ backgroundColor: '#3e2723   ' }}>
-                        <div className="me-5">
-                            <span className='lead'>Buscanos en nuestras Redes Sociales</span>
+
+                    <section
+                        className="d-flex flex-column flex-md-row justify-content-between align-items-center p-3"
+                        style={{ backgroundColor: '#3e2723' }}
+                    >
+                        <div className="mb-3 mb-md-0">
+                            <span className="text-white">Buscanos en nuestras Redes Sociales</span>
                         </div>
-                        <div>
-                            <a href="#" className="text-white me-4 "><FaFacebookF size={30} /></a>
-                            <a href="#" className="text-white me-4"><FaInstagram size={30} /></a>
-                            <a href="https://wa.me/506XXXXXXXX"  className="text-white me-4">
-                                                        <FaWhatsapp size={30} />
-                                                    </a>
+                        <div className="d-flex gap-3">
+                            <a href="#" className="text-white">
+                                <FaFacebookF size={30} />
+                            </a>
+                            <a href="#" className="text-white">
+                                <FaInstagram size={30} />
+                            </a>
+                            <a href="https://wa.me/506XXXXXXXX" className="text-white">
+                                <FaWhatsapp size={30} />
+                            </a>
                         </div>
                     </section>
+
 
                     {/* Links Section */}
                     <section>
@@ -62,8 +71,8 @@ const Footer = () => {
                                     <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#7c4dff', height: '2px' }} />
                                     <p><FaHome className="me-2" /> El Abejonal, San Pablo de León Cortés, San José, Costa Rica</p>
                                     <p><FaEnvelope className="me-2" /> info@example.com</p>
-                                    <p><FaPhone className="me-2" /> +506 60190259 /  +506 62531144</p> 
-            
+                                    <p><FaPhone className="me-2" /> +506 60190259 /  +506 62531144</p>
+
                                 </div>
                             </div>
                         </div>
@@ -71,7 +80,7 @@ const Footer = () => {
 
                     {/* Copyright */}
                     <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                        © 2025 Copyright: 
+                        © 2025 Copyright:
                         <a className="text-white ms-1" href="https://mdbootstrap.com/">Andres Cordero</a>
                     </div>
                 </footer>
