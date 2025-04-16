@@ -138,52 +138,53 @@ const Home = () => {
             {/* Seccion de redes */}
 
 
-            <section
-                className="text-white text-center mt-3 p-md-3 position-relative rounded d-block mx-3 mx-md-5 my-md-5"
-                style={{
-                    background: 'linear-gradient(135deg,rgb(0, 0, 0),rgba(46, 46, 46, 0.73))',
-                }}
-            >
-                <div>
-                    <img
-                        src={IconPhone}
-                        alt="Biker Mascot"
-                        className="d-block d-md-none mx-auto mb-4 pt-2"
-                        style={{ maxWidth: "180px" }} />
+            <section className='margintop'>
+                <div
+                    className="text-white text-center mt-3 p-md-3 position-relative rounded d-block mx-3 mx-md-5 "
+                    style={{
+                        background: 'linear-gradient(135deg,rgb(0, 0, 0),rgba(46, 46, 46, 0.73))',
+                    }}
+                >
+                    <div>
+                        <img
+                            src={IconPhone}
+                            alt="Biker Mascot"
+                            className="d-block d-md-none mx-auto mb-4 pt-2"
+                            style={{ maxWidth: "180px" }} />
 
-                    {/* Imagen flotante a la izquierda */}
-                    <img
-                        src={IconPhone}
-                        alt="Biker Mascot"
-                        className="social-image-floating d-none d-md-block"
-                    />
-                    <div className="container px-3 px-md-5">
-                        <h2 className="display-5 fw-bold mb-3">Seguínos en Redes Sociales</h2>
-                        <p className="lead mx-auto" style={{ maxWidth: "700px" }}>
-                            Viví la experiencia Vaca Flaca también online. Enterate de eventos, promos y toda la vibra biker desde nuestras redes.
-                        </p>
-                        <div className="d-flex justify-content-center gap-3 flex-wrap py-2">
-                            {/* Iconos sociales */}
-                            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="icon-social">
-                                <FaFacebook size={50} />
-                            </a>
-                            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="icon-social">
-                                <FaInstagram size={50} />
-                            </a>
-                            <a href="https://wa.me/506XXXXXXXX" target="_blank" rel="noreferrer" className="icon-social">
-                                <FaWhatsapp size={50} />
-                            </a>
+                        {/* Imagen flotante a la izquierda */}
+                        <img
+                            src={IconPhone}
+                            alt="Biker Mascot"
+                            className="social-image-floating d-none d-md-block"
+                        />
+                        <div className="container px-3 px-md-5">
+                            <h2 className="display-5 fw-bold mb-3">Seguínos en Redes Sociales</h2>
+                            <p className="lead mx-auto" style={{ maxWidth: "700px" }}>
+                                Viví la experiencia Vaca Flaca también online. Enterate de eventos, promos y toda la vibra biker desde nuestras redes.
+                            </p>
+                            <div className="d-flex justify-content-center gap-3 flex-wrap py-2">
+                                {/* Iconos sociales */}
+                                <a href="https://facebook.com" target="_blank" rel="noreferrer" className="icon-social">
+                                    <FaFacebook size={50} />
+                                </a>
+                                <a href="https://instagram.com" target="_blank" rel="noreferrer" className="icon-social">
+                                    <FaInstagram size={50} />
+                                </a>
+                                <a href="https://wa.me/506XXXXXXXX" target="_blank" rel="noreferrer" className="icon-social">
+                                    <FaWhatsapp size={50} />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-
             {/* Alojamiento */}
 
-            <section className="d-flex flex-wrap">
+            <section className="d-flex flex-wrap margintop">
                 {/* Columna de texto */}
-                <div className="col-12 col-md-5 d-flex align-items-center p-5 bg-dark text-light biker-section">
+                <div className="col-12 col-md-5 d-flex align-items-center p-5 bg-dark text-light biker-section ">
                     <div>
                         <h2 className="display-5 fw-bold mb-3">¿Sos parte de un Moto Club?</h2>
                         <p className="lead mb-0 mb-md-4">
@@ -194,73 +195,82 @@ const Home = () => {
 
                 {/* Columna de imagen */}
                 <div className="col-12 col-md-7 ">
-
                     <img
                         src={Cabin}
                         alt="Zona Motocross"
                         className="mx-auto d-block"
                         style={{
-                            width: '100%',       // o w-100 en clase
-                            height: '500px',     // definí una altura
+                            width: '100%',
+                            height: '500px',
                             objectFit: 'cover',
-                            // opcional: un poco de estilo
+
                         }}
                     />
-
-
                 </div>
             </section>
 
 
 
 
-
-
-
-
-
             {/* Seccion Horario y ubicacion */}
 
-            <section className="bg-body-secondary text-dark pb-2 pt-4 m-md-5 m-3" id="ubicacion">
-                <div className="container">
-                    <h2 className="text-center fw-bold mb-4">📍 ¿Dónde Estamos?</h2>
-                    <h4 className=" text-center mb-5">Visitános en la fresca Zona de Los Santos. Viví la experiencia Vaca Flaca.</h4>
+            <section>
 
-                    <div className="row">
-                        {/* Horario */}
-                        <div className=" order-2 d-flex flex-column mx-auto col-11 col-md-6 mb-2 shadow-lg p-5 bg-light rounded-4">
-                            <h4 className="fw-bold mb-2 text-center badge bg-black fs-2">🕒 Horario</h4>
-                            <ul className="list-group bg-light my-4">
-                                <li className="list-group-item bg-body-secondary text-dark border-0">Martes a Jueves: 9:00am - 9:00pm</li>
-                                <li className="list-group-item bg-body-secondary text-dark border-0">Viernes y Sábado: 9:00am - 10:00pm</li>
-                                <li className="list-group-item bg-body-secondary text-dark border-0">Domingo: 9:00am - 8:00pm</li>
-                                <li className="list-group-item bg-body-secondary text-dark border-0">Lunes: Cerrado</li>
-                            </ul>
+                <div className="bg-body-secondary text-dark m-3 m-md-5 rounded">
 
-                            <h5 className="fw-bold">📫 Dirección</h5>
-                            <p>El Abejonal, San Pablo de León Cortés, San José, Costa Rica</p>
-                            <a
-                                href="https://www.google.com/maps?q=9.935+,-84.051"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn btn btn-primary mt-3"
-                            >
-                                Cómo llegar
-                            </a>
-                        </div>
+                    <div className="container-fluid p-4">
+                        <h2 className="text-center fw-bold mb-4">📍 ¿Dónde Estamos?</h2>
+                        <h4 className=" text-center mb-5">Visitános en la fresca Zona de Los Santos. Viví la experiencia Vaca Flaca.</h4>
+                        <div className="row">
 
-                        {/* Mapa */}
-                        <div className="col-md-6 order-1">
-                            <div className="ratio mb-5 ratio-4x3 shadow-lg rounded-4 overflow-hidden">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.7021516059426!2d-84.05155649999999!3d9.706441999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa1114f13c217c7%3A0xfeb8c45c6c3feca5!2sVaca%20Flaca%20zona%20Biker%20(El%20Trapiche)!5e0!3m2!1sen!2scr!4v1744691873870!5m2!1sen!2scr"
-                                    width="100%"
-                                    height="100%"
-                                    style={{ border: 0 }}
-                                    allowFullScreen=""
-                                    loading="lazy"
-                                    title="Ubicación Vaca Flaca"
-                                ></iframe>
+                            {/* Horario */}
+                            <div className="order-2 d-flex flex-column mx-auto col-11 col-md-6 shadow-lg p-5 bg-light rounded-4">
+                                <h4 className="fw-bold mb-2 text-center badge bg-black fs-2 text-white">🕒 Horario</h4>
+                                <ul className="list-group bg-light my-4">
+                                    <li className="list-group-item bg-body-secondary text-dark border-0">
+                                        Martes a Jueves: 9:00am - 9:00pm
+                                    </li>
+                                    <li className="list-group-item bg-body-secondary text-dark border-0">
+                                        Viernes y Sábado: 9:00am - 10:00pm
+                                    </li>
+                                    <li className="list-group-item bg-body-secondary text-dark border-0">
+                                        Domingo: 9:00am - 8:00pm
+                                    </li>
+                                    <li className="list-group-item bg-body-secondary text-dark border-0">
+                                        Lunes: Cerrado
+                                    </li>
+                                </ul>
+
+                                <h5 className="fw-bold">📫 Dirección</h5>
+                                <p>El Abejonal, San Pablo de León Cortés, San José, Costa Rica</p>
+
+                                <a
+                                    href="https://www.google.com/maps?q=9.935+,-84.051"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn btn-primary mt-3 shadow-sm"
+                                    style={{ borderRadius: '25px', transition: 'all 0.3s ease' }}
+                                >
+                                    Cómo llegar
+                                </a>
+                            </div>
+
+
+
+                            {/* Mapa */}
+                            <div className="col-md-6 order-1">
+                                <div className="ratio mb-5 ratio-4x3 shadow-lg rounded-4 overflow-hidden w-100 h-100">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.7021516059426!2d-84.05155649999999!3d9.706441999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa1114f13c217c7%3A0xfeb8c45c6c3feca5!2sVaca%20Flaca%20zona%20Biker%20(El%20Trapiche)!5e0!3m2!1sen!2scr!4v1744691873870!5m2!1sen!2scr"
+                                        width="100%"
+                                        height="100%"
+                                        style={{ border: 0 }}
+                                        allowFullScreen="true"
+                                        loading="lazy"
+                                        title="Ubicación Vaca Flaca"
+
+                                    ></iframe>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -89,4 +89,10 @@
     margin-top: 6rem;
 }
 
+@media (max-width: 576px) {
+    .margintop {
+        margin-top: 2rem; 
+    }
+}
+
 
