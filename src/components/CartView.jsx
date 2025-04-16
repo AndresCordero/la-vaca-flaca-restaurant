@@ -9,28 +9,28 @@ import Swal from 'sweetalert2'
 
 const CartView = () => {
     const { clear, cartTotal, cartImpuesto } = useCart()
+    
+        const preConfirmation = () => {
+            Swal.fire({
+                title: '¿Está seguro que desea borrar todos los productos del carrito?',
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Si, borrar!"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    clear()
+                    Swal.fire({
+                        title: "¡Borrado!",
+                        text: "Los productos se han borrado del carrito",
+                        icon: "success",
+                        confirmButtonColor: "#198754"
+                    });
+                }
+            })
+        }
 
-
-    const preConfirmation = () => {
-        Swal.fire({
-            title: '¿Está seguro que desea borrar todos los productos del carrito?',
-            icon: "warning",
-            showCancelButton: true,
-            confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
-            confirmButtonText: "Si, borrar!"
-        }).then((result) => {
-            if (result.isConfirmed) {
-                clear()
-                Swal.fire({
-                    title: "¡Borrado!",
-                    text: "Los productos se han borrado del carrito",
-                    icon: "success",
-                    confirmButtonColor: "#198754"
-                });
-            }
-        })
-    }
     return (
         <div className='d-flex justify-content-center flex-column'>
             <h1 className='text-center mt-5'>Tu carrito</h1>

@@ -8,9 +8,9 @@ import IconPhone from '/phone2.png'
 import Cabin from '/cabina2.jpg'
 import { NavLink } from 'react-router-dom';
 
+
 const Home = () => {
-
-
+    window.scrollTo(0, 0)
     return (
         <div className='bg-black pb-2'>
 

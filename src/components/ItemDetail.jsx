@@ -21,7 +21,7 @@ const ItemDetail = ({ product }) => {
         <div className='container text-center'>
             <div className='card border-dark shadow-lg p-4 container d-flex justify-content-center align-items-center flex-wrap my-5'>
                 <h1 className='mb-5'>Detalle de producto: {product.name}</h1>
-                <img className='rounded img-fluid ' src={product.img} alt={product.name} style={{ maxWidth: '35rem', width: '100%', height: 'auto' }} />
+                <img className='rounded img-fluid ' src={product.img} alt={product.name} style={{ maxWidth: '18rem', width: '100%', height: 'auto' }} />
                 <hr className="w-25 mt-5" />
                 <p className='mt-3 lead'>{product.description}</p>
                 <p>Stock: {product.stock}</p>
