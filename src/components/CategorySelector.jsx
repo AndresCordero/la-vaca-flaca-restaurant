@@ -16,13 +16,13 @@ const categories = [
 
 const CategorySelector = () => {
     return (
-        <div className="d-flex flex-wrap justify-content-center gap-2 mb-4">
+        <div className="d-flex flex-wrap justify-content-center gap-2 mb-4 bg-dark py-4 rounded shadow">
             {categories.map((cat) => (
                 <NavLink
                     key={cat.name}
                     to={cat.path}
                     className={({ isActive }) =>
-                        `btn btn-outline-dark ${isActive ? 'active fw-bold' : ''}`
+                        `btn btn-outline-light ${isActive ? 'active fw-bold' : ''}`
                     }
                 >
                     {cat.name}

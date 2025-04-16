@@ -11,7 +11,7 @@ const ItemList = ({ data }) => {
                 className="m-2 card-fade"
                 style={{
                     width: '250px',
-                    animationDelay: `${index * 0.2}s`,  // Retraso progresivo
+                    animationDelay: `${index * 0.2}s`, 
                 }}
             >
                 <Item product={product} />

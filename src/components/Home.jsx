@@ -69,7 +69,7 @@ const Home = () => {
                                 <img src="./olladecarne.webp" className="card-img-top" alt="Olla de Carne" />
                                 <div className="card-body">
                                     <h5 className="card-title">Domingos de Olla de Carne</h5>
-                                    <p className="card-text">Solo ₡4.500 todos los domingos. ¡Vení con tu familia!</p>
+                                    <p className="card-text">Por solo ₡4.500 todos los domingos. ¡Vení con tu familia!</p>
                                 </div>
                             </div>
                         </div>
@@ -243,7 +243,7 @@ const Home = () => {
 
 
                             {/* Horario */}
-                            <div className=" d-flex flex-column mt-4 mt-md-0 mx-auto col-12 col-md-5 shadow-lg pt-5 px-5 bg-light rounded-4">
+                            <div className=" d-flex flex-column mt-4 mt-md-0 mx-auto col-12 col-md-4 shadow-lg pt-5 px-5 bg-light rounded-4">
                                 <h4 className="fw-bold mb-2 text-center badge bg-black fs-2 text-white">🕒 Horario</h4>
                                 <ul className="list-group bg-light my-4 shadow">
                                     <li className="list-group-item bg-body-secondary text-dark border-0">

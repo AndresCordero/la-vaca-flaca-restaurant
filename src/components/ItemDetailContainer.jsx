@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { getProducts } from '../mock/asyncData'
+import '../components/styles/Animaciones.css'
+import BackgroundImage from '/public/wallpaper.png'
 import ItemDetail from './ItemDetail'
 import { useParams } from 'react-router-dom'
 import LoaderComponent from './LoaderComponent'
