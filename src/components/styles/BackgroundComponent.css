@@ -1,0 +1,16 @@
+
+.bg-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-wrapper::before {
+    content: "";
+    background-image: var(--bg-BackgroundImage);
+    background-repeat: repeat;
+    background-size: auto;
+    opacity: 0.04;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}

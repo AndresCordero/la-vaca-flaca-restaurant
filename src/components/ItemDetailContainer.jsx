@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../components/styles/Animaciones.css'
-import BackgroundImage from '/public/wallpaper.png'
+import BackgroundComponent from './BackgroundComponent'
 import ItemDetail from './ItemDetail'
 import { useParams } from 'react-router-dom'
 import LoaderComponent from './LoaderComponent'
@@ -17,8 +17,9 @@ const ItemDetailContainer = () => {
 
     /* Firebase Usa doc en vez de docs*/
 
-
     useEffect(() => {
+
+        window.scrollTo(0, 250);
         setLoading(true)
 
         //conexion con nuestra collection
@@ -48,9 +49,11 @@ const ItemDetailContainer = () => {
     }
 
     return (
-        <div className=' d-flex justify-content-center mt-5'>
-            {loading ? <LoaderComponent /> : <ItemDetail product={product} />}
-        </div>
+        <BackgroundComponent>
+            <div className=' d-flex justify-content-center mt-5'>
+                {loading ? <LoaderComponent /> : <ItemDetail product={product} />}
+            </div>
+        </BackgroundComponent>
     )
 }
 

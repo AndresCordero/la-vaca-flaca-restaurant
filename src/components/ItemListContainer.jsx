@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import '../components/styles/Animaciones.css'
-import BackgroundImage from '../assets/wallpaper.png'
+import BackgroundComponent from './BackgroundComponent'
 import CategorySelector from './CategorySelector'
 import menu_image from "/image_standing.png"
 import ItemList from './ItemList'
@@ -15,8 +15,8 @@ const ItemListContainer = ({ greeting }) => {
     const { categoryId } = useParams()
 
     useEffect(() => {
+        window.scrollTo(0, 160)
         setLoading(true)
-
         const prodCollection = collection(db, "productos")
 
         const q = categoryId && categoryId !== "all"
@@ -37,9 +37,7 @@ const ItemListContainer = ({ greeting }) => {
 
     return (
         <main>
-            <div className='main-back'
-                style={{ "--bg-BackgroundImage": `url(${BackgroundImage})` }}>
-
+            <BackgroundComponent>
                 <div className="container pt-3 pt-md-5 position-relative ">
                     <img
                         src={menu_image}
@@ -78,7 +76,7 @@ const ItemListContainer = ({ greeting }) => {
                             <CategorySelector />
                         </div>
 
-                        <div className="d-flex justify-content-center align-items-center flex-column col-12">
+                        <div className="d-flex justify-content-center align-items-center flex-column">
                             {loading ? <LoaderComponent /> : <ItemList data={data} />}
                             {!loading && (
                                 <p className="text-center my-5">**Los precios no incluyen el 10% de servicio a la mesa</p>
@@ -86,7 +84,7 @@ const ItemListContainer = ({ greeting }) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </BackgroundComponent>
         </main>
 
     )

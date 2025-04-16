@@ -17,6 +17,7 @@ const Checkout = () => {
     const { cart, cartTotal, clear } = useCart();
     const [showConfirmation, setShowConfirmation] = useState(false);
 
+
     const buyerData = (event) => {
         setBuyer({
             ...buyer,
@@ -73,18 +74,18 @@ const Checkout = () => {
     useEffect(() => {
         if (orderId) {
             Swal.fire({
-                position: "center   ",
+                position: "center",
                 icon: "success",
                 title: "¡Compra realizada con éxito!",
                 showConfirmButton: false,
                 timer: 2000
             }).then(() => {
-                setShowConfirmation(true); // 🔥 Se muestra el contenido solo después del alert
+                setShowConfirmation(true);
             });
         }
     }, [orderId]);
 
-
+    window.scrollTo(0, 110)
 
     return (
         <>
@@ -99,7 +100,13 @@ const Checkout = () => {
                 </div>
             ) : (
                 <div className="container mt-5">
-                    <div className="card shadow-lg border-2 p-4 p-md-5 mx-auto w-100" style={{ maxWidth: "800px" }} >
+                        <div className="alert alert-info text-center mb-4">
+                            <h2>¡Casi listo para completar tu compra!</h2>
+                            <p>Revisa que los productos en tu carrito sean los correctos antes de proceder con la orden.</p>
+                        </div>
+
+                        {/* Form */}
+                    <div className="card shadow-lg border-2 p-4 p-md-5 mx-auto mb-4 w-100" style={{ maxWidth: "800px" }} >
                         <Form noValidate validated={validated} onSubmit={finalizarCompra}>
                             <Row className="mb-3">
                                 <Form.Group as={Col} md="6">
@@ -176,7 +183,7 @@ const Checkout = () => {
                                     feedbackType="invalid"
                                 />
                             </Form.Group>
-                            <Button className="btn btn-dark mt-4" type="submit" disabled={!cart.length} >Completar Compra</Button>
+                            <Button className="btn btn-warning btn-lg text-center  mt-4" type="submit" disabled={!cart.length} >Completar Compra</Button>
                         </Form>
                     </div>
                 </div>

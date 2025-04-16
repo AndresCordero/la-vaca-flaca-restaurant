@@ -8,7 +8,7 @@ const ItemList = ({ data }) => {
         {data.map((product, index) => (
             <div
                 key={product.id}
-                className="m-2 card-fade"
+                className="m-md-2 card-fade"
                 style={{
                     width: '250px',
                     animationDelay: `${index * 0.2}s`, 
