@@ -14,13 +14,13 @@
 
 .video-bg {
     position: absolute;
-    top: 30%;
+    top: 51%;
     left: 50%;
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
-    transform: translate(-50%, -50%) scale(0.7);
+    transform: translate(-50%, -50%) scale(0.4);
     object-fit: contain;
 }
 
