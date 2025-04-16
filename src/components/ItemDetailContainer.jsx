@@ -44,9 +44,9 @@ const ItemDetailContainer = () => {
 
 
     if (invalid) {
-        return
-        <div>El producto no existe</div>
+        return <div>El producto no existe</div>
     }
+    
 
     return (
         <BackgroundComponent>

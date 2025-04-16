@@ -85,7 +85,6 @@ const Checkout = () => {
         }
     }, [orderId]);
 
-
     const cancelOrder = () => {
 
         Swal.fire({
