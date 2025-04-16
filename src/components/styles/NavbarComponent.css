@@ -17,13 +17,15 @@
 .navbar-gradient .dropdown-menu {
     background-color: #222;
     border: none;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 8px;
+    font-size: 1.1rem;
+    ;
 }
 
 
 .navbar-gradient .nav-link.active {
-    background-color: #3e2723;
+    background-color: #2c2c2c         ;
     border-radius: 6px;
     padding: 0.4rem 0.7rem;
 }
