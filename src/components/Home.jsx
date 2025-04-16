@@ -32,7 +32,7 @@ const Home = () => {
 
                     <svg
                         className="svg-overlay"
-                        viewBox="0 0 1440 320"
+                        viewBox="0 15 1440 320"
                         preserveAspectRatio="none"
                     >
                         <path
