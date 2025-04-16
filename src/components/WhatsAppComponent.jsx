@@ -10,7 +10,7 @@ const WhatsAppComponent = () => {
                     accountName={'Vaca Flaca'} 
                     statusMessage={'Typically replies within 10 minutes'} 
                     chatMessage={'Hola, bienvenido/a 🤝 Como podemos ayudarte?'} 
-                    darkMode={true}
+                    darkMode={false}
                     avatar={logo}
                     />
         </div>
