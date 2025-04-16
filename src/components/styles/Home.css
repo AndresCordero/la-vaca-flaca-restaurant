@@ -1,20 +1,33 @@
 .hero-section {
+    position: relative;
     height: 100vh;
     overflow: hidden;
 }
 
+.svg-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
 .video-bg {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
     transform: translate(-50%, -50%) scale(0.7);
-    z-index: 0;
     object-fit: contain;
 }
+
+/* @media (max-width: 576px){
+    .video-bg {
+        max-width: 1500px
+}} */
 
 .overlay {
     background: rgba(0, 0, 0, 0.5);
@@ -31,7 +44,7 @@
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .svg {
         height: 170px;
 

@@ -4,7 +4,6 @@ import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import '../components/styles/Home.css';
 import HomeVideo from '/video4.mp4';
 import MotoVideo from '/Moto2.mp4'
-import MotoPhoto from '/moto3.jpeg'
 import IconPhone from '/phone2.png'
 import Cabin from '/cabina2.jpg'
 import { NavLink } from 'react-router-dom';
@@ -14,43 +13,51 @@ const Home = () => {
 
     return (
         <div className='bg-black pb-2'>
-            <section className="hero-section position-relative text-white text-center d-flex align-items-center justify-content-center flex-column">
-                <video className="video-bg max-h-50 overflow-auto mb-5" autoPlay loop muted playsInline>
-                    <source src={HomeVideo} type="video/mp4" />
-                </video>
 
-                <div className="overlay position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
-                    <div>
-                        <h1 className="display-3 fw-bold">Bar y Restaurante Vaca Flaca</h1>
-                        <p className="lead">Comida deliciosa, ambiente único. ¡Disfrutá cada bocado!</p>
-                        <div className="d-flex flex-column flex-md-row gap-3 justify-content-center mt-4">
-                            <NavLink to="./category/all" className="btn btn-warning col-8 col-md-auto mx-auto mx-md-0 btn-lg">Ver Menú</NavLink>
-                            <NavLink to="/reserva" className="btn btn-outline-light col-8  col-md-auto mx-auto mx-md-0 btn-lg">Reservar</NavLink>
+            {/* Hero */}
+            <section>
+                <div className="hero-section text-white text-center d-flex align-items-center justify-content-center flex-column pb-5 pb-md-1">
+                    <video className="video-bg overflow-auto mb-5" autoPlay loop muted playsInline>
+                        <source src={HomeVideo} type="video/mp4" />
+                    </video>
+
+                    <div className="overlay position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                        <div>
+                            <h1 className="display-3 fw-bold">Bar y Restaurante Vaca Flaca</h1>
+                            <p className="lead">Comida deliciosa, ambiente único. ¡Disfrutá cada bocado!</p>
+                            <div className="d-flex flex-column flex-md-row gap-3 justify-content-center mt-4">
+                                <NavLink to="./category/all" className="btn btn-warning col-8 col-md-auto mx-auto mx-md-0 btn-lg">Ver Menú</NavLink>
+                                <NavLink to="/reserva" className="btn btn-outline-light col-8  col-md-auto mx-auto mx-md-0 btn-lg">Reservar</NavLink>
+                            </div>
                         </div>
                     </div>
+
+                    {/* SVG al final */}
+                    <div className="svg-bottom w-100 overflow-hidden">
+                        <svg
+                            viewBox="0 0 1440 310"
+                            preserveAspectRatio="none"
+                            style={{
+                                height: '180px',
+                                width: '100%',
+                                transition: 'height 0.3s ease-in-out',
+                                display: 'block',
+                            }}
+                        >
+                            <path
+                                d="M0,158.755s63.9,52.163,179.472,50.736c121.494-1.5,185.839-49.738,305.984-49.733,109.21,0,181.491,51.733,300.537,50.233,123.941-1.562,225.214-50.126,390.43-50.374,123.821-.185,353.982,58.374,458.976,56.373,217.907-4.153,284.6-57.236,284.6-57.236V351.03H0V158.755Z"
+                                fill="#000"
+                            />
+                        </svg>
+                    </div>
                 </div>
+
             </section>
 
 
             {/* SVG */}
 
 
-            <div className="svg" style={{ overflow: 'hidden', lineHeight: 0, marginTop: '-140px', position: 'relative', zIndex: 1 }}>
-                <svg className='svg'
-                    viewBox="0 0 1440 310"
-                    preserveAspectRatio="none"
-                    style={{
-                        height: '200px',
-                        width: '100%',
-                        transition: 'height 0.3s ease-in-out', // Suaviza el cambio de altura
-                    }}
-                >
-                    <path
-                        d="M0,158.755s63.9,52.163,179.472,50.736c121.494-1.5,185.839-49.738,305.984-49.733,109.21,0,181.491,51.733,300.537,50.233,123.941-1.562,225.214-50.126,390.43-50.374,123.821-.185,353.982,58.374,458.976,56.373,217.907-4.153,284.6-57.236,284.6-57.236V351.03H0V158.755Z"
-                        style={{ fill: '#000' }}
-                    ></path>
-                </svg>
-            </div>
 
 
             {/* Seccion Ofertas */}
@@ -186,9 +193,9 @@ const Home = () => {
                 {/* Columna de texto */}
                 <div className="col-12 col-md-5 d-flex align-items-center p-5 bg-dark text-light biker-section ">
                     <div>
-                        <h2 className="display-5 fw-bold mb-3">¿Sos parte de un Moto Club?</h2>
+                        <h2 className="display-5 fw-bold mb-3">Descubrí nuestro hospedaje rústico</h2>
                         <p className="lead mb-0 mb-md-4">
-                            Traé a tu crew y unite a Vaca Flaca. Nuestra zona biker está lista para recibirlos con buena comida, ambiente rústico, <strong>hospedaje</strong> y mucha actitud.
+                            En Vaca Flaca ofrecemos <strong>servicio de hospedaje</strong> para todo el público. Disfrutá de un ambiente rústico, buena comida y un lugar ideal para desconectarte.
                         </p>
                     </div>
                 </div>
@@ -203,7 +210,6 @@ const Home = () => {
                             width: '100%',
                             height: '500px',
                             objectFit: 'cover',
-
                         }}
                     />
                 </div>
@@ -223,7 +229,7 @@ const Home = () => {
                         <div className="row">
 
                             {/* Horario */}
-                            <div className="order-2 d-flex flex-column mt-4 mt-md-0 mx-auto col-12 col-md-6 shadow-lg p-5 bg-light rounded-4">
+                            <div className="order-2 d-flex flex-column mt-4 mt-md-0 mx-auto px-md-5 col-12 col-md-6 shadow-lg pt-5 px-5 bg-light rounded-4">
                                 <h4 className="fw-bold mb-2 text-center badge bg-black fs-2 text-white">🕒 Horario</h4>
                                 <ul className="list-group bg-light my-4 shadow">
                                     <li className="list-group-item bg-body-secondary text-dark border-0">
@@ -247,7 +253,7 @@ const Home = () => {
                                     href="https://www.google.com/maps?q=9.935+,-84.051"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="btn btn-primary mt-3 shadow-sm"
+                                    className="btn btn-primary my-3 shadow-sm"
                                     style={{ borderRadius: '25px', transition: 'all 0.3s ease' }}
                                 >
                                     Cómo llegar
