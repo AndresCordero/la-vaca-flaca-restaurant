@@ -13,10 +13,10 @@ function NavbarComponent() {
         <Navbar expand="lg" className="navbar-gradient" data-bs-theme="dark">
             <div className='p-2'>
                 <NavLink as={NavLink} to='/'>
-                    <img className='rounded' src={NavImage} alt="logo" style={{ width: '15rem' }} />
+                    <img className='rounded' src={NavImage} alt="logo" style={{ width: '17rem' }} />
                 </NavLink>
             </div>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" className="me-sm-3" />
+            <Navbar.Toggle aria-controls="basic-navbar-nav" className="me-3" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="text-center">
                     <Nav.Link as={NavLink} to='/'>Home</Nav.Link>
