@@ -78,7 +78,7 @@ const ItemListContainer = ({ greeting }) => {
                             <CategorySelector />
                         </div>
 
-                        <div className="d-flex justify-content-center align-items-center flex-column">
+                        <div className="d-flex justify-content-center align-items-center flex-column col-12">
                             {loading ? <LoaderComponent /> : <ItemList data={data} />}
                             {!loading && (
                                 <p className="text-center my-5">**Los precios no incluyen el 10% de servicio a la mesa</p>

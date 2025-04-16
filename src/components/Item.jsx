@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Item = ({ product }) => {
     return (
-        <div className='card text-center mx-3 shadow-lg' style={{ maxWidth: '14rem', minHeight: '350px', width: '100%', marginTop: 2, marginBottom: 35 }}>
+        <div className='card text-center pt-2 mx-3 shadow-lg' style={{ maxWidth: '15rem', minHeight: '350px', width: '100%', marginTop: 15, marginBottom: 35 }}>
 
             <img
                 className='mb-3 p-1'
