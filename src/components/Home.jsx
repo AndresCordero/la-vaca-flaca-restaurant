@@ -10,7 +10,6 @@ import { NavLink } from 'react-router-dom';
 
 
 const Home = () => {
-    window.scrollTo(0, 0)
     return (
         <div className='bg-black pb-2'>
 
@@ -38,7 +37,7 @@ const Home = () => {
                             viewBox="0 0 1440 310"
                             preserveAspectRatio="none"
                             style={{
-                                height: '180px',
+                                height: '200px',
                                 width: '100%',
                                 transition: 'height 0.3s ease-in-out',
                                 display: 'block',
