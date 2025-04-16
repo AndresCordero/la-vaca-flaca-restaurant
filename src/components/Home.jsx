@@ -51,11 +51,7 @@ const Home = () => {
                         </svg>
                     </div>
                 </div>
-
             </section>
-
-
-            {/* SVG */}
 
 
 
@@ -81,7 +77,7 @@ const Home = () => {
                         {/* Offer Card 2 */}
                         <div className="col-md-4 mb-4">
                             <div className="card h-100 shadow-lg border-0">
-                                <img src="./balde.jpg" className="card-img-top" alt="Promo Cerveza" />
+                                <img src="./test.jpg" className="card-img-top" alt="Promo Cerveza" />
                                 <div className="card-body">
                                     <h5 className="card-title">Balde de Cerveza Nacional</h5>
                                     <p className="card-text">Por solo ₡7.500. ¡Salud!</p>
@@ -92,7 +88,7 @@ const Home = () => {
                         {/* Offer Card 3 */}
                         <div className="col-md-4 mb-4">
                             <div className="card h-100 shadow-lg border-0">
-                                <img src="Ribeye.jpg" className="card-img-top" alt="Hamburguesa" />
+                                <img src="test1.jpg" className="card-img-top" alt="Corte de" />
                                 <div className="card-body">
                                     <h5 className="card-title">Cortes especiales cualquier día de la semana</h5>
                                     <p className="card-text">Desde ₡4.900 en adelante</p>
@@ -225,11 +221,29 @@ const Home = () => {
                 <div className="bg-body-secondary text-dark m-3 m-md-5 rounded">
                     <div className="container-fluid p-4">
                         <h2 className="text-center fw-bold mb-4">📍 ¿Dónde Estamos?</h2>
-                        <h4 className=" text-center mb-5">Visitános en la fresca Zona de Los Santos. Viví la experiencia Vaca Flaca.</h4>
-                        <div className="row">
+                        <h4 className=" text-center mb-5">Visitános en la increíble Zona de Los Santos. Viví la experiencia Vaca Flaca.</h4>
+                        <div className="row g-0 p-md-5">
+
+
+
+
+                            {/* Mapa */}
+                            <div className=" col-md-6 me-md-0">
+                                <div className="ratio mb-5 ratio-4x3 shadow-lg rounded-4 overflow-hidden w-100 h-100">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.7021516059426!2d-84.05155649999999!3d9.706441999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa1114f13c217c7%3A0xfeb8c45c6c3feca5!2sVaca%20Flaca%20zona%20Biker%20(El%20Trapiche)!5e0!3m2!1sen!2scr!4v1744691873870!5m2!1sen!2scr"
+                                        width="100%"
+                                        height="100%"
+
+                                        title="Ubicación Vaca Flaca"
+
+                                    ></iframe>
+                                </div>
+                            </div>
+
 
                             {/* Horario */}
-                            <div className="order-2 d-flex flex-column mt-4 mt-md-0 mx-auto px-md-5 col-12 col-md-6 shadow-lg pt-5 px-5 bg-light rounded-4">
+                            <div className=" d-flex flex-column mt-4 mt-md-0 mx-auto col-12 col-md-5 shadow-lg pt-5 px-5 bg-light rounded-4">
                                 <h4 className="fw-bold mb-2 text-center badge bg-black fs-2 text-white">🕒 Horario</h4>
                                 <ul className="list-group bg-light my-4 shadow">
                                     <li className="list-group-item bg-body-secondary text-dark border-0">
@@ -253,29 +267,11 @@ const Home = () => {
                                     href="https://www.google.com/maps?q=9.935+,-84.051"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="btn btn-primary my-3 shadow-sm"
+                                    className="btn btn-primary mb-3 shadow-sm"
                                     style={{ borderRadius: '25px', transition: 'all 0.3s ease' }}
                                 >
                                     Cómo llegar
                                 </a>
-                            </div>
-
-
-
-                            {/* Mapa */}
-                            <div className="col-12 col-md-6 order-1">
-                                <div className="ratio mb-5 ratio-4x3 shadow-lg rounded-4 overflow-hidden w-100 h-100">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.7021516059426!2d-84.05155649999999!3d9.706441999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa1114f13c217c7%3A0xfeb8c45c6c3feca5!2sVaca%20Flaca%20zona%20Biker%20(El%20Trapiche)!5e0!3m2!1sen!2scr!4v1744691873870!5m2!1sen!2scr"
-                                        width="100%"
-                                        height="100%"
-                                        style={{ border: 0 }}
-                                        allowFullScreen="true"
-                                        loading="lazy"
-                                        title="Ubicación Vaca Flaca"
-
-                                    ></iframe>
-                                </div>
                             </div>
                         </div>
                     </div>
