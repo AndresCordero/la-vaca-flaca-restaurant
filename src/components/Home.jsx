@@ -15,11 +15,10 @@ const Home = () => {
 
             {/* Hero */}
             <section>
-                <div className="hero-section text-white text-center d-flex align-items-center justify-content-center flex-column pb-5 pb-md-1">
-                    <video className="video-bg overflow-auto mb-5" autoPlay loop muted playsInline>
+                <div className="hero-section text-white text-center d-flex align-items-center justify-content-center flex-column position-relative">
+                    <video className="video-bg" autoPlay loop muted playsInline>
                         <source src={HomeVideo} type="video/mp4" />
                     </video>
-
                     <div className="overlay position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
                         <div>
                             <h1 className="display-3 fw-bold">Bar y Restaurante Vaca Flaca</h1>
@@ -31,26 +30,26 @@ const Home = () => {
                         </div>
                     </div>
 
-                    {/* SVG al final */}
-                    <div className="svg-bottom w-100 overflow-hidden">
-                        <svg
-                            viewBox="0 0 1440 310"
-                            preserveAspectRatio="none"
-                            style={{
-                                height: '200px',
-                                width: '100%',
-                                transition: 'height 0.3s ease-in-out',
-                                display: 'block',
-                            }}
-                        >
-                            <path
-                                d="M0,158.755s63.9,52.163,179.472,50.736c121.494-1.5,185.839-49.738,305.984-49.733,109.21,0,181.491,51.733,300.537,50.233,123.941-1.562,225.214-50.126,390.43-50.374,123.821-.185,353.982,58.374,458.976,56.373,217.907-4.153,284.6-57.236,284.6-57.236V351.03H0V158.755Z"
-                                fill="#000"
-                            />
-                        </svg>
-                    </div>
+                    <svg
+                        className="svg-overlay"
+                        viewBox="0 0 1440 320"
+                        preserveAspectRatio="none"
+                    >
+                        <path
+                            fill="#fff"
+                            d="M0,158.755s63.9,52.163,179.472,50.736c121.494-1.5,185.839-49.738,305.984-49.733,109.21,0,181.491,51.733,300.537,50.233,123.941-1.562,225.214-50.126,390.43-50.374,123.821-.185,353.982,58.374,458.976,56.373,217.907-4.153,284.6-57.236,284.6-57.236V351.03H0V158.755Z"
+                        />
+                    </svg>
+
+
+
+
                 </div>
             </section>
+
+
+
+
 
 
 
