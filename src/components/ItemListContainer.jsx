@@ -36,7 +36,7 @@ const ItemListContainer = ({ greeting }) => {
 
     return (
         <main className='bg-body-secondary'>
-            <div className="container pt-md-5 position-relative">
+            <div className="container pt-3 pt-md-5 position-relative">
                 <img
                     src={menu_image}
                     alt="Vaca Flaca logo"
