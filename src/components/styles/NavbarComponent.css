@@ -13,12 +13,6 @@
     position: relative;
 }
 
-/* .navbar-gradient .nav-link.active,
-.navbar-gradient .dropdown-toggle.active {
-    background-color: #7c4dff !important;
-    font-weight: 600;
-} */
-
 
 .navbar-gradient .dropdown-menu {
     background-color: #222;
@@ -27,14 +21,9 @@
     border-radius: 8px;
 }
 
-/* .navbar-gradient .nav-link.active,
-.navbar-gradient .dropdown-toggle.active {
-    text-shadow: 0 0 5px #7c4dff99;
-} */
-
 
 .navbar-gradient .nav-link.active {
-    background-color: #f8620ba6;
+    background-color: #3e2723;
     border-radius: 6px;
     padding: 0.4rem 0.7rem;
 }
