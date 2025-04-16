@@ -34,7 +34,7 @@
 @media (max-width: 768px) {
     .svg {
         height: 170px;
-        /* Reduce la altura en pantallas más pequeñas */
+
     }
 
     .svg path {
@@ -56,8 +56,6 @@
     object-fit: cover;
 }
 
-
-
 .social-image-floating {
     position: absolute;
     left: -10px;
@@ -65,9 +63,6 @@
     bottom: 0;
     max-height: 320px;
 }
-
-
-
 
 .icon-social {
     padding: 0.5rem 0.5rem;
@@ -86,6 +81,12 @@
     color: #000;
 }
 
-.mx-md-9 {
-    margin-inline: 9rem;
+.biker-section {
+    background: linear-gradient(to right, #1b1b1b, #2c2c2c);
 }
+
+.margintop{
+    margin-top: 6rem;
+}
+
+

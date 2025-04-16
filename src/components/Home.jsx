@@ -121,7 +121,7 @@ const Home = () => {
                         </div>
 
                         {/* Text Column */}
-                        <div className="col-md-5 rounded col-11 bg-dark mt-3 mx-auto d-flex flex-column align-items-center text-center p-5">
+                        <div className="col-md-5 col-12 bg-dark mt-3 mt-sm-0 mx-auto d-flex flex-column justify-content-center align-items-center text-center p-5">
                             <div className="px-3">
                                 <h2 className="display-5 fw-bold mb-3">Zona Motocross & Biker</h2>
                                 <p className="lead mb-4">
@@ -132,86 +132,91 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+            </section>
 
 
-
-                {/* Seccion de redes */}
-
-
-                <section
-                    className="text-white text-center mt-3 p-md-3 position-relative rounded d-block mx-3 mx-md-5 my-md-5"
-                    style={{
-                        background: 'linear-gradient(135deg,rgb(0, 0, 0),rgba(46, 46, 46, 0.73))',
-                    }}
-                >
-                    <div>
-
-                        <img
-                            src={IconPhone}
-                            alt="Biker Mascot"
-                            className="d-block d-md-none mx-auto mb-4 pt-2"
-                            style={{ maxWidth: "180px" }} />
+            {/* Seccion de redes */}
 
 
+            <section
+                className="text-white text-center mt-3 p-md-3 position-relative rounded d-block mx-3 mx-md-5 my-md-5"
+                style={{
+                    background: 'linear-gradient(135deg,rgb(0, 0, 0),rgba(46, 46, 46, 0.73))',
+                }}
+            >
+                <div>
+                    <img
+                        src={IconPhone}
+                        alt="Biker Mascot"
+                        className="d-block d-md-none mx-auto mb-4 pt-2"
+                        style={{ maxWidth: "180px" }} />
 
-                        {/* Imagen flotante a la izquierda */}
-                        <img
-                            src={IconPhone}
-                            alt="Biker Mascot"
-                            className="social-image-floating d-none d-md-block"
-                        />
-
-                        <div className="container px-3 px-md-5">
-                            <h2 className="display-5 fw-bold mb-3">Seguínos en Redes Sociales</h2>
-                            <p className="lead mx-auto" style={{ maxWidth: "700px" }}>
-                                Viví la experiencia Vaca Flaca también online. Enterate de eventos, promos y toda la vibra biker desde nuestras redes.
-                            </p>
-                            <div className="d-flex justify-content-center gap-3 flex-wrap py-2">
-                                {/* Iconos sociales */}
-                                <a href="https://facebook.com" target="_blank" rel="noreferrer" className="icon-social">
-                                    <FaFacebook size={50} />
-                                </a>
-                                <a href="https://instagram.com" target="_blank" rel="noreferrer" className="icon-social">
-                                    <FaInstagram size={50} />
-                                </a>
-                                <a href="https://wa.me/506XXXXXXXX" target="_blank" rel="noreferrer" className="icon-social">
-                                    <FaWhatsapp size={50} />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-
-                <div className="container-fluid px-0 mt-3">
-                    <div className="row g-0 min-vh-50">
-
-
-
-                        {/* Text Column */}
-                        <div className="col-md-5 d-flex align-items-center p-5 bg-dark text-light">
-                            <div>
-                                <h2 className="display-5 fw-bold mb-3">¿Sos parte de un Moto Club?</h2>
-                                <p className="lead mb-0 mb-md-4">
-                                    Traé a tu crew y unite a Vaca Flaca. Nuestra zona biker está lista para recibirlos con buena comida, ambiente rústico, <strong>hospedaje</strong> y mucha actitud.
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* Image Column */}
-                        <div className="col-md-7">
-                            <div className="position-relative w-100 h-100" style={{ minHeight: '400px' }}>
-                                <img
-                                    src={Cabin}
-                                    alt="Zona Motocross"
-                                    className="w-100 h-50"
-                                    style={{ objectFit: 'contain' }}
-                                />
-                            </div>
+                    {/* Imagen flotante a la izquierda */}
+                    <img
+                        src={IconPhone}
+                        alt="Biker Mascot"
+                        className="social-image-floating d-none d-md-block"
+                    />
+                    <div className="container px-3 px-md-5">
+                        <h2 className="display-5 fw-bold mb-3">Seguínos en Redes Sociales</h2>
+                        <p className="lead mx-auto" style={{ maxWidth: "700px" }}>
+                            Viví la experiencia Vaca Flaca también online. Enterate de eventos, promos y toda la vibra biker desde nuestras redes.
+                        </p>
+                        <div className="d-flex justify-content-center gap-3 flex-wrap py-2">
+                            {/* Iconos sociales */}
+                            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="icon-social">
+                                <FaFacebook size={50} />
+                            </a>
+                            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="icon-social">
+                                <FaInstagram size={50} />
+                            </a>
+                            <a href="https://wa.me/506XXXXXXXX" target="_blank" rel="noreferrer" className="icon-social">
+                                <FaWhatsapp size={50} />
+                            </a>
                         </div>
                     </div>
                 </div>
             </section>
+
+
+            {/* Alojamiento */}
+
+            <section className="d-flex flex-wrap">
+                {/* Columna de texto */}
+                <div className="col-12 col-md-5 d-flex align-items-center p-5 bg-dark text-light biker-section">
+                    <div>
+                        <h2 className="display-5 fw-bold mb-3">¿Sos parte de un Moto Club?</h2>
+                        <p className="lead mb-0 mb-md-4">
+                            Traé a tu crew y unite a Vaca Flaca. Nuestra zona biker está lista para recibirlos con buena comida, ambiente rústico, <strong>hospedaje</strong> y mucha actitud.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Columna de imagen */}
+                <div className="col-12 col-md-7 ">
+
+                    <img
+                        src={Cabin}
+                        alt="Zona Motocross"
+                        className="mx-auto d-block"
+                        style={{
+                            width: '100%',       // o w-100 en clase
+                            height: '500px',     // definí una altura
+                            objectFit: 'cover',
+                            // opcional: un poco de estilo
+                        }}
+                    />
+
+
+                </div>
+            </section>
+
+
+
+
+
+
+
 
 
             {/* Seccion Horario y ubicacion */}
@@ -261,10 +266,6 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
-
-
-
 
 
         </div>
