@@ -6,7 +6,7 @@ const Item = ({ product }) => {
         <div className='card text-center pt-2 mx-md-3 shadow-lg' style={{ maxWidth: '17rem', minHeight: '350px', width: '100%', marginTop: 15, marginBottom: 35 }}>
 
             <img
-                className='mb-3 p-1'
+                className='mb-3 p-1 rounded'
                 src={product.img}
                 alt={product.name}
                 style={{
