@@ -55,7 +55,7 @@ return (
                     preserveAspectRatio="none"
                 >
                     <path
-                        fill="#fff"
+                        fill="#000"
                         d= {svgPath}
                     />
                 </svg>
