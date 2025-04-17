@@ -229,69 +229,70 @@ const Home = () => {
             {/* Seccion Horario y ubicacion */}
 
             <section>
-    <div className="bg-body-secondary text-dark m-3 m-md-5 rounded">
-        <div className="container-fluid p-4">
-            <h2 className="text-center fw-bold mb-4">📍 ¿Dónde Estamos?</h2>
-            <h4 className="text-center mb-5">
-                Visitános en la increíble Zona de Los Santos. Viví la experiencia Vaca Flaca.
-            </h4>
+                <div className="bg-body-secondary text-dark m-3 m-md-5 rounded">
+                    <div className="container-fluid p-4">
+                        <h2 className="text-center fw-bold mb-4">📍 ¿Dónde Estamos?</h2>
+                        <h4 className="text-center mb-5">
+                            Visitános en la increíble Zona de Los Santos. Viví la experiencia Vaca Flaca.
+                        </h4>
 
-            <div className="row g-4 p-md-5 align-items-stretch">
-                {/* Mapa */}
-                <div className="col-md-6 d-flex">
-                    <div className="ratio ratio-4x3 w-100 shadow-lg rounded-4 overflow-hidden">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.7021516059426!2d-84.05155649999999!3d9.706441999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa1114f13c217c7%3A0xfeb8c45c6c3feca5!2sVaca%20Flaca%20zona%20Biker%20(El%20Trapiche)!5e0!3m2!1sen!2scr!4v1744691873870!5m2!1sen!2scr"
-                            width="100%"
-                            height="100%"
-                            title="Ubicación Vaca Flaca"
-                            allowFullScreen
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                        ></iframe>
+                        <div className="row g-4 p-md-5 align-items-stretch">
+                            {/* Mapa */}
+                            <div className="col-md-6 d-flex">
+                                <div className="ratio ratio-4x3 w-100 shadow-lg rounded-4 overflow-hidden">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.7021516059426!2d-84.05155649999999!3d9.706441999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa1114f13c217c7%3A0xfeb8c45c6c3feca5!2sVaca%20Flaca%20zona%20Biker%20(El%20Trapiche)!5e0!3m2!1sen!2scr!4v1744691873870!5m2!1sen!2scr"
+                                        width="100%"
+                                        height="100%"
+                                        title="Ubicación Vaca Flaca"
+                                        allowFullScreen
+                                        loading="lazy"
+                                        referrerPolicy="no-referrer-when-downgrade"
+                                    ></iframe>
+                                </div>
+                            </div>
+
+                            {/* Horario y Dirección */}
+                            <div className="col-md-6 d-flex">
+                                <div
+                                    className="d-flex flex-column justify-content-between w-100 shadow-lg pt-4 px-4 rounded-4 position-relative text-white overflow-hidden"
+                                    style={{
+                                        backgroundImage: "url('/frente.jpg')",
+                                        backgroundSize: 'cover',
+                                        backgroundPosition: 'center',
+                                        backgroundRepeat: 'no-repeat',
+                                        
+                                    }}
+                                >
+                                    <div className="position-relative z-2 bg-dark bg-opacity-75 p-3 rounded text-center">
+                                        <h4 className="fw-bold text-center badge bg-black fs-2 text-white mb-3">🕒 Horario</h4>
+                                        <ul className="list-group mb-4">
+                                            <li className="list-group-item bg-transparent text-white fw-bold border-0">Martes a Jueves: 9:00am - 9:00pm</li>
+                                            <li className="list-group-item bg-transparent text-white fw-bold border-0">Viernes y Sábado: 9:00am - 10:00pm</li>
+                                            <li className="list-group-item bg-transparent text-white fw-bold border-0">Domingo: 9:00am - 8:00pm</li>
+                                            <li className="list-group-item bg-transparent text-white fw-bold border-0">Lunes: Cerrado</li>
+                                        </ul>
+                                    </div>
+
+                                    <div className="text-center pb-3 position-relative z-2 bg-dark bg-opacity-75 p-3 rounded">
+                                        <h5 className="fw-bold text-white">📫 Dirección</h5>
+                                        <p className="mb-2">El Abejonal, San Pablo de León Cortés, San José, Costa Rica</p>
+                                        <a
+                                            href="https://www.google.com/maps?q=9.935+,-84.051"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="btn btn-primary shadow-sm"
+                                            style={{ borderRadius: '25px', transition: 'all 0.3s ease' }}
+                                        >
+                                            Cómo llegar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                {/* Horario y Dirección */}
-                <div className="col-md-6 d-flex">
-                    <div className="d-flex flex-column justify-content-between w-100 shadow-lg pt-4 px-4 bg-light rounded-4">
-                        <div>
-                            <h4 className="fw-bold text-center badge bg-black fs-2 text-white mb-3">🕒 Horario</h4>
-                            <ul className="list-group bg-light shadow-sm mb-4">
-                                <li className="list-group-item bg-body-secondary text-dark border-0">
-                                    Martes a Jueves: 9:00am - 9:00pm
-                                </li>
-                                <li className="list-group-item bg-body-secondary text-dark border-0">
-                                    Viernes y Sábado: 9:00am - 10:00pm
-                                </li>
-                                <li className="list-group-item bg-body-secondary text-dark border-0">
-                                    Domingo: 9:00am - 8:00pm
-                                </li>
-                                <li className="list-group-item bg-body-secondary text-dark border-0">
-                                    Lunes: Cerrado
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="text-center pb-3">
-                            <h5 className="fw-bold">📫 Dirección</h5>
-                            <p className="mb-2">El Abejonal, San Pablo de León Cortés, San José, Costa Rica</p>
-                            <a
-                                href="https://www.google.com/maps?q=9.935+,-84.051"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn btn-primary shadow-sm"
-                                style={{ borderRadius: '25px', transition: 'all 0.3s ease' }}
-                            >
-                                Cómo llegar
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+            </section>
 
 
 
