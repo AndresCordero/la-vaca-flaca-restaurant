@@ -86,9 +86,8 @@ const Checkout = () => {
     }, [orderId]);
 
     const cancelOrder = () => {
-
         Swal.fire({
-            title: '¿Está seguro que desea borrar todos los productos del carrito?',
+            title: '¿Está seguro que desea cancelar y eliminar los productos del carrito?',
             icon: "warning",
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
@@ -97,7 +96,15 @@ const Checkout = () => {
         }).then((result) => {
             if (result.isConfirmed) {
                 clear()
-                navigate('/');
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: "¡Lo productos se han borrado del carrito de manera exitosa!",
+                    showConfirmButton: false,
+                    timer: 2500
+                }).then(()=> {
+                    navigate('/');
+                });
             }
         });
     }
