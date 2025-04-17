@@ -32,13 +32,13 @@ const CartView = () => {
 
     return (
         <div className='d-flex justify-content-center flex-column'>
-            <h1 className='text-center mt-5'>Tu carrito</h1>
-            <div className='text-center m-5 card border-2 border-dark shadow-lg'>
+            <h1 className='text-center my-5'>Tu carrito</h1>
+            <div className='text-center mx-3 card border-2 border-dark mx-md-auto shadow-lg ' style={{maxWidth:'30rem', minWidth:'10rem'}}>
                 <CartItem />
             </div>
             <h5 className='my-4 text-center'>Total de productos sin impuesto: ₡{cartTotal()}</h5>
             <h2 className='mt-2 mb-4 text-center'>Total a pagar: ₡{cartImpuesto() + cartTotal()}</h2>
-            <hr className="w-50 mx-auto pb-5" />
+            <hr className="w-50 mx-auto pb-4" />
             <Link to={'/checkout'} className='btn btn-lg btn-warning mx-auto mb-4'>Finalizar Compra</Link>
             <Link to={'/category/all'} className='btn btn-outline-dark mx-auto mb-4'>Agregar mas productos</Link>
             <button className='btn btn-danger mx-auto mb-5' onClick={preConfirmation}>Borrar carrito</button>

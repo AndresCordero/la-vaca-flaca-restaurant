@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 import { useCart } from './context/CartContext';
 import { doc, getDoc, addDoc, collection, serverTimestamp, updateDoc } from 'firebase/firestore';
 import { db } from '../service/firebase';
-import { Link, useNavigate  } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Checkout = () => {
     const [buyer, setBuyer] = useState({});
@@ -97,9 +97,10 @@ const Checkout = () => {
         }).then((result) => {
             if (result.isConfirmed) {
                 clear()
-                navigate('/');}
-            });
-        }
+                navigate('/');
+            }
+        });
+    }
 
 
 
@@ -201,8 +202,10 @@ const Checkout = () => {
                                     feedbackType="invalid"
                                 />
                             </Form.Group>
-                            <Button className="btn btn-warning btn text-center  mt-4" type="submit" disabled={!cart.length} >Completar Compra</Button>
-                            <Link className="btn btn-outline-dark text-center mt-4" onClick={cancelOrder} >Cancelar orden</Link>
+                            <div className="d-flex justify-content-between">
+                                <Button className="btn btn-warning btn text-center  mt-4" type="submit" disabled={!cart.length} >Completar Compra</Button>
+                                <Link className="btn btn-outline-dark text-center mt-4" onClick={cancelOrder} >Cancelar orden</Link>
+                            </div>
                         </Form>
                     </div>
                 </div>
