@@ -50,7 +50,7 @@ const ItemDetailContainer = () => {
 
     return (
         <BackgroundComponent>
-            <div className=' d-flex justify-content-center m-5'>
+            <div className=' d-flex justify-content-center m-3 mx-md-auto' style={{maxWidth: '36rem'}}>
                 {loading ? <LoaderComponent /> : <ItemDetail product={product} />}
             </div>
         </BackgroundComponent>
