@@ -51,7 +51,7 @@ const Home = () => {
 
                     <svg
                         className="svg-overlay"
-                        viewBox="0 16 1440 320"
+                        viewBox="0 26 1440 320"
                         preserveAspectRatio="none"
                     >
                         <path
@@ -136,7 +136,7 @@ const Home = () => {
                         </div>
 
                         {/* Text Column */}
-                        <div className="col-md-5 col-12 bg-dark mt-3 mt-sm-0 mx-auto d-flex flex-column justify-content-center align-items-center text-center p-5">
+                        <div className="col-md-5 col-12 bg-dark mt-sm-0 mx-auto d-flex flex-column justify-content-center align-items-center text-center p-5">
                             <div className="px-3">
                                 <h2 className="display-5 fw-bold mb-3">Zona Motocross & Biker</h2>
                                 <p className="lead mb-4">
