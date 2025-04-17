@@ -22,7 +22,7 @@ function NavbarComponent() {
                     <img className="rounded" src={NavImage} alt="logo" style={{ width: '17rem' }} />
                 </NavLink>
             </div>
-            <Navbar.Toggle onClick={() => setExpanded(!expanded)} className="me-3" />
+            <Navbar.Toggle onClick={() => setExpanded(!expanded)} className="me-2" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="text-center">
                     <NavLink className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} to="/" onClick={handleNavClick}>Home</NavLink>
