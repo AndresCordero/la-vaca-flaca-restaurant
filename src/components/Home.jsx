@@ -179,10 +179,10 @@ const Home = () => {
                             </p>
                             <div className="d-flex justify-content-center gap-3 flex-wrap py-2">
                                 {/* Iconos sociales */}
-                                <a href="https://facebook.com" target="_blank" rel="noreferrer" className="icon-social">
+                                <a href="https://www.facebook.com/share/1AdkFHDEHb/" target="_blank" rel="noreferrer" className="icon-social">
                                     <FaFacebook size={50} />
                                 </a>
-                                <a href="https://instagram.com" target="_blank" rel="noreferrer" className="icon-social">
+                                <a href="https://www.instagram.com/trapiche_vacaflaca?igsh=bnVhNmRpeGt3Y2l3" target="_blank" rel="noreferrer" className="icon-social">
                                     <FaInstagram size={50} />
                                 </a>
                                 <a href="https://wa.me/50660190259 " target="_blank" rel="noreferrer" className="icon-social">

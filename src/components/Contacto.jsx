@@ -5,7 +5,7 @@ export default function ContactForm() {
         <div className="container py-5">
             <h2 className="text-center mb-4">Contáctanos</h2>
             <div className="row justify-content-center">
-                <div className="col-md-8">
+                <div className="col-md-5 bg-light fs-5 fw-bold p-3 rounded">
                     <form>
                         <div className="mb-3">
                             <label htmlFor="name" className="form-label">Nombre</label>

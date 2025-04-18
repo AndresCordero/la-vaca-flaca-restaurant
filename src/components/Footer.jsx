@@ -23,10 +23,10 @@ const Footer = () => {
                             <span className="text-white">Buscanos en nuestras Redes Sociales</span>
                         </div>
                         <div className="d-flex gap-3">
-                            <a href="#" className="text-white">
+                            <a href="https://www.facebook.com/share/1AdkFHDEHb/" className="text-white">
                                 <FaFacebookF size={30} />
                             </a>
-                            <a href="#" className="text-white">
+                            <a href="https://www.instagram.com/trapiche_vacaflaca?igsh=bnVhNmRpeGt3Y2l3" className="text-white">
                                 <FaInstagram size={30} />
                             </a>
                             <a href="https://wa.me/50660190259" className="text-white">
@@ -47,13 +47,14 @@ const Footer = () => {
                                     <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                 </div>
 
-                                {/* Products */}
+                                {/* Secciones */}
                                 <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                                    <h6 className="text-uppercase fw-bold">Productos</h6>
+                                    <h6 className="text-uppercase fw-bold">Secciones</h6>
                                     <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#7c4dff', height: '2px' }} />
-                                    <p><a href="#!" className="text-white">Menu</a></p>
-                                    <p><a href="#!" className="text-white">Zona Biker</a></p>
-                                    <p><a href="#!" className="text-white">Alojamiento</a></p>
+                                    <p><a href="/category/all" className="text-white">Menu</a></p>
+                                    <p><a href="/zonabiker" className="text-white">Zona Biker</a></p>
+                                    <p><a href="/Galeria" className="text-white">Galería</a></p>
+                                    <p><a href="/Contacto" className="text-white">Contacto</a></p>
                                 </div>
 
                                 {/* Useful Links */}
