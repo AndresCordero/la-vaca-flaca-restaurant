@@ -35,6 +35,11 @@ body {
     padding: 2px;
 }
 
+.tz-gallery .lightbox img {
+    
+    border-radius: 0;
+    position: relative;
+}
 
 .tz-gallery .lightbox:before {
     position: absolute;

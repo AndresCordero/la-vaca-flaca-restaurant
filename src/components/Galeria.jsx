@@ -1,46 +1,28 @@
 
-
-/* const images = [
-    { src: "/gallery/galeria3.jpg", alt: "Galería 3" },
-    { src: "/gallery/galeria4.jpg", alt: "Galería 4" },
-    { src: "/gallery/galeria5.jpg", alt: "Galería 5" },
-    { src: "/gallery/galeria6.jpg", alt: "Galería 6" },
-    { src: "/gallery/galeria7.jpg", alt: "Galería 7" },
-    { src: "/gallery/galeria8.jpg", alt: "Galería 8" },
-    { src: "/gallery/galeria9.jpg", alt: "Galería 9" },
-    { src: "/gallery/galeria10.jpg", alt: "Galería 10" },
-    { src: "/gallery/galeria11.jpg", alt: "Galería 11" },
-    { src: "/gallery/galeria12.jpg", alt: "Galería 12" },
-    { src: "/gallery/galeria13.jpg", alt: "Galería 13" },
-    { src: "/gallery/galeria16.jpg", alt: "Galería 16" },
-    { src: "/gallery/galeria17.jpg", alt: "Galería 17" },
-    { src: "/gallery/galeria19.jpg", alt: "Galería 19" },
-    { src: "/gallery/galeria18.jpg", alt: "Galería 18" },
-    { src: "/gallery/galeria15.jpg", alt: "Galería 15" },
-]; */
-
-
 import { useEffect } from "react";
 import "baguettebox.js/dist/baguetteBox.min.css";
 import baguetteBox from "baguettebox.js";
 
 
 const photos = [
-    "/gallery/galeria9.jpg",
-    "/gallery/galeria3.jpg",
-    "/gallery/galeria4.jpg",
-    "/gallery/galeria5.jpg",
-    "/gallery/galeria6.jpg",
-    "/gallery/galeria7.jpg",
-    "/gallery/galeria8.jpg",
-    "/gallery/galeria10.jpg",
-    "/gallery/galeria11.jpg",
-    "/gallery/galeria13.jpg",
-    "/gallery/galeria16.jpg",
-    "/gallery/galeria17.jpg",
-    "/gallery/galeria12.jpg",
-    "/gallery/galeria19.jpg",
-    "/gallery/galeria18.jpg",
+    "/gallery/gallery6.webp",
+    "/gallery/gallery8.webp",
+    "/gallery/gallery1.webp",
+    "/gallery/gallery2.webp",
+    "/gallery/gallery3.webp",
+    "/gallery/gallery4.webp",
+    "/gallery/gallery5.webp",
+    "/gallery/gallery7.webp",
+    "/gallery/gallery9.webp",
+    "/gallery/gallery10.webp",
+    "/gallery/gallery11.webp",
+    "/gallery/gallery12.webp",
+    "/gallery/gallery13.webp",
+    "/gallery/gallery14.webp",
+    "/gallery/gallery15.webp",
+    "/gallery/gallery17.webp",
+    "/gallery/gallery18.webp",
+    "/gallery/gallery19.webp",
 ];
 
 
