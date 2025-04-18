@@ -5,7 +5,7 @@ import '../components/styles/Home.css';
 import HomeVideo from '/video4.mp4';
 import MotoVideo from '/Moto2.mp4'
 import IconPhone from '/phone2.png'
-import Cabin from '/cabina2.jpg'
+import Cabin from '/gallery/gallery4.webp'
 import { NavLink } from 'react-router-dom';
 
 
@@ -257,24 +257,24 @@ const Home = () => {
                                 <div
                                     className="d-flex flex-column justify-content-between w-100 shadow-lg pt-4 px-4 rounded-4 position-relative text-white overflow-hidden"
                                     style={{
-                                        backgroundImage: "url('/frente.jpg')",
+                                        backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/frente.jpg')",
                                         backgroundSize: 'cover',
                                         backgroundPosition: 'center',
                                         backgroundRepeat: 'no-repeat',
-                                        
+
                                     }}
                                 >
-                                    <div className="position-relative z-2 bg-dark bg-opacity-75 p-3 rounded text-center">
+                                    <div className="position-relative z-2 bg-secondary bg-opacity-25 p-3 rounded text-center fw-bolder">
                                         <h4 className="fw-bold text-center badge bg-black fs-2 text-white mb-3">🕒 Horario</h4>
-                                        <ul className="list-group mb-4">
-                                            <li className="list-group-item bg-transparent text-white fw-bold border-0">Martes a Jueves: 9:00am - 9:00pm</li>
-                                            <li className="list-group-item bg-transparent text-white fw-bold border-0">Viernes y Sábado: 9:00am - 10:00pm</li>
-                                            <li className="list-group-item bg-transparent text-white fw-bold border-0">Domingo: 9:00am - 8:00pm</li>
-                                            <li className="list-group-item bg-transparent text-white fw-bold border-0">Lunes: Cerrado</li>
+                                        <ul className="list-group mb-4 ">
+                                            <li className="list-group-item bg-transparent text-white fs-4 bg-dark border-1">Martes a Sábado: 9:00am - 9:00pm</li>
+                                            <li className="list-group-item bg-transparent text-white fs-4 bg-dark border-1">Domingo: 9:00am - 8:00pm</li>
+                                            <li className="list-group-item bg-transparent text-white fs-4 bg-dark border-1">Lunes: Cerrado</li>
+
                                         </ul>
                                     </div>
 
-                                    <div className="text-center pb-3 position-relative z-2 bg-dark bg-opacity-75 p-3 rounded">
+                                    <div className="text-center pb-3 position-relative z-2 bg-secondary bg-opacity-25 p-3 rounded mb-2">
                                         <h5 className="fw-bold text-white">📫 Dirección</h5>
                                         <p className="mb-2">El Abejonal, San Pablo de León Cortés, San José, Costa Rica</p>
                                         <a
