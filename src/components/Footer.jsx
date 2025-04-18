@@ -29,7 +29,7 @@ const Footer = () => {
                             <a href="#" className="text-white">
                                 <FaInstagram size={30} />
                             </a>
-                            <a href="https://wa.me/506XXXXXXXX" className="text-white">
+                            <a href="https://wa.me/50660190259" className="text-white">
                                 <FaWhatsapp size={30} />
                             </a>
                         </div>

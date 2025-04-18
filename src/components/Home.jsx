@@ -64,10 +64,6 @@ const Home = () => {
             </section>
 
 
-
-
-
-
             {/* Seccion Ofertas */}
 
             <section className="offers-section py-3 text-center bg-dark text-white m-md-5 rounded m-3">
@@ -142,7 +138,10 @@ const Home = () => {
                                 <p className="lead mb-4">
                                     Vení a vivir la adrenalina en nuestra pista de motocross o relajate con tu crew biker en un ambiente 100% Vaca Flaca.
                                 </p>
-                                <a href="#contacto" className="btn btn-warning btn-lg">Mira disponibilidad</a>
+                                <a href="https://wa.link/mr9eb5" className="btn btn-warning btn-lg" target="_blank" rel="noopener noreferrer">
+                                    Mira disponibilidad
+                                </a>
+
                             </div>
                         </div>
                     </div>
@@ -186,7 +185,7 @@ const Home = () => {
                                 <a href="https://instagram.com" target="_blank" rel="noreferrer" className="icon-social">
                                     <FaInstagram size={50} />
                                 </a>
-                                <a href="https://wa.me/506XXXXXXXX" target="_blank" rel="noreferrer" className="icon-social">
+                                <a href="https://wa.me/50660190259 " target="_blank" rel="noreferrer" className="icon-social">
                                     <FaWhatsapp size={50} />
                                 </a>
                             </div>
@@ -257,7 +256,7 @@ const Home = () => {
                                 <div
                                     className="d-flex flex-column justify-content-between w-100 shadow-lg pt-4 px-4 rounded-4 position-relative text-white overflow-hidden"
                                     style={{
-                                        backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/frente.jpg')",
+                                        backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/gallery/gallery15.webp')",
                                         backgroundSize: 'cover',
                                         backgroundPosition: 'center',
                                         backgroundRepeat: 'no-repeat',
@@ -274,7 +273,7 @@ const Home = () => {
                                         </ul>
                                     </div>
 
-                                    <div className="text-center pb-3 position-relative z-2 bg-secondary bg-opacity-25 p-3 rounded mb-2">
+                                    <div className="text-center pb-3 position-relative z-2 bg-secondary bg-opacity-25 p-3 rounded mb-3">
                                         <h5 className="fw-bold text-white">📫 Dirección</h5>
                                         <p className="mb-2">El Abejonal, San Pablo de León Cortés, San José, Costa Rica</p>
                                         <a
@@ -293,8 +292,6 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
-
 
         </div>
     );
