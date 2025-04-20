@@ -44,7 +44,7 @@ const Home = () => {
                             <p className="lead">Comida deliciosa, ambiente único. ¡Disfrutá cada bocado!</p>
                             <div className="d-flex flex-column flex-md-row gap-3 justify-content-center mt-4">
                                 <NavLink to="./category/all" className="btn btn-warning col-8 col-md-auto mx-auto mx-md-0 btn-lg">Ver Menú</NavLink>
-                                <NavLink to="/reserva" className="btn btn-outline-light col-8  col-md-auto mx-auto mx-md-0 btn-lg">Reservar</NavLink>
+                                
                             </div>
                         </div>
                     </div>
