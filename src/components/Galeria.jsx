@@ -40,7 +40,7 @@ export default function Gallery() {
                 {photos.map((src, index) => (
                     <div className="col-sm-6 col-md-4 mb-3" key={index}>
                         <a href={src} className="lightbox d-block">
-                            <img src={src} alt={`galería ${index + 1}`} className="img-fluid rounded shadow " style={{ width: "100%", height: "530px", objectFit: "cover" }}/>
+                            <img src={src} alt={`galería ${index + 1}`} className="img-fluid rounded shadow gallery-image " style={{ width: "100%", height: "530px", objectFit: "cover" }}/>
                         </a>
                     </div>
                 ))}

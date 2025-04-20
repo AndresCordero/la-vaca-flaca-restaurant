@@ -5,3 +5,14 @@
     letter-spacing: 1px;
     padding: 150px;
 }
+
+
+
+.gallery-image {
+    transition:  transform 0.9s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.9s ease;
+}
