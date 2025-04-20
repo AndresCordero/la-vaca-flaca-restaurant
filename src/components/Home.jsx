@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import '../components/styles/Home.css';
-import HomeVideo from '/video4.mp4';
-import MotoVideo from '/Moto2.mp4'
+import HomeVideo from '/HeroVideo.mp4';
+import MotoVideo from '/MotoVideo.mp4'
 import IconPhone from '/phone2.png'
 import Cabin from '/gallery/gallery4.webp'
 import { NavLink } from 'react-router-dom';
