@@ -1,9 +1,7 @@
 import React from 'react';
-import bikerImg from '/biker.jpeg'; // Imagen fuerte (biker o ruta)
+import bikerImg from '/biker.jpeg'; 
 import '../components/styles/ZonaBikerContainer.css';
-import eventoImg from '/evento.jpeg'; // Imagen de evento
-
-
+import eventoImg from '/evento.jpeg';
 
 const ZonaBikerContainer = () => {
     return (
