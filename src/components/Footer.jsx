@@ -61,9 +61,7 @@ const Footer = () => {
                                 <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                                     <h6 className="text-uppercase fw-bold">Enlaces de Interes</h6>
                                     <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#7c4dff', height: '2px' }} />
-                                    <p><a href="#!" className="text-white">Your Account</a></p>
-                                    <p><a href="#!" className="text-white">Become an Affiliate</a></p>
-                                    <p><a href="#!" className="text-white">Help</a></p>
+                                    <p><a href="#!" className="text-white">Desarrollo web y de Apps como esta</a></p>
                                 </div>
 
                                 {/* Contact */}
