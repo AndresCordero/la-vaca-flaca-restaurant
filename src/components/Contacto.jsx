@@ -11,17 +11,15 @@ import IconPhone from '/phone2.png'
 
 export default function ContactForm() {
     return (
-        <div className="container py-5 bg-black text-white">
+        <div className="py-5 bg-black text-white">
             <h2 className="text-center mb-4">Contáctanos</h2>
             <div className="d-flex align-items-center my-md-5 flex-column">
-
                 <p className="lead fw-bold"><FaPhone className="me-2 fs-4" /> +506 60190259 /  +506 62531144</p>
                 <p className="text-center mb-4"><FaHome className="me-2" /> El Abejonal, San Pablo de León Cortés, San José, Costa Rica</p>
             </div>
 
-
+            <div className="row justify-content-center mx-2 mx-md-0">
             {/* Form */}
-            <div className="row justify-content-center mx-1 mx-md-0">
                 <div className="col-md-5 bg-light text-black fs-5 fw-bold p-3 rounded shadow-lg mb-5 mb-md-0">
                     <form>
                         <div className="mb-3">

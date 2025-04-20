@@ -48,10 +48,9 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-
                     <svg
                         className="svg-overlay"
-                        viewBox="0 26 1440 320"
+                        viewBox="0 0 1440 320"
                         preserveAspectRatio="none"
                     >
                         <path
@@ -59,7 +58,6 @@ const Home = () => {
                             d={svgPath}
                         />
                     </svg>
-
                 </div>
             </section>
 
@@ -138,10 +136,9 @@ const Home = () => {
                                 <p className="lead mb-4">
                                     Vení a vivir la adrenalina en nuestra pista de motocross o relajate con tu crew biker en un ambiente 100% Vaca Flaca.
                                 </p>
-                                <a href="https://wa.link/mr9eb5" className="btn btn-warning btn-lg" target="_blank" rel="noopener noreferrer">
+                                <a href="https://wa.me/50662531144" className="btn btn-warning btn-lg" target="_blank" rel="noopener noreferrer">
                                     Mira disponibilidad
                                 </a>
-
                             </div>
                         </div>
                     </div>
