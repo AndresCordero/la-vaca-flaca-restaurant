@@ -11,7 +11,7 @@ import IconPhone from '/phone2.png'
 
 export default function ContactForm() {
     return (
-        <div className="py-5 bg-black text-white">
+        <div className="py-5 bg-black text-white" style={{background: "linear-gradient(180deg,rgba(26, 26, 26, 0.81), #111)"}}>
             <h2 className="text-center mb-4">Contáctanos</h2>
             <div className="d-flex align-items-center my-md-5 flex-column">
                 <p className="lead fw-bold"><FaPhone className="me-2 fs-4" /> +506 60190259 /  +506 62531144</p>

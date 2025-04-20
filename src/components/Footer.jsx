@@ -59,10 +59,23 @@ const Footer = () => {
 
                                 {/* Useful Links */}
                                 <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                                    <h6 className="text-uppercase fw-bold">Enlaces de Interes</h6>
-                                    <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#7c4dff', height: '2px' }} />
-                                    <p><a href="#!" className="text-white">Desarrollo web y de Apps como esta</a></p>
+                                    <h6 className="text-uppercase fw-bold">Enlaces de Interés</h6>
+                                    <hr
+                                        className="mb-4 mt-0 d-inline-block mx-auto"
+                                        style={{ width: '60px', backgroundColor: '#7c4dff', height: '2px' }}
+                                    />
+                                    <p>
+                                        <a
+                                            href="https://tusitio.dev"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-white text-decoration-none"
+                                        >
+                                            🛠️ Sitio desarrollado por AndresCorderoDev – ¿Querés uno así para tu negocio?
+                                        </a>
+                                    </p>
                                 </div>
+
 
                                 {/* Contact */}
                                 <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
