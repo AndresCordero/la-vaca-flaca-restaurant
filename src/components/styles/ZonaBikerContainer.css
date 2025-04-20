@@ -1,0 +1,16 @@
+.zona-baiker {
+    background: linear-gradient(180deg, #000000, #1a1a1a);
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.zona-title {
+    text-shadow: 2px 2px 10px red;
+    color: #e50914;
+}
+
+.btn-outline-light:hover {
+    background-color: #e50914;
+    color: #000;
+    border-color: #e50914;
+}

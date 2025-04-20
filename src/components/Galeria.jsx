@@ -2,6 +2,8 @@
 import { useEffect } from "react";
 import "baguettebox.js/dist/baguetteBox.min.css";
 import baguetteBox from "baguettebox.js";
+import '../components/styles/Galeria.css';
+
 
 
 const photos = [
@@ -32,7 +34,7 @@ export default function Gallery() {
     }, []);
 
     return (
-        <div className="container py-5 gallery-container">
+        <div className="py-5 gallery-container">
             <h2 className="text-center mb-4">Galería</h2>
             <div className="row tz-gallery">
                 {photos.map((src, index) => (

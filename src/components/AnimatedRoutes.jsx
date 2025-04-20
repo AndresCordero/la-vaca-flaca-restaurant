@@ -7,7 +7,7 @@ import CartContainer from './CartContainer.';
 import Home from './Home';
 import ItemListContainer from './ItemListContainer';
 import ItemDetailContainer from './ItemDetailContainer';
-import ZonaBiker from './ZonaBiker';
+import ZonaBikerContainer from './ZonaBikerContainer';
 import Galeria from './Galeria';
 import Contacto from './Contacto';
 import Checkout from './Checkout';
@@ -44,7 +44,7 @@ const AnimatedRoutes = () => {
                         <Route path="/category/all" element={<ItemListContainer greeting="Todos los productos" />} />
                         <Route path="/category/:categoryId" element={<ItemListContainer greeting="Estas viendo la categoria: " />} />
                         <Route path="/item/:id" element={<ItemDetailContainer />} />
-                        <Route path="/zonabiker" element={<ZonaBiker />} />
+                        <Route path="/zonabiker" element={<ZonaBikerContainer />} />
                         <Route path="/cart" element={<CartContainer />} />
                         <Route path="/galeria" element={<Galeria />} />
                         <Route path="/contacto" element={<Contacto />} />
