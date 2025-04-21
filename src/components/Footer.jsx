@@ -66,7 +66,7 @@ const Footer = () => {
                                     />
                                     <p>
                                         <a
-                                            href="https://tusitio.dev"
+                                            href="https://andrescordero.github.io/portfolio/"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="text-white text-decoration-none"
@@ -93,7 +93,7 @@ const Footer = () => {
                     {/* Copyright */}
                     <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
                         © 2025 Copyright:
-                        <a className="text-white ms-1" href="https://mdbootstrap.com/">Andres Cordero</a>
+                        <a className="text-decoration-none text-white ms-1" href="https://andrescordero.github.io/portfolio/">AndresCorderoDev</a>
                     </div>
                 </footer>
             </div>
