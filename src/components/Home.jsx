@@ -121,7 +121,7 @@ const Home = () => {
                                     loop
                                     muted
                                     playsInline
-                                    poster="/images/motocross-fallback.jpg"
+                                    
                                 >
                                     <source src={MotoVideo} type="video/mp4" />
                                     Tu navegador no soporta el video HTML5.
