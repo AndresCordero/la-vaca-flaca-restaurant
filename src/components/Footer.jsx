@@ -82,7 +82,7 @@ const Footer = () => {
                                     <h6 className="text-uppercase fw-bold">Contacto</h6>
                                     <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#7c4dff', height: '2px' }} />
                                     <p><FaHome className="me-2" /> El Abejonal, San Pablo de León Cortés, San José, Costa Rica</p>
-                                    <p><FaEnvelope className="me-2" /> info@example.com</p>
+                                    <p><FaEnvelope className="me-2" /> info@vacaflaca.com</p>
                                     <p><FaPhone className="me-2" /> +506 60190259 /  +506 62531144</p>
 
                                 </div>
