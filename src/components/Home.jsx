@@ -218,8 +218,6 @@ const Home = () => {
             </section>
 
 
-
-
             {/* Seccion Horario y ubicacion */}
 
             <section>
