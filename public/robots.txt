@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://la-vaca-flaca-restaurant.vercel.app/sitemap.xml
+Sitemap: https://vacaflaca.com/sitemap.xml
