@@ -20,7 +20,7 @@ export default function ContactForm() {
 
             <div className="row justify-content-center mx-2 mx-md-0">
             {/* Form */}
-                <div className="col-md-5 bg-light text-black fs-5 fw-bold p-3 rounded shadow-lg mb-5 mb-md-0">
+                <div className="p-5 col-md-5 bg-light text-black fs-5 fw-bold p-3 rounded shadow-lg mb-5 mb-md-0">
                     <form>
                         <div className="mb-3">
                             <label htmlFor="name" className="form-label">Nombre</label>
