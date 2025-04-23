@@ -71,7 +71,7 @@ const Footer = () => {
                                             rel="noopener noreferrer"
                                             className="text-white text-decoration-none"
                                         >
-                                            🛠️ Sitio desarrollado por AndresCorderoDev – ¿Querés uno así para tu negocio?
+                                            🌐 Desarrollado por TarraKode® –  ¿Querés tu web? ¡Click aquí!
                                         </a>
                                     </p>
                                 </div>
@@ -93,7 +93,7 @@ const Footer = () => {
                     {/* Copyright */}
                     <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
                         © 2025 Copyright:
-                        <a className="text-decoration-none text-white ms-1" href="https://andrescordero.github.io/portfolio/">AndresCorderoDev</a>
+                        <a className="text-decoration-none text-white ms-1" href="https://andrescordero.github.io/portfolio/">TarraKode</a>
                     </div>
                 </footer>
             </div>
