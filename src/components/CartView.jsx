@@ -33,7 +33,7 @@ const CartView = () => {
     return (
         <div className='d-flex justify-content-center flex-column'>
             <h1 className='text-center my-5'>Tu carrito</h1>
-            <div className='text-center mx-3 card border-2 border-dark mx-md-auto shadow-lg ' style={{maxWidth:'30rem', minWidth:'10rem'}}>
+            <div className='text-center mx-4 card border-2 border-dark mx-md-auto p-md-5 shadow-lg ' style={{maxWidth:'30rem', minWidth:'10rem'}}>
                 <CartItem />
             </div>
             <h5 className='my-4 text-center'>Total de productos sin impuesto: ₡{cartTotal()}</h5>
