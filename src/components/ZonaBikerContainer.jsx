@@ -8,7 +8,7 @@ const ZonaBikerContainer = () => {
         <section className="zona-baiker text-white py-5">
             <div className="container text-center">
                 <h2 className="display-4 fw-bold mb-4 zona-title">
-                    ZONA BAIKER
+                    ZONA BIKER
                 </h2>
                 <p className="lead mx-auto mb-5" style={{ maxWidth: '800px' }}>
                     Más que un restaurante, somos punto de encuentro biker. Rutas, música y comunidad.
