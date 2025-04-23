@@ -93,7 +93,7 @@ const Footer = () => {
                     {/* Copyright */}
                     <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
                         © 2025 Copyright:
-                        <a className="text-decoration-none text-white ms-1" href="https://andrescordero.github.io/portfolio/">TarraKode</a>
+                        <a className="text-decoration-none text-white ms-1" href="https://andrescordero.github.io/portfolio/">TarraKode®</a>
                     </div>
                 </footer>
             </div>
