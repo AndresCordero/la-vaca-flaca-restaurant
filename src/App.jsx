@@ -16,13 +16,14 @@ function App() {
   return (
     <BrowserRouter>
     <Helmet>
-        <title>La Vaca Flaca Restaurante</title>
-        <meta name="description" content="Disfruta de la mejor comida en La Vaca Flaca. Ambiente acogedor y platos deliciosos." />
-        <meta property="og:title" content="La Vaca Flaca Restaurante" />
+        <title>Vaca Flaca - Restaurante y Zona Biker</title>
+        <meta name="description" content="Disfruta de la mejor comida en Restaurante Vaca Flaca. Ambiente acogedor y platos deliciosos." />
+        <meta property="og:title" content="Vaca Flaca - Restaurante y Zona Biker" />
         <meta property="og:description" content="Disfruta de la mejor comida en La Vaca Flaca. Ambiente acogedor y platos deliciosos." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://la-vaca-flaca-restaurant.vercel.app/" />
-        <meta property="og:image" content="https://la-vaca-flaca-restaurant.vercel.app/LogoNav4.png" />
+        <meta property="og:url" content="https://vacaflaca.com/" />
+        <meta property="og:image" content="https://vacaflaca.com/LogoNav4.png" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
 
