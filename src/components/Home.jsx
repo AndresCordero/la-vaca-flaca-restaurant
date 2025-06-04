@@ -7,6 +7,8 @@ import Cabin from '/gallery/gallery4.webp'
 import { NavLink } from 'react-router-dom';
 
 
+
+
 const Home = () => {
     const [svgPath, setSvgPath] = useState('');
 
