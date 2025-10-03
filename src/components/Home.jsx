@@ -136,7 +136,7 @@ const Home = () => {
                                 <p className="lead mb-4">
                                     Vení a vivir la adrenalina en nuestra pista de motocross o relajate con tu crew biker en un ambiente 100% Vaca Flaca.
                                 </p>
-                                <a href="https://wa.me/50662531144" className="btn btn-warning btn-lg" target="_blank" rel="noopener noreferrer">
+                                <a href="https://wa.me/50688020529" className="btn btn-warning btn-lg" target="_blank" rel="noopener noreferrer">
                                     Mira disponibilidad
                                 </a>
                             </div>
@@ -182,7 +182,7 @@ const Home = () => {
                                 <a href="https://www.instagram.com/trapiche_vacaflaca?igsh=bnVhNmRpeGt3Y2l3" target="_blank" rel="noreferrer" className="icon-social">
                                     <FaInstagram size={50} />
                                 </a>
-                                <a href="https://wa.me/50660190259 " target="_blank" rel="noreferrer" className="icon-social">
+                                <a href="https://wa.me/506880202529 " target="_blank" rel="noreferrer" className="icon-social">
                                     <FaWhatsapp size={50} />
                                 </a>
                             </div>

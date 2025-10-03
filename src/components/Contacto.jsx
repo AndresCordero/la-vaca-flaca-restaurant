@@ -14,7 +14,7 @@ export default function ContactForm() {
         <div className="py-5 bg-black text-white" style={{background: "linear-gradient(180deg,rgba(26, 26, 26, 0.81), #111)"}}>
             <h2 className="text-center mb-4">Contáctanos</h2>
             <div className="d-flex align-items-center my-md-5 flex-column">
-                <p className="lead fw-bold"><FaPhone className="me-2 fs-4" /> +506 60190259 /  +506 62531144</p>
+                <p className="lead fw-bold"><FaPhone className="me-2 fs-4" /> +506  /  +506 </p>
                 <p className="text-center mb-4"><FaHome className="me-2" /> El Abejonal, San Pablo de León Cortés, San José, Costa Rica</p>
             </div>
 
@@ -89,7 +89,7 @@ export default function ContactForm() {
                                 <a href="https://www.instagram.com/trapiche_vacaflaca?igsh=bnVhNmRpeGt3Y2l3" target="_blank" rel="noreferrer" className="icon-social">
                                     <FaInstagram size={50} />
                                 </a>
-                                <a href="https://wa.me/50660190259 " target="_blank" rel="noreferrer" className="icon-social">
+                                <a href="https://wa.me/50688020529 " target="_blank" rel="noreferrer" className="icon-social">
                                     <FaWhatsapp size={50} />
                                 </a>
                             </div>

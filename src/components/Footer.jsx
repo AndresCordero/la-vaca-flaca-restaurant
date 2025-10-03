@@ -29,7 +29,7 @@ const Footer = () => {
                             <a href="https://www.instagram.com/trapiche_vacaflaca?igsh=bnVhNmRpeGt3Y2l3" className="text-white">
                                 <FaInstagram size={30} />
                             </a>
-                            <a href="https://wa.me/50660190259" className="text-white">
+                            <a href="https://wa.me/50688020529" className="text-white">
                                 <FaWhatsapp size={30} />
                             </a>
                         </div>
@@ -83,7 +83,7 @@ const Footer = () => {
                                     <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px', backgroundColor: '#7c4dff', height: '2px' }} />
                                     <p><FaHome className="me-2" /> El Abejonal, San Pablo de León Cortés, San José, Costa Rica</p>
                                     <p><FaEnvelope className="me-2" /> info@vacaflaca.com</p>
-                                    <p><FaPhone className="me-2" /> +506 60190259 /  +506 62531144</p>
+                                    <p><FaPhone className="me-2" /> +506  /  +506 </p>
 
                                 </div>
                             </div>
